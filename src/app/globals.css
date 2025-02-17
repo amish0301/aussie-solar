@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+html,
+body {
+  font-family: "Sora" !important;
+}
+
+.swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+}
+
+.swiper-slide img:hover {
+  transform: scale(1.1);
+}
+
+.accordion-item {
+  background: #f3f3f3;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  font-weight: 500;
+  font-size: 18px;
+  color: inherit;
+  padding: 11px 35px 11px;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-button::after {
+  content: "+";
+  font-size: 24px;
+  font-weight: bold;
+  color: #e63a27;
+  position: absolute;
+  right: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+  content: "-";
+  color: #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #e63a27;
+  color: #fff;
+}
+
+.accordion-body {
+  font-size: var(--paragraph2-font-size);
+  line-height: var(--paragraph2-line-height);
+  color: var(--paragraph-color);
+  text-transform: capitalize;
+  padding: 10px 20px;
+  background: #ffffff;
+  border-top: 1px solid #ddd;
+}

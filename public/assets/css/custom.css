@@ -1,0 +1,263 @@
+.en-owl-btn button.slide-prev {
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.en-owl-btn button.slide-next {
+    border: none;
+    background: transparent;
+}
+.en-owl-btn-two .slide-prev {
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+}
+
+.en-owl-btn-two button.slide-next {
+    border: none;
+    background: transparent;
+}
+
+.featured-area-one h2 {
+    font-size: 60px;
+}
+.modal-video-body {
+    max-width: 1600px !important;
+}
+
+
+.swiper-slider-dots.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two-slider.swiper-theme .swiper-slider-dots .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: transparent;
+	border: 5px solid #FE5716;
+	padding: 4px;
+	margin: 4px;
+}
+.two-slider.swiper-theme .swiper-slider-dots .swiper-pagination-bullet{
+	background: #b5b5b5;
+	border: 8px solid #b5b5b5;
+}
+
+.recent-projects-two.owl-carousel {
+    position: relative;
+}
+/* active slider img  */
+.en-testimonial-nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    max-width: 668px;
+    align-items: center;
+    margin-top: 40px;
+     
+}
+.en-testimonial-img-wrapper img{
+    border-radius: 50px;
+     
+}
+.en-testimonial-img-wrapper{
+    position: relative;
+}
+
+.en-testimonial-img-wrapper.active::before {
+	left:0;
+	content: "";
+	background-color: #01bd71b8;
+	width: 97px;
+	height: 100%;
+	position: absolute;
+	margin: auto;
+	border-radius: 62px;
+}
+.en-testimonial-img-wrapper.active::after {
+    left: 3px;
+	content: "";
+	border: 3px solid #fff;
+	width: 91px;
+	height: 106px;
+	position: absolute;
+	margin: auto;
+	border-radius: 62px;
+	top: 3px;
+}
+ 
+@media only screen and (max-width: 480px) {
+    .en-testimonial-img-wrapper.active::before {
+      display: none;
+    }
+    .en-testimonial-img-wrapper.active::after {
+      display: none;
+    }
+    .en-testimonial-img-wrapper {
+        text-align: center;
+    }
+  }
+  
+  /* slider for creative team */
+
+  .swiper-slider-dots-two.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.swiper-slider-dots-two .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: transparent;
+	border: 5px solid #FE5716;
+	padding: 4px;
+	margin: 4px;
+}
+.swiper-slider-dots-two .swiper-pagination-clickable .swiper-pagination-bullet {
+	background: #b5b5b5;
+	border: 8px solid #b5b5b5;
+}
+  /* slider for latest instalation */
+
+  .swiper-slider-dots-three.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.swiper-slider-dots-three .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: transparent;
+	border: 5px solid #FE5716;
+	padding: 4px;
+	margin: 4px;
+}
+.swiper-slider-dots-three .swiper-pagination-clickable .swiper-pagination-bullet {
+	background: #b5b5b5;
+	border: 8px solid #b5b5b5;
+}
+.mobile-nav ul, .solar-energy ul, .team-info ul, .top-bar-text ul, .logo ul, .about-energix ul, .footer-bottom ul, ul.information, ul.custom-listing-stlyes, .social-media, .recent-posts, .recent-comments, .categories, .categories.meta, .comment-ul-child, .navbar-links, .share-this ul{
+    margin: 0;
+    padding: 0;
+}
+.team-image figure{
+    margin: 0 !important;
+}
+.recent-projects-two.swiper-carousel {
+	position: relative;
+}
+.top-bar-mail p, .footer-bottom p{
+    margin-bottom: 0 !important;
+}
+.request-quote-info a{
+    margin-top: 8px;
+    z-index: 5;
+}
+.sectors a{
+    color: #000;
+}
+
+.history p {
+	padding-right: 10px;
+	line-height: 26px;
+}
+.quote-two i{
+    background-color:  #0A9642;
+}
+
+/* circle  */
+.circle .CircularProgressbar-trail {
+	stroke: #FAFAFA;
+}
+.circle .CircularProgressbar-path {
+	stroke: #0A9642;
+}
+.CircularProgressbar .CircularProgressbar-text {
+    fill: #212529;
+    font-size: 20px;
+    dominant-baseline: middle;
+    text-anchor: middle;
+    font-weight: bold;
+}
+.contact-info h4{
+    margin-bottom: 0 !important;
+}
+.call-for p{
+    margin-bottom: 0 !important;
+}
+a.read-more-btn{
+    color:#000;
+}
+.contact-info p {
+	line-height: 24px;
+}
+/* from validation  */
+.quote-form-div {
+	position: relative;
+	margin-bottom: 10px;
+}
+.error-message {
+	position: absolute;
+	left: 30px;
+	bottom: -5px;
+	font-size: 12px;
+	color: #c2c2c2;
+}
+
+.blog-form-div {
+	position: relative;
+	margin-bottom: 10px;
+}
+.contact-form-div {
+	position: relative;
+}
+.blog-form-div .error-message {
+	position: absolute;
+	left: 30px;
+	bottom: -20px;
+	font-size: 12px;
+	color: #FE5716;
+}
+.contact-form-div .error-message {
+	position: absolute;
+	left: 30px;
+	bottom: 10px;
+	font-size: 12px;
+	color: #FE5716;
+}
+.contact-form-div.contact-form-message-div .error-message {
+	position: absolute;
+	left: 30px;
+	bottom: -17px;
+	font-size: 12px;
+	color: #FE5716;
+}
+.swiper-slider-dots-two .swiper-pagination-bullet, .swiper-slider-dots-three .swiper-pagination-bullet {
+	height: 15px;
+	width: 15px;
+}
+
+/* header one */
+ 
+button.header-one-btn {
+	background-color: #fe5716;
+	color: white;
+	font-weight: bold;
+	border-radius: 70px;
+	margin-left: 20px;
+}
+.menu-bar-en{
+	padding: 10px 20px !important;
+}
+
+.custom-listing-stlyes {
+	margin-bottom: 20px !important;
+}
+.en-work-skills{
+	margin-top: 80px !important;
+}
+.battery-storage-text p{
+   margin-bottom: 0;
+}
+
+ 
