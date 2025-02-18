@@ -64,9 +64,9 @@ const TestimonialsSec = ({ propsClass }: propsType) => {
 
             <div className="col-lg-6">
               <div className="heading">
-                <p>Testimonials</p>
+                <p>Industry-Recognized Certifications</p>
                 <div className="line"></div>
-                <h2>Client’s reviews</h2>
+                <h2>About Certification</h2>
               </div>
 
               <div className="c-slider">
