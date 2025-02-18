@@ -2,8 +2,10 @@ import navMenuData from "@/data/menu/menu-data";
 import useGlobalContext from "@/hooks/use-context";
 import LogoIcon from "@/svg/LogoIcon";
 import LogoTwoIcon from "@/svg/LogoTwoIcon";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+import Logo from "../../../public/assets/img/logo.png";
 
 const MobileMenu = () => {
   const { sideMenuOpen, toggleSideMenu } = useGlobalContext();
@@ -22,9 +24,9 @@ const MobileMenu = () => {
         id="mobile-nav"
         style={{ display: sideMenuOpen ? "block" : "none" }}
       >
-        <div className="res-log">
+        <div className="mobilemenu-logo">
           <Link href="/">
-            <LogoTwoIcon />
+          <Image src={Logo} alt="logo" width={170} height={50} />
           </Link>
         </div>
         <ul>

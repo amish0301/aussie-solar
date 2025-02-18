@@ -92,7 +92,7 @@ const FooterTwo = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="#">Image Gallery </a>
+                    <a href="/gallery">Image Gallery </a>
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>

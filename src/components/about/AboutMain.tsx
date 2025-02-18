@@ -6,10 +6,12 @@ import SolarEnergySec from "../home-two/SolarEnergySec";
 import CreativeTeam from "../home-two/CreativeTeam";
 import CompanyHistory from "./CompanyHistory";
 import TestimonialsSec from "../home/TestimonialsSec";
+import aboutImg from '../../../public/assets/img/banners/about-banner.jpg'
+
 const AboutMain = () => {
   return (
     <>
-      <BreadCamb title="About Us" />
+      <BreadCamb title="About Us" bgImg={aboutImg} />
       <WellComeToSolarSec /> 
       <ProcessSolutionsSec propsClass="gap no-top" />
       <SolarEnergySec />

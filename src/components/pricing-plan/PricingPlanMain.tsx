@@ -1,14 +1,14 @@
 import React from "react";
 import BreadCambDefault from "../shearedComponents/BreadCambDefault";
 import Pricing from "./Pricing";
-import WhyUseEnergix from "../home/WhyUseEnergix";
+import WhyUse from "../home/WhyUseUs";
 
 const PricingPlanMain = () => {
   return (
     <>
       <BreadCambDefault pages="Pages" title="Pricing Plans" />
       <Pricing /> 
-      <WhyUseEnergix propsClass="two" bgImg={null}/>
+      <WhyUse propsClass="two" bgImg={null}/>
     </>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import bgImg from "../../../public/assets/img/background.jpg";
+import bgImg from "../../../public/assets/img/get-in-touch-bgimg.jpg";
 import CredentialsIcon from "@/svg/CredentialsIcon";
 import SolarEnergyIcon from "@/svg/SolarEnergyIcon";
 import TechnologiesIcon from "@/svg/TechnologiesIcon";
@@ -36,7 +36,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
+                  <a href="/services-details/4">
                     <h4>Battery Storage Solutions</h4>
                   </a>
                   <p>
@@ -82,7 +82,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
+                  <a href="/packages/commercial-solar">
                     <h4>Commercial solar energy</h4>
                   </a>
                   <p>
@@ -100,7 +100,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
+                  <a href="/contact">
                     <h4>High Return On Investment</h4>
                   </a>
                   <p>
@@ -118,7 +118,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
+                  <a href="/packages/residential-solar">
                     <h4>Boost Green Credentials</h4>
                   </a>
                   <p>
@@ -136,7 +136,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
+                  <a href="/packages/commercial-solar">
                     <h4>Industrial Solar Energy</h4>
                   </a>
                   <p>
@@ -154,7 +154,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
+                  <a href="/contact">
                     <h4>Scale With New Technologies</h4>
                   </a>
                   <p>

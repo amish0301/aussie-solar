@@ -1,32 +1,14 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Accordion from "../shearedComponents/Accordion";
+import { FAQItem } from "@/interFace/interFace";
 
-interface FAQItem {
-  question: string;
-  answer: string;
+interface faqProp {
+  faqData: FAQItem[];
 }
 
-const FAQAccordion: React.FC = () => {
+const FAQAccordion: React.FC<faqProp> = ({ faqData }: faqProp) => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  const faqData: FAQItem[] = [
-    {
-      question: "What are the advantages of your service?",
-      answer:
-        "Our service offers sustainable and renewable energy solutions tailored to your needs.",
-    },
-    {
-      question: "How can I get started?",
-      answer:
-        "Contact us through our website to schedule a consultation and assess your energy requirements.",
-    },
-    {
-      question: "Is there a warranty on your solar panels?",
-      answer:
-        "Yes, our solar panels come with a 25-year performance warranty for maximum reliability.",
-    },
-  ];
 
   return (
     <div className="accordion" id="faqAccordion">

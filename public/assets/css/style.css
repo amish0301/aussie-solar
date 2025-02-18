@@ -1043,7 +1043,7 @@ button.button {
 }
 .solar-energy h3 {
   font-size: 22px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: bold;
   padding-top: 25px;
   padding-bottom: 5px;
@@ -3033,7 +3033,7 @@ ul.information {
   content: "Completed Projects";
 }
 /* 64. Accordion styles */
-.tabs {
+/* .tabs {
   border-radius: 8px;
   overflow: hidden;
 }
@@ -3088,7 +3088,7 @@ ul.information {
 }
 .tab-close:hover {
   background: #1a252f;
-}
+} */
 input:checked + .tab-label {
   background: #0a9642;
   color: white;
@@ -3720,9 +3720,15 @@ i#nav-icon4 {
   -o-transform: translateY(-50%);
   left: -13px;
 }
-.res-log {
+.mobilemenu-logo {
   margin-bottom: 30px;
 }
+
+.mobilemenu-logo img {
+  margin: auto;
+}
+
+
 .mobile-nav .donation {
   display: flex;
   align-items: center;
@@ -3779,7 +3785,7 @@ li.menu-item-has-children.active {
   background-image: url("../img/remove.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 15px;
+  top: 20px;
   right: 20px;
 }
 .bar-menu {

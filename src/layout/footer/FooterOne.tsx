@@ -53,19 +53,19 @@ const FooterOne = () => {
                 <h4>Residential Solar</h4>
                 <ul>
                   <li>
-                    <Link href="#">13.2kW Solar System</Link>
+                    <Link href="/package-details/104">13.2kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">10.12kW Solar System</Link>
+                    <Link href="/package-details/103">10.12kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">7.92kW Solar System</Link>
+                    <Link href="/package-details/102">7.92kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">6.6kW Solar System</Link>
+                    <Link href="/package-details/101">6.6kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">Custom Solution</Link>
+                    <Link href="/contact">Custom Solution</Link>
                   </li>
                 </ul>
               </div>
@@ -77,19 +77,19 @@ const FooterOne = () => {
                 <h4>Commercial Solar</h4>
                 <ul>
                   <li>
-                    <Link href="#">100kW Solar System</Link>
+                    <Link href="/package-details/204">100kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">50kW Solar System</Link>
+                    <Link href="/package-details/203">50kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">30kW Solar System</Link>
+                    <Link href="/package-details/202">30kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">20kW Solar System</Link>
+                    <Link href="/package-details/201">20kW Solar System</Link>
                   </li>
                   <li>
-                    <Link href="#">Custom Solution</Link>
+                    <Link href="/contact">Custom Solution</Link>
                   </li>
                 </ul>
               </div>
@@ -98,13 +98,13 @@ const FooterOne = () => {
                 <h4>Solar Services</h4>
                 <ul>
                   <li>
-                    <Link href="#">Solar Panel Installation</Link>
+                    <Link href="/services-details/1">Solar Panel Installation</Link>
                   </li>
                   <li>
-                    <Link href="#">Solar Panel Cleaning</Link>
+                    <Link href="/services-details/2">Solar Panel Cleaning</Link>
                   </li>
                   <li>
-                    <Link href="#">Solar Batteries</Link>
+                    <Link href="/services-details/4">Solar Batteries</Link>
                   </li>
                 </ul>
               </div>
@@ -116,22 +116,19 @@ const FooterOne = () => {
                 <h4>Kangaroo Solar</h4>
                 <ul>
                   <li>
-                    <Link href="#">About Us</Link>
+                    <Link href="/about">About Us</Link>
                   </li>
                   <li>
-                    <Link href="#">Why Kangaroo Solar?</Link>
+                    <Link href="/gallery">Explore Our Gallery</Link>
                   </li>
                   <li>
-                    <Link href="#">Explore Our Gallery</Link>
-                  </li>
-                  <li>
-                    <Link href="#">FAQs</Link>
+                    <Link href="/faqs">FAQs</Link>
                   </li>
                   <li>
                     <Link href="#">Support</Link>
                   </li>
                   <li>
-                    <Link href="#">Contact Us</Link>
+                    <Link href="/contact">Contact Us</Link>
                   </li>
                 </ul>
               </div>

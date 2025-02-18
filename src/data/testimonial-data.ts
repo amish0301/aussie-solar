@@ -1,5 +1,5 @@
 import { TtestimonialType } from "@/interFace/interFace";
-import union from "../../public/assets/img/union.jpg";
+import clean_certi_logo from "../../public/assets/img/certificates/Clean-Energy-Logo.svg";
 import union1 from "../../public/assets/img/union-1.jpg";
 import union2 from "../../public/assets/img/union-2.jpg";
 import union3 from "../../public/assets/img/union-3.jpg";
@@ -17,7 +17,7 @@ export const testimonialData: TtestimonialType[] = [
       "Cut down on all your work by collaborating with our Launch Pad team to get the framework of your online business up and running in no time.",
     name: "Thomas Walkar",
     title: "Sustainable Energy Owner",
-    img: union,
+    img: clean_certi_logo,
   },
   {
     id: 2,

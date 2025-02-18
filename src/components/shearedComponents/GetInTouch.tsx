@@ -1,7 +1,7 @@
 "use client";
 import useGlobalContext from "@/hooks/use-context";
 import Image from "next/image";
-import bgImg from "../../../public/assets/img/background.jpg";
+import bgImg from "../../../public/assets/img/get-in-touch-bgimg.jpg";
 import arista from "../../../public/assets/img/arista-square-1.png";
 import PhoneIcon from "@/svg/PhoneIcon";
 
@@ -41,7 +41,7 @@ const GetInTouch = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-4">
+        <div className="col-lg-5">
           <div className="arista-square-img">
             <Image
               alt="arista-square-1"

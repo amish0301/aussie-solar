@@ -1,15 +1,17 @@
 import React from "react";
-import bgImg from "../../../public/assets/img/banners/solar-panel-services.jpg";
+import bgImgOptional from "../../../public/assets/img/banners/solar-panel-services.jpg";
+import { StaticImageData } from "next/image";
 interface propsType {
   title: string;
+  bgImg?: StaticImageData;
 }
 
-const BreadCamb = ({ title }: propsType) => {
+const BreadCamb = ({ title, bgImg }: propsType) => {
   return (
     <>
       <section
         className="banner"
-        style={{ backgroundImage: `url(${bgImg.src})` }}
+        style={{ backgroundImage: bgImg ? `url(${bgImg.src})` : `url(${bgImgOptional.src})` }}
       >
         <div className="container">
           <div className="banner-text">

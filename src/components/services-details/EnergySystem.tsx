@@ -1,10 +1,14 @@
+import { FAQItem } from "@/interFace/interFace";
 import BattaryIconTwo from "@/svg/BattaryIconTwo";
 import InvestmentIcon from "@/svg/InvestmentIcon";
 import SolarEnergyTwoIcon from "@/svg/SolarEnergyTwoIcon";
-import React from "react";
 import FAQAccordion from "./FAQAccordion";
 
-const EnergySystem = () => {
+interface propType {
+  faqData: FAQItem[];
+}
+
+const EnergySystem = ({ faqData }: propType) => {
   return (
     <>
       <section className="clean-energy mt-60">
@@ -111,9 +115,8 @@ const EnergySystem = () => {
             </div>
           </div> */}
 
-        {/* render FAQ's */}
-        <FAQAccordion />
-
+          {/* render FAQ's */}
+          <FAQAccordion faqData={faqData} />
 
           <h5 className="my-5">Clean Energy System</h5>
           <div className="row">

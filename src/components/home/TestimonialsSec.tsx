@@ -6,21 +6,20 @@ import QuoteIcon from "@/svg/QuoteIcon";
 import { TtestimonialType } from "@/interFace/interFace";
 import { testimonialData } from "@/data/testimonial-data";
 
-interface propsType{
-  propsClass:string
+interface propsType {
+  propsClass: string;
 }
- 
-const TestimonialsSec = ({propsClass}:propsType) => {
+
+const TestimonialsSec = ({ propsClass }: propsType) => {
   const [currentData, setcurrentData] = useState<TtestimonialType | null>(null);
   const [currentActive, setcurrentActive] = useState(0);
-
 
   const handleCurrentData = (id: number) => {
     setcurrentActive(id);
     const data = testimonialData.find((item) => item.id == id);
     setcurrentData(data as TtestimonialType);
   };
- 
+
   return (
     <>
       <section className={`gap circle-slider ${propsClass}`}>
@@ -28,7 +27,7 @@ const TestimonialsSec = ({propsClass}:propsType) => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="nav-c-slider">
-                {testimonialData?.slice(0,5)?.map((item) => (
+                {testimonialData?.slice(0, 5)?.map((item) => (
                   <button
                     onClick={() => handleCurrentData(item.id)}
                     key={item.id}
@@ -44,6 +43,7 @@ const TestimonialsSec = ({propsClass}:propsType) => {
                       className="animate__animated animate__fadeIn"
                       src={item.img}
                       alt={`img ${item.id}`}
+                      style={{ objectFit: "contain" }}
                     />
                   </button>
                 ))}
@@ -56,6 +56,7 @@ const TestimonialsSec = ({propsClass}:propsType) => {
                         : (currentData?.img as StaticImageData)
                     }
                     alt="img 1"
+                    style={{ objectFit: "contain" }}
                   />
                 </div>
               </div>
@@ -93,7 +94,7 @@ const TestimonialsSec = ({propsClass}:propsType) => {
                         <h3>{currentData?.review}</h3>
                         <div className="d-flex align-items-center">
                           <i>
-                          <QuoteIcon />
+                            <QuoteIcon />
                           </i>
                           <div>
                             <h4>{currentData?.name}</h4>

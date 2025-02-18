@@ -1,15 +1,15 @@
-import pricingPlan1 from "../../public/assets/img/pricing-plan-2.jpg";
-import pricingPlan2 from "../../public/assets/img/pricing-plan-2.jpg";
-import pricingPlan3 from "../../public/assets/img/pricing-plan-2.jpg";
-import pricingPlan4 from "../../public/assets/img/pricing-plan-2.jpg";
-import pricingPlan5 from "../../public/assets/img/pricing-plan-2.jpg";
-import pricingPlan6 from "../../public/assets/img/pricing-plan-2.jpg";
+import pricingPlan1 from "../../public/assets/img/savings.svg";
+import pricingPlan2 from "../../public/assets/img/savings.svg";
+import pricingPlan3 from "../../public/assets/img/savings.svg";
+import pricingPlan4 from "../../public/assets/img/savings.svg";
+import pricingPlan5 from "../../public/assets/img/savings.svg";
+import pricingPlan6 from "../../public/assets/img/savings.svg";
 import { pricingPlan } from "@/interFace/interFace";
 
 export const pricingPlanData:pricingPlan[] = [
     {
         id:1,
-        title:"6.6kW Solar System",
+        title:"6.6kW Solar Panel System",
         originalPrice: 3960,
         price:3250,
         package:"Month",
@@ -17,7 +17,7 @@ export const pricingPlanData:pricingPlan[] = [
     },
     {
         id:2,
-        title:"10.12kW Solar System",
+        title:"10.12kW Solar Panel System",
         price:4950,
         originalPrice: 5690,
         package:"Month",
@@ -25,7 +25,7 @@ export const pricingPlanData:pricingPlan[] = [
     },
     {
         id:3,
-        title:"13.28kW Solar System",
+        title:"13.28kW Solar Panel System",
         price:5950,
         originalPrice: 6790,
         package:"Month",

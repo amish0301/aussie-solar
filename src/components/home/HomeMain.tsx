@@ -3,7 +3,7 @@ import HeroSlider from "./HeroSlider";
 import DomesticSec from "./DomesticSec";
 import SaveEnegryGallarySec from "./SaveEnegryGallarySec";
 import LatestInstallations from "./LatestInstallations";
-import WhyUseEnergix from "./WhyUseEnergix";
+import WhyUse from "./WhyUseUs";
 import ProcessSolutionsSec from "./ProcessSolutionsSec";
 import TestimonialsSec from "./TestimonialsSec";
 import PricingPlan from "./PricingPlan";
@@ -18,13 +18,13 @@ const HomeMain = () => {
       <DomesticSec />
       <SaveEnegryGallarySec />
       <LatestInstallations classOne="" noBottom="no-bottom"/>
-      <WhyUseEnergix bgImg={bgImg} propsClass=''/>
-      <ProcessSolutionsSec propsClass="gap"/>
-      <TestimonialsSec propsClass="no-top" />
+      <WhyUse bgImg={bgImg} propsClass=''/>
       <PricingPlan />
       <RequestAQuote noTop="no-top" quoteClass=""/>
-      <HomeBlogSec />
       <Sponsors />
+      <ProcessSolutionsSec propsClass="gap"/>
+      <TestimonialsSec propsClass="no-top" />
+      <HomeBlogSec />
     </>
   );
 };

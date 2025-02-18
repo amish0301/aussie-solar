@@ -17,8 +17,8 @@ const PricingPlanCard = ({ data, margin }: propsData) => {
           <Image
             alt="img"
             src={data?.img}
-            width={120}
-            height={100}
+            width={100}
+            height={90}
           />
           <h3>{data?.title}</h3>
 

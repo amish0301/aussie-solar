@@ -62,6 +62,7 @@ export type TserviceData = {
   img?: StaticImageData;
   kwp?: string;
   href?: string;
+  faqData?: FAQItem[]
 };
 
 export type AccordianPropTypes = {
@@ -101,4 +102,9 @@ export interface BreadCrumbDefaultPropType {
   title: string;
   pages: string;
   bgImg?: StaticImageData
+}
+
+export interface FAQItem {
+  question: string;
+  answer: string;
 }

@@ -59,7 +59,7 @@ const HeaderOne = () => {
           <div className="menu-bar menu-bar-en">
             <div className="logo">
               <Link href="/">
-                <Image src={Logo} alt="logo" width={150} height={40} />
+                <Image src={Logo} alt="logo" width={140} height={40} />
               </Link>
             </div>
             <nav className="navbar">

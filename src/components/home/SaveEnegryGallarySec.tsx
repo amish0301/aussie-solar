@@ -32,18 +32,19 @@ const SaveEnegryGallarySec = () => {
             <div className="col-lg-6">
               <div className="renewable-group">
                 <p>
-                  leading renewable energy solutions provider that is
-                  revolutionising and redefining the way sustainable energy
-                  sources are harnessed across the world. Present in 18
-                  countries across Asia, Australia, Europe Africa and the
-                  Americas, Veztaz is powering.
+                  At Kangaroo Solars, we are committed to delivering
+                  high-quality, reliable, and sustainable solar energy solutions
+                  across Australia. With a presence in multiple regions, we take
+                  pride in being a trusted name in the solar power industry,
+                  helping homeowners and businesses transition to clean,
+                  renewable energy.
                 </p>
                 <Image
                   alt="chris-hemsworth"
                   src={hemsworth}
                   style={{ width: "auto", height: "auto" }}
                 />
-                <h3>Alines Jannie</h3>
+                <h3>CEO_Founder Name</h3>
                 <h6>Director of Renewable Group</h6>
               </div>
             </div>
@@ -116,7 +117,7 @@ const SaveEnegryGallarySec = () => {
                 <i>
                   <RenewAbleEnergy />
                 </i>
-                <div className="battery-storage-text"> 
+                <div className="battery-storage-text">
                   <Link href="/services">
                     <h3>Renewable Energy</h3>
                   </Link>

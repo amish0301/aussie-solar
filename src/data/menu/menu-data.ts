@@ -12,11 +12,10 @@ const navMenuData: MenuItem[] = [
     id: 1,
     label: "Home",
     link: "/",
-    hasDropdown: true,
-    subMenu: [
-      { id: 7, label: "Home 1", link: "/" },
-      { id: 8, label: "Home 2", link: "/home-two" },
-    ],
+    hasDropdown: false,
+    // subMenu: [
+    //   { id: 7, label: "Home 1", link: "/" },
+    // ],
   },
   {
     id: 2,
@@ -105,8 +104,8 @@ const navMenuData: MenuItem[] = [
           { id: 16.6, label: "Custom Size Solution", link: "/contact" },
         ],
       },
-      { id: 14, label: "our blog", link: "/our-blog" },
-      { id: 15, label: "blog details", link: "/blog-details" },
+      // { id: 14, label: "our blog", link: "/our-blog" },
+      // { id: 15, label: "blog details", link: "/blog-details" },
     ],
   },
   {
@@ -115,9 +114,9 @@ const navMenuData: MenuItem[] = [
     link: "#",
     hasDropdown: true,
     subMenu: [
-      { id: 9, label: "our projects", link: "/our-projects" },
-      { id: 10, label: "projects details", link: "/projects-details" },
-      { id: 11, label: "support", link: "/support" },
+      { id: 9, label: "FAQs", link: "/faq" },
+      // { id: 10, label: "projects details", link: "/projects-details" },
+      // { id: 11, label: "support", link: "/support" },
       { id: 12, label: "pricing plan", link: "/pricing-plan" },
       { id: 14, label: "Gallery", link: "/gallery" },
       { id: 15, label: "Contact Us", link: "/contact" },

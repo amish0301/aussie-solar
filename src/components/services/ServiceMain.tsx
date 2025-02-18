@@ -4,7 +4,7 @@ import SustainableEnergy from "./SustainableEnergy";
 import FaultActivity from "./FaultActivity";
 import RequestAQuote from "../home/RequestAQuote";
 import UnlimitedSource from "./UnlimitedSource";
-import WhyUseEnergix from "../home/WhyUseEnergix";
+import WhyUse from "../home/WhyUseUs";
 import SolarPV from "./SolarPV";
 
 const ServiceMain = () => {
@@ -15,7 +15,7 @@ const ServiceMain = () => {
       <FaultActivity />
       <RequestAQuote noTop="" quoteClass="two m-0" />
       <UnlimitedSource />
-      <WhyUseEnergix propsClass="two" bgImg={null} />
+      <WhyUse propsClass="two" bgImg={null} />
       <SolarPV />
     </>
   );

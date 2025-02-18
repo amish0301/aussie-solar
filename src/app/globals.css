@@ -27,51 +27,50 @@ body {
   transform: scale(1.1);
 }
 
-.accordion-item {
-  background: #f3f3f3;
-  border-radius: 3px;
-  margin-bottom: 10px;
-}
-
 .accordion-button {
-  font-weight: 500;
-  font-size: 18px;
-  color: inherit;
-  padding: 11px 35px 11px;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-  cursor: pointer;
-}
-
-.accordion-button::after {
-  content: "+";
-  font-size: 24px;
+  background-color: #4CAF50; /* White background when collapsed */
+  color: #333; /* Dark text color */
+  font-size: 1.2rem;
+  text-align: left;
   font-weight: bold;
-  color: #e63a27;
-  position: absolute;
-  right: 20px;
-  transition: transform 0.2s ease-in-out;
+  padding: 1rem;
+  border: 1px solid #ddd; /* Light border */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.3s ease;
 }
 
-.accordion-button:not(.collapsed)::after {
-  content: "-";
-  color: #ffffff;
+.accordion-button.active {
+  background-color: #4CAF50; /* Green background when expanded */
+  color: white; /* White text when active */
 }
 
-.accordion-button:not(.collapsed) {
-  background: #e63a27;
-  color: #fff;
+.accordion-button.collapsed {
+  background-color: white;  /* Keep white background when collapsed */
 }
 
 .accordion-body {
-  font-size: var(--paragraph2-font-size);
-  line-height: var(--paragraph2-line-height);
-  color: var(--paragraph-color);
-  text-transform: capitalize;
-  padding: 10px 20px;
-  background: #ffffff;
+  padding: 1rem;
+  background-color: #f1f1f1; /* Light background for content */
   border-top: 1px solid #ddd;
 }
+
+.accordion-item {
+  border: 1px solid #ddd; /* Border around the entire accordion item */
+  border-radius: 5px;
+  margin-bottom: 0.5rem;
+}
+
+.accordion-header {
+  padding: 0;
+}
+
+.accordion-collapse {
+  overflow: hidden;
+}
+
+.accordion-button:focus {
+  outline: none; /* Remove focus outline for cleaner UI */
+}
+

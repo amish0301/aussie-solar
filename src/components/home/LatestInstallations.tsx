@@ -3,12 +3,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css/bundle";
-import projectOne from "../../../public/assets/img/recent-projects-1.jpg";
-import projectTwo from "../../../public/assets/img/recent-projects-2.jpg";
-import projectThree from "../../../public/assets/img/recent-projects-3.jpg";
-import projectFour from "../../../public/assets/img/recent-projects-4.jpg";
-import projectFive from "../../../public/assets/img/recent-projects-5.jpg";
-import projectSix from "../../../public/assets/img/recent-projects-6.jpg";
+import projectOne from "../../../public/assets/img/packages/word-from-founder.jpg";
+import projectTwo from "../../../public/assets/img/solar-panels.jpg";
+import projectThree from "../../../public/assets/img/battery-1.jpeg";
+import projectFour from "../../../public/assets/img/installation-1.jpg";
+import projectFive from "../../../public/assets/img/cleaning-1.jpg"
 import Image from "next/image";
 import EvenoddIcon from "@/svg/EvenoddIcon";
 import Link from "next/link";
@@ -23,43 +22,36 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
     {
       id: 1,
       img: projectOne,
-      title: "Develops and Manages Sustainable Infrastructure",
-      kwp: "250.43",
+      title: "Explore our Residential Package",
+      kwp: "6.6kW - 13.2kW",
       icon: <EvenoddIcon />,
     },
     {
       id: 2,
       img: projectTwo,
-      title: "Bishop rawstorne academy – leyland (bauder mounting)",
-      kwp: "250.43",
-      icon: <EvenoddIcon />,
-    },
-    {
-      id: 3,
-      img: projectThree,
-      kwp: "250.43",
-      title: "Develops and Manages Sustainable Infrastructure",
+      title: "Explore Our Commercial Package",
+      kwp: "20kW - 100kW",
       icon: <EvenoddIcon />,
     },
     {
       id: 4,
       img: projectFour,
-      title: "Bishop rawstorne academy – leyland (bauder mounting)",
-      kwp: "250.43",
+      title: "Solar Panel Installation",
+      // kwp: "250.43",
+      icon: <EvenoddIcon />,
+    },
+    {
+      id: 3,
+      img: projectThree,
+      kwp: "Looking for Solar Battery?",
+      title: "Solar Battery",
       icon: <EvenoddIcon />,
     },
     {
       id: 5,
       img: projectFive,
-      title: "Develops and Manages Sustainable Infrastructure",
-      kwp: "250.43",
-      icon: <EvenoddIcon />,
-    },
-    {
-      id: 6,
-      img: projectSix,
-      title: "Develops and Manages Sustainable Infrastructure",
-      kwp: "250.43",
+      kwp: "Solar Panel Cleaning",
+      title: "Solar Panel Cleaning",
       icon: <EvenoddIcon />,
     },
   ];
@@ -68,9 +60,9 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
     <section className={`recent-projects gap ${classOne} ${noBottom}`}>
       <div className="container">
         <div className="heading">
-          <p>Recent Projects</p>
+          <p>Our Packages</p>
           <div className="line"></div>
-          <h2>Latest Installations</h2>
+          <h2>Provide Solar Solution</h2>
         </div>
         <div className="row">
           <div className="new-project swiper-carousel swiper-theme">
@@ -116,15 +108,15 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
                   <div className="item">
                     <div className="recent-projects-img">
                       <figure>
-                        <Image alt="recent-projects" src={item?.img} />
+                        <Image alt="our-packages" src={item?.img} />
                       </figure>
                       <div className="recent-projects-text">
-                        <Link href="/our-projects">
+                        <Link href={item.id === 1 ? "/packages/residential-solar" : item.id === 2 ? "/packages/commercial-solar" : item.id === 4 ? '/services-details/1' : item.id === 5 ? '/services-details/2' : item.id === 4 ? '/services-details/4' : '/services'}>
                           <h5>{item?.title}</h5>
                         </Link>
                         <h6>{item?.kwp}</h6>
-                        <span>KWP SYSTEM</span>
-                        <Link href="/our-projects">
+                        {item?.kwp && <span>KWP SYSTEM</span>}
+                        <Link href={item.id === 1 ? "/packages/residential-solar" : item.id === 2 ? "/packages/commercial-solar" : item.id === 4 ? '/services-details/1' : item.id === 5 ? '/services-details/2' : item.id === 4 ? '/services-details/4' : '/services'}>
                           <i>{item?.icon}</i>
                         </Link>
                       </div>
