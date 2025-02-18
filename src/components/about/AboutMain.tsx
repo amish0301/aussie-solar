@@ -1,12 +1,10 @@
-import React from "react";
-import BreadCamb from "../shearedComponents/BreadCamb";
-import WellComeToSolarSec from "./WellComeToSolarSec";
-import ProcessSolutionsSec from "../home/ProcessSolutionsSec";
+import aboutImg from '../../../public/assets/img/banners/about-banner.jpg';
 import SolarEnergySec from "../home-two/SolarEnergySec";
-import CreativeTeam from "../home-two/CreativeTeam";
-import CompanyHistory from "./CompanyHistory";
+import ProcessSolutionsSec from "../home/ProcessSolutionsSec";
 import TestimonialsSec from "../home/TestimonialsSec";
-import aboutImg from '../../../public/assets/img/banners/about-banner.jpg'
+import BreadCamb from "../shearedComponents/BreadCamb";
+import CompanyHistory from "./CompanyHistory";
+import WellComeToSolarSec from "./WellComeToSolarSec";
 
 const AboutMain = () => {
   return (
@@ -15,7 +13,7 @@ const AboutMain = () => {
       <WellComeToSolarSec /> 
       <ProcessSolutionsSec propsClass="gap no-top" />
       <SolarEnergySec />
-      <CreativeTeam bgImg={null} />
+      {/* <CreativeTeam bgImg={null} /> */}
       <CompanyHistory />
       <TestimonialsSec propsClass="" />
     </>

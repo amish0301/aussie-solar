@@ -28,6 +28,14 @@ export const testimonialData: TtestimonialType[] = [
     img: union1,
   },
   {
+    id: 5,
+    review:
+      "Tesla Powerwall revolutionizes energy storage, allowing homeowners to harness solar power efficiently for a sustainable and independent energy future.",
+    name: "Tesla Powerwall",
+    title: "Energy Storage Expert",
+    img: union4,
+  },
+  {
     id: 3,
     review:
       "The Smart Energy Council promotes innovation in solar and renewable energy solutions, driving a sustainable future with cutting-edge technology.",
@@ -42,14 +50,6 @@ export const testimonialData: TtestimonialType[] = [
     name: "Solar Accreditation Australia",
     title: "Certified Solar Technician",
     img: union3,
-  },
-  {
-    id: 5,
-    review:
-      "Tesla Powerwall revolutionizes energy storage, allowing homeowners to harness solar power efficiently for a sustainable and independent energy future.",
-    name: "Tesla Powerwall",
-    title: "Energy Storage Expert",
-    img: union4,
   },
   {
     id: 6,

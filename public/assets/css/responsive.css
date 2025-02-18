@@ -852,9 +852,15 @@
     margin-left: 65%;
   }
 }
+
 @media(max-width: 993px){
   .gap {
     padding: 100px 0;
+  }
+
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
   }
 
   .arista-square-img {
@@ -1076,6 +1082,11 @@
   }
   .price-container {
     padding: 10px;
+  }
+
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
   }
 
   .arista-square-img {
@@ -1342,6 +1353,10 @@
  .history h2, .history h4, .history p{
    padding-left: 10px;
  }
+ .menu-bar.sticky {
+  position: relative !important;
+  box-shadow: none;
+}
  
  .arista-square-img {
   margin-bottom: -80px;
@@ -1549,6 +1564,12 @@
   .contact-info h4{
     line-height: 10px;
   }
+
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
+  }
+
   .en-testimonial-img-wrapper {
     left: 42%;
   }
@@ -1600,6 +1621,10 @@
 @media(max-width: 480px){
   .blog-text-two-text h6 a{
     font-size: 12px;
+  }
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
   }
   .en-testimonial-img-wrapper {
     left: 0%;
@@ -1742,6 +1767,10 @@
   }
 }
 @media(max-width: 450px){
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
+  }
   .domestic h3 {
     font-size: 22px;
     line-height: 30px;
@@ -1890,6 +1919,10 @@
   }
 }
 @media(max-width: 410px){
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
+  }
   .sponsors img {
     width: 39% !important;
     margin: 7px;
@@ -1994,6 +2027,10 @@
   }
 }
 @media(max-width: 375px){
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
+  }
   .blog-text span {
     font-size: 12px;
   }
@@ -2057,6 +2094,10 @@
   }
 }
 @media(max-width: 365px){
+  .menu-bar.sticky {
+    position: relative !important;
+    box-shadow: none;
+  }
   .progressbar {
       margin-right: 32px !important;
   }

@@ -8,7 +8,7 @@ const ContactMain = () => {
         <>
          <BreadCamb title='Contact Us'/>   
          <ContactArea/>
-         <Map/>
+         {/* <Map/> */}
         </>
     );
 };

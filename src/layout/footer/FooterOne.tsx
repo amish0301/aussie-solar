@@ -14,186 +14,142 @@ const FooterOne = () => {
         style={{ backgroundImage: `url(${bgImg.src})` }}
       >
         <div className="container">
-          <div className="row">
-            <div className="col-lg-3 col-md-6">
-              <div className="logo">
-                <Link href="/">
-                  <Image src={Logo} alt="logo" width={220} />
-                </Link>
-                <ul className="d-flex social-media">
-                  <li>
-                    <Link href="https://www.facebook.com/">
-                      <i className="fa-brands fa-facebook"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="https://twitter.com/">
-                      <i className="fa-brands fa-twitter"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="https://www.instagram.com/">
-                      <i className="fa-brands fa-instagram"></i>
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="https://www.youtube.com/">
-                      <i className="fa-brands fa-youtube"></i>
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+  <div className="row">
+    {/* Logo & About Section */}
+    <div className="col-lg-4 col-md-6">
+      <div className="logo">
+        <Link href="/">
+          <Image src={Logo} alt="logo" width={180} />
+        </Link>
+        <p>
+          Solar energy’s exceptional synergies with energy storage, electric vehicles, and smart grids mean the industry works on the frontline of technology and system change.
+        </p>
+        <ul className="d-flex social-media">
+          <li>
+            <Link href="https://www.facebook.com/">
+              <i className="fa-brands fa-facebook"></i> Facebook
+            </Link>
+          </li>
+          <li>
+            <Link href="https://twitter.com/">
+              <i className="fa-brands fa-twitter"></i> Twitter
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.instagram.com/">
+              <i className="fa-brands fa-instagram"></i> Instagram
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-            {/* Middle section */}
+    {/* Residential Solar Section */}
+    <div className="col-lg-2 col-md-6">
+      <div className="footer-widget about-energix">
+        <h4>Residential Solar</h4>
+        <div className="line"></div>
+        <ul className="footer-link-style">
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/106">19.36kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/104">13.2kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/103">10.12kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/102">7.92kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/101">6.6kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/contact">Custom Solution</a></li>
+        </ul>
+      </div>
+    </div>
 
-            {/* Middle Section - Solar Services */}
-            <div className="col-lg-3 col-md-6">
-              <div className="footer-widget">
-                <h4>Residential Solar</h4>
-                <ul>
-                  <li>
-                    <Link href="/package-details/104">13.2kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details/103">10.12kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details/102">7.92kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details/101">6.6kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Custom Solution</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    {/* Commercial Solar Section */}
+    <div className="col-lg-2 col-md-6">
+      <div className="footer-widget about-energix">
+        <h4>Commercial Solar</h4>
+        <div className="line"></div>
+        <ul className="footer-link-style">
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/204">100kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/203">50kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/202">30kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/package-details/201">20kW Solar System</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/contact">Custom Solution</a></li>
+        </ul>
+      </div>
+    </div>
 
-            {/* Right Section - More Services */}
-            <div className="col-lg-3 col-md-6">
-              <div className="footer-widget">
-                <h4>Commercial Solar</h4>
-                <ul>
-                  <li>
-                    <Link href="/package-details/204">100kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details/203">50kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details/202">30kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/package-details/201">20kW Solar System</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Custom Solution</Link>
-                  </li>
-                </ul>
-              </div>
+    {/* Solar Services Section */}
+    <div className="col-lg-2 col-md-6">
+      <div className="footer-widget about-energix">
+        <h4>Solar Services</h4>
+        <div className="line"></div>
+        <ul className="footer-link-style">
+          <li><i className="fa-solid fa-caret-right"></i><a href="/services-details/1">Solar Panel Installation</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/services-details/2">Solar Panel Cleaning</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/services-details/4">Solar Batteries</a></li>
+        </ul>
+      </div>
+    </div>
 
-              <div className="footer-widget">
-                <h4>Solar Services</h4>
-                <ul>
-                  <li>
-                    <Link href="/services-details/1">Solar Panel Installation</Link>
-                  </li>
-                  <li>
-                    <Link href="/services-details/2">Solar Panel Cleaning</Link>
-                  </li>
-                  <li>
-                    <Link href="/services-details/4">Solar Batteries</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
+    {/* Kangaroo Solar Section */}
+    <div className="col-lg-2 col-md-6">
+      <div className="footer-widget about-energix">
+        <h4>Kangaroo Solar</h4>
+        <div className="line"></div>
+        <ul className="footer-link-style">
+          <li><i className="fa-solid fa-caret-right"></i><a href="/about">About Us</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/gallery">Explore Our Gallery</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/faqs">FAQs</a></li>
+          <li><i className="fa-solid fa-caret-right"></i><a href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-            {/* Kangaroo Solar Section */}
-            <div className="col-lg-3 col-md-6">
-              <div className="footer-widget">
-                <h4>Kangaroo Solar</h4>
-                <ul>
-                  <li>
-                    <Link href="/about">About Us</Link>
-                  </li>
-                  <li>
-                    <Link href="/gallery">Explore Our Gallery</Link>
-                  </li>
-                  <li>
-                    <Link href="/faqs">FAQs</Link>
-                  </li>
-                  <li>
-                    <Link href="#">Support</Link>
-                  </li>
-                  <li>
-                    <Link href="/contact">Contact Us</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div className="row contact-footer">
-            <div className="col-xl-4 col-md-6">
-              <div className="contact-info">
-                <div>
-                  <i>
-                    <PhoneIcon />
-                  </i>
-                </div>
-                <div>
-                  <h4>Phone No:</h4>
-                  <Link href="callto:01234525407">
-                    <p>01234 525 407 - 01234 525 407</p>
-                  </Link>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="contact-info">
-                <div>
-                  <i>
-                    <LocationIcon />
-                  </i>
-                </div>
-                <div>
-                  <p>12/7 new town, 245x Town 1214 Street, United State</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-xl-4 col-md-6">
-              <div className="contact-info mb-0">
-                <div>
-                  <i>
-                    <EmailIcon />
-                  </i>
-                </div>
-                <div>
-                  <h4>Email Address:</h4>
-                  <Link href="mailto:info@kangaroosolar.com.au">
-                    <p>info@kangaroosolar.com.au</p>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <p>Ⓒ Copyright Energix 2024. All Right Reserved.</p>
-            <ul>
-              <li>
-                <Link href="#">Privacy Policy</Link>
-              </li>
-              <li>
-                <Link href="#">Terms & Conditions</Link>
-              </li>
-              <li>
-                <Link href="#">About Us</Link>
-              </li>
-            </ul>
-          </div>
+  {/* Contact Footer */}
+  <div className="row contact-footer">
+    <div className="col-lg-4 col-md-6">
+      <div className="contact-info">
+        <i><PhoneIcon /></i>
+        <div>
+          <h4>Phone No:</h4>
+          <Link href="callto:01234525407">
+            <p>01234 525 407 - 01234 525 407</p>
+          </Link>
         </div>
+      </div>
+    </div>
+
+    <div className="col-lg-4 col-md-6">
+      <div className="contact-info">
+        <i><LocationIcon /></i>
+        <div>
+          <p>12/7 new town, 245x Town 1214 Street, United State</p>
+        </div>
+      </div>
+    </div>
+
+    <div className="col-lg-4 col-md-6">
+      <div className="contact-info">
+        <i><EmailIcon /></i>
+        <div>
+          <h4>Email Address:</h4>
+          <Link href="mailto:info@kangaroosolar.com.au">
+            <p>info@kangaroosolar.com.au</p>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {/* Footer Bottom */}
+  <div className="footer-bottom">
+    <p>Ⓒ Copyright Energix 2024. All Right Reserved.</p>
+    <ul>
+      <li><Link href="#">Privacy Policy</Link></li>
+      <li><Link href="#">Terms & Conditions</Link></li>
+      <li><Link href="#">About Us</Link></li>
+    </ul>
+  </div>
+</div>
+
       </footer>
     </>
   );

@@ -25,9 +25,6 @@ const WellComeToSolarSec = () => {
                   countries across Asia, Australia, Europe Africa and the
                   Americas, Veztaz is powering.
                 </p>
-                <Image alt="chris-hemsworth" src={directorImg} />
-                <h3>Alines Jannie</h3>
-                <h6>Director of Renewable Group</h6>
               </div>
             </div>
             <div className="col-xl-7">
@@ -43,7 +40,7 @@ const WellComeToSolarSec = () => {
                       <div className="d-flex">
                         <h2 className="timer count-title count-number">
                           {" "}
-                          <CountUpContent number={18} text="" />{" "}
+                          <CountUpContent number={8} text="" />{" "}
                         </h2>
                         <span>+</span>
                       </div>

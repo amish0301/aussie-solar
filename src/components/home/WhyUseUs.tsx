@@ -23,6 +23,7 @@ const WhyUseEnergix = ({bgImg,propsClass}:propsType) => {
       >
         <div className="container">
           <div className="row align-items-center">
+            <h1>Expert In-House Team of Electricians and Solar Specialists with Over 8 Years of Experience</h1>
             <div className="col-xl-5">
               <div className="heading">
                 <p>Worldwithout Waste</p>

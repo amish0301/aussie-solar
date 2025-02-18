@@ -52,7 +52,15 @@ export const packagesData: packagesType[] = [
                 details: "Residential Package",
                 img: custom_sol,
                 href: '/contact'
-            }
+            },
+            {
+                id: 106,
+                title: "19.36kW Solar Panel System",
+                details: "Residential Package",
+                img: img13,
+                kwp: "19.36kW",
+                href: '/packages/residential-solar'
+            },
         ]
     },
 

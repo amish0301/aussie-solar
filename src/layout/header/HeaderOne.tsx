@@ -1,17 +1,46 @@
 import navMenuData from "@/data/menu/menu-data";
 import useGlobalContext from "@/hooks/use-context";
 import EmailTwoIcon from "@/svg/EmailTwoIcon";
-import LocationTwoIcon from "@/svg/LocationTwoIcon";
 
+import PhoneTwoIcon from "@/svg/PhoneTwoIcon";
 import SearchIcon from "@/svg/SearchIcon";
-import Link from "next/link";
-import MobileMenu from "./MobileMenu";
 import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import Logo from "../../../public/assets/img/logo.png";
+import MobileMenu from "./MobileMenu";
 
 const HeaderOne = () => {
-  const { toggleSideMenu, toggleSearchBar, openLetterBox, setOpenLetterBox } =
-    useGlobalContext();
+  const { toggleSideMenu, toggleSearchBar, openLetterBox, setOpenLetterBox } = useGlobalContext();
+
+  const [isSticky, setIsSticky] = useState<boolean>(false);
+  const [isLaptop, setIsLaptop] = useState<boolean>(false);
+
+  useEffect(() => {
+    const checkScreenSize = () => {
+      setIsLaptop(window.innerWidth > 1200);
+    };
+
+    const handleScroll = () => {
+      if (isLaptop && window.scrollY > 50) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    // Initial check for screen size
+    checkScreenSize();
+
+    // Add event listeners
+    window.addEventListener("resize", checkScreenSize);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener("resize", checkScreenSize);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isLaptop]);
 
   return (
     <>
@@ -45,18 +74,18 @@ const HeaderOne = () => {
                     <p>info@kangaroosolar.com.au</p>
                   </Link>
                 </div>
-                <div className="d-flex align-items-center">
+                <div className="d-flex align-items-center px-3">
                   <i>
-                    <LocationTwoIcon />
+                    <PhoneTwoIcon />
                   </i>
-                  <p>12/7 new town, 245x Street, United State</p>
+                  <Link href="callto:+61-455-505-652"><p>+61-455-505-652</p></Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div className="container">
-          <div className="menu-bar menu-bar-en">
+          <div className={`menu-bar menu-bar-en ${isSticky ? "sticky" : ""}`}>
             <div className="logo">
               <Link href="/">
                 <Image src={Logo} alt="logo" width={140} height={40} />

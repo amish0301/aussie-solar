@@ -11,6 +11,7 @@ import RequestAQuote from "./RequestAQuote";
 import HomeBlogSec from "./HomeBlogSec";
 import Sponsors from "./Sponsors";
 import bgImg from "../../../public/assets/img/energix.jpg";
+
 const HomeMain = () => {
   return (
     <>

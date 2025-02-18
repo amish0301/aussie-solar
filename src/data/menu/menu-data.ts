@@ -13,9 +13,6 @@ const navMenuData: MenuItem[] = [
     label: "Home",
     link: "/",
     hasDropdown: false,
-    // subMenu: [
-    //   { id: 7, label: "Home 1", link: "/" },
-    // ],
   },
   {
     id: 2,
@@ -71,6 +68,11 @@ const navMenuData: MenuItem[] = [
             id: 5.5,
             label: "13.2kW Solar System",
             link: "/package-details/104",
+          },
+          {
+            id: 5.6,
+            label: "19.36kW Solar System",
+            link: "/package-details/105",
           },
           { id: 5.6, label: "Custom Size Solution", link: "/contact" },
         ],

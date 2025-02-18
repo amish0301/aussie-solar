@@ -14,10 +14,8 @@ const FaqMain = () => {
 
         {/* Contact Section - Right Column (only visible on medium and larger screens) */}
         <div className="col-12 col-md-5 d-none d-md-block">
-          <div className="sticky-top">
-            <h2 className="mt-4 text-center">Make an Appointment</h2>
-            <HomePageContactForm />
-          </div>
+          <h2 className="mt-4 text-center">Make an Appointment</h2>
+          <HomePageContactForm />
         </div>
       </div>
     </div>

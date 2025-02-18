@@ -256,7 +256,7 @@ figure {
   width: 280px;
   background-color: #fff;
   box-shadow: 0px 10px 10px 3px hsl(0deg 0% 0% / 16%);
-  z-index: 1000;
+  z-index: 999;
   transition: 0.3s all ease-in-out;
   margin-top: 5px; /* Reduce margin for better hover detection */
 }
@@ -370,9 +370,22 @@ figure {
   border-radius: 54px;
   padding-left: 23px;
   margin-top: -52px;
-  z-index: 111;
+  z-index: 444;
   position: relative;
+  transition: all .3s ease-in-out;
 }
+
+.menu-bar.sticky {
+  position: fixed;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all .3s ease-in-out;
+}
+
 
 button.search-btn svg {
   width: 30px;
@@ -785,6 +798,15 @@ button.button {
   height: 100%;
   opacity: 0.95;
 }
+
+.energix > .container h1 {
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
 .heading {
   position: relative;
 }
@@ -1363,7 +1385,7 @@ footer.one .logo {
   color: #fe5716;
 }
 .social-media li {
-  padding-left: 20px;
+  padding-right: 20px;
 }
 .social-media li i {
   font-size: 20px;
@@ -2114,11 +2136,11 @@ ul.link-style li {
   align-items: center;
   padding-bottom: 35px;
 }
-ul.link-style li i {
+ul.link-style li i, ul.footer-link-style li i {
   font-size: 14px;
   color: #fe5716;
 }
-ul.link-style li a {
+ul.link-style li a, ul.footer-link-style li i a {
   color: #dadada;
   line-height: 0;
   margin-left: 16px;
@@ -2126,6 +2148,21 @@ ul.link-style li a {
 ul.link-style li a:hover {
   color: #fe5716;
 }
+
+ul.footer-link-style {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5px;
+  gap: 10px;
+}
+
+ul.footer-link-style li {
+  width: 100%;
+  column-gap: 6px;
+  display: flex;
+  align-items: center;
+}
+
 /* 44. contact-info.two */
 .contact-info.two i {
   background-color: transparent;

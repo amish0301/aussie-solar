@@ -3,11 +3,11 @@ import EstimateCalculationIcon from "@/svg/EstimateCalculationIcon";
 import ProjectIcon from "@/svg/ProjectIcon";
 import React from "react";
 
-interface propsType{
-  propsClass:string;
+interface propsType {
+  propsClass: string;
 }
 
-const ProcessSolutionsSec = ({propsClass}:propsType) => {
+const ProcessSolutionsSec = ({ propsClass }: propsType) => {
   return (
     <>
       <section className={`process-solutions ${propsClass}`}>
@@ -25,8 +25,8 @@ const ProcessSolutionsSec = ({propsClass}:propsType) => {
                   <span>1</span>
                 </div>
                 <p>
-                  Our mission is to provide clear, high quality and affordable
-                  ecological advice and services to public.
+                  Schedule a free, no-obligation consultation to learn how solar
+                  can reduce your energy costs and provide long-term savings.
                 </p>
                 <CalculationIcon />
               </div>
@@ -38,8 +38,9 @@ const ProcessSolutionsSec = ({propsClass}:propsType) => {
                   <span>2</span>
                 </div>
                 <p>
-                  Our mission is to provide clear, high quality and affordable
-                  ecological advice and services to public.
+                  Get a customized solar savings estimate based on your energy
+                  usage, helping you understand the financial benefits of going
+                  solar.
                 </p>
                 <EstimateCalculationIcon />
               </div>
@@ -51,8 +52,9 @@ const ProcessSolutionsSec = ({propsClass}:propsType) => {
                   <span>3</span>
                 </div>
                 <p>
-                  Our mission is to provide clear, high quality and affordable
-                  ecological advice and services to public.
+                  Trust our experienced solar professionals to design and
+                  install a high-quality, efficient solar energy system tailored
+                  to your needs.
                 </p>
                 <ProjectIcon />
               </div>

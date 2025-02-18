@@ -39,13 +39,6 @@ const SaveEnegryGallarySec = () => {
                   helping homeowners and businesses transition to clean,
                   renewable energy.
                 </p>
-                <Image
-                  alt="chris-hemsworth"
-                  src={hemsworth}
-                  style={{ width: "auto", height: "auto" }}
-                />
-                <h3>CEO_Founder Name</h3>
-                <h6>Director of Renewable Group</h6>
               </div>
             </div>
           </div>
@@ -54,8 +47,8 @@ const SaveEnegryGallarySec = () => {
               <div className="battery-storage">
                 <Image
                   alt="chris-hemsworth"
-                  src={battaryStorage}
-                  style={{ width: "100%", height: "100%" }}
+                  src={battaryStorage}  // tesla powerwall three +
+                  style={{ width: "100%", height: "100%" }} 
                 />
                 <i>
                   <BattaryIcon />
@@ -99,7 +92,7 @@ const SaveEnegryGallarySec = () => {
                     </i>
                     <div className="battery-storage-text">
                       <Link href="/services">
-                        <h3>Wind Kinetic</h3>
+                        <h3>Consumption Monitoring</h3>
                       </Link>
                       <p>Protecting our environment.</p>
                     </div>
@@ -111,7 +104,7 @@ const SaveEnegryGallarySec = () => {
               <div className="battery-storage two">
                 <Image
                   alt="chris-hemsworth"
-                  src={battaryStorage4}
+                  src={battaryStorage4} // black solar panel
                   style={{ width: "100%", height: "100%" }}
                 />
                 <i>
@@ -119,7 +112,7 @@ const SaveEnegryGallarySec = () => {
                 </i>
                 <div className="battery-storage-text">
                   <Link href="/services">
-                    <h3>Renewable Energy</h3>
+                    <h3>Solar Panel Installation</h3>
                   </Link>
                   <p>Protecting our environment needn’t cost the earth.</p>
                 </div>
