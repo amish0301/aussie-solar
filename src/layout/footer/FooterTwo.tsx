@@ -21,7 +21,7 @@ const FooterTwo = () => {
       >
         <div className="container">
           <div className="row">
-            <div className="col-xl-4 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="logo">
                 <Link href="/">
                   <Image src={Logo} alt="logo" width={220} />
@@ -50,7 +50,7 @@ const FooterTwo = () => {
                 </ul>
               </div>
             </div>
-            <div className="col-xl-4 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="about-energix">
                 <h6>Contact Information</h6>
                 <div className="line"></div>
@@ -85,9 +85,34 @@ const FooterTwo = () => {
                 </div>
               </div>
             </div>
-            <div className="col-xl-4 col-md-12">
+            <div className="col-lg-2 col-md-6">
               <div className="about-energix">
                 <h6>Useful Links</h6>
+                <div className="line"></div>
+                <ul className="link-style">
+                  <li>
+                    <i className="fa-solid fa-caret-right"></i>
+                    <a href="/services">Services</a>
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-caret-right"></i>
+                    <a href="/gallery">Image Gallery </a>
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-caret-right"></i>
+                    <a href="/about">About Us </a>
+                  </li>
+                  <li className="pb-0">
+                    <i className="fa-solid fa-caret-right"></i>
+                    <a href="/contact">Contact Us </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="col-lg-2 col-md-6">
+              <div className="about-energix">
+                <h6>Solar Packages</h6>
                 <div className="line"></div>
                 <ul className="link-style">
                   <li>
@@ -98,25 +123,8 @@ const FooterTwo = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/gallery">Image Gallery </a>
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-caret-right"></i>
                     <a href="/packages/commercial-solar">Commercial Package</a>
                   </li>
-                  <li>
-                    <i className="fa-solid fa-caret-right"></i>
-                    <a href="/about">About Us </a>
-                  </li>
-                  <li>
-                    <i className="fa-solid fa-caret-right"></i>
-                    <a href="/services">Services</a>
-                  </li>
-                  <li className="pb-0">
-                    <i className="fa-solid fa-caret-right"></i>
-                    <a href="/contact">Contact Us </a>
-                  </li>
-                  
                 </ul>
               </div>
             </div>

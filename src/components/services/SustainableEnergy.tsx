@@ -3,13 +3,14 @@ import SolarCleaningIcon from "@/svg/CleaningIcon";
 import InverterIcon from "@/svg/InverterIcon";
 import PowerIcon from "@/svg/PowerIcon";
 import SolarPanelIcon from "@/svg/SolarPanelIcon";
+import WifiMonitoring from "@/svg/WifiMonitoring";
 import Image from "next/image";
 import Link from "next/link";
-import serviceOne from "../../../public/assets/img/installation-1.jpg";
-import serviceTwo from "../../../public/assets/img/cleaning-1.jpg";
-import serviceThree from "../../../public/assets/img/solar-panels.jpg";
 import serviceFour from "../../../public/assets/img/battery-1.jpeg";
+import serviceTwo from "../../../public/assets/img/cleaning-1.jpg";
+import serviceOne from "../../../public/assets/img/installation-1.jpg";
 import serviceFive from "../../../public/assets/img/inverter-1.jpeg";
+import serviceThree from "../../../public/assets/img/solar-panels.jpg";
 import serviceSix from "../../../public/assets/img/wifi.jpg";
 
 const SustainableEnergy = () => {
@@ -181,7 +182,7 @@ const SustainableEnergy = () => {
             <div className="col-lg-7">
               <div className="services-img two">
                 <figure>
-                  <Image alt="img" src={serviceSix} />
+                  <Image alt="img" src={serviceSix} loading="eager" />
                 </figure>
               </div>
             </div>
@@ -189,7 +190,7 @@ const SustainableEnergy = () => {
               <div className="use-energix three">
                 <div className="use-energix-icon">
                   <i>
-                    <PowerIcon />
+                    <WifiMonitoring color={"#0b9643"} />
                   </i>
                 </div>
                 <div>

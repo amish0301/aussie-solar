@@ -9,9 +9,10 @@ const LetterBox = () => {
       <div className={`latterbox ${openLetterBox === true ? "slide" : ""}`}>
         <form className="request-quote-form">
           <h3>Request a Quote</h3>
-          <input type="text" name="Complete Name" placeholder="Complete Name" />
+          <input type="text" name="fullName" placeholder="Full Name" />
           <input type="text" name="Email Address" placeholder="Email Address" />
           <input type="text" name="Phone No" placeholder="Phone No" />
+          <input type="text" name="Address" placeholder="Address" />
           <textarea placeholder="Message"></textarea>
           <button className="button">Send Message</button>
         </form>
