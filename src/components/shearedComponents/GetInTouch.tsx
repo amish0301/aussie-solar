@@ -10,7 +10,7 @@ const GetInTouch = () => {
 
   return (
     <div
-      className="request-quote mt-2 mb-4 two"
+      className="request-quote mt-4 mb-4 two container"
       style={{ backgroundImage: `url(${bgImg.src})` }}
     >
       <div className="row">
