@@ -1509,10 +1509,10 @@ footer.one .logo {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #17195a;
+  background-color: #171954;
   left: 0;
   mix-blend-mode: multiply;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 /* 30. header.two */
 header.two {

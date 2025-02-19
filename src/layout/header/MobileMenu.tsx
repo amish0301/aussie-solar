@@ -26,7 +26,7 @@ const MobileMenu = () => {
       >
         <div className="mobilemenu-logo">
           <Link href="/">
-          <Image src={Logo} alt="logo" width={170} height={50} />
+            <Image src={Logo} alt="logo" width={170} height={50} />
           </Link>
         </div>
         <ul>
@@ -102,7 +102,7 @@ const MobileMenu = () => {
                 </svg>
               </i>
               <Link href="callto:01234525407">
-                <p>01234 525 407 - 01234 525 407</p>
+                <p>01234 525 407</p>
               </Link>
             </div>
           </div>
@@ -134,8 +134,8 @@ const MobileMenu = () => {
                   ></path>
                 </svg>
               </i>
-              <Link href="mailto:username@domainname.com">
-                <p>username@domainname.com</p>
+              <Link href="mailto:info@kangaroosolar.com.au">
+                <p>info@kangaroosolar.com.au</p>
               </Link>
             </div>
           </div>

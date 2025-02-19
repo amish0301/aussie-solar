@@ -28,49 +28,37 @@ body {
 }
 
 .accordion-button {
-  background-color: #4CAF50; /* White background when collapsed */
-  color: #333; /* Dark text color */
+  background-color: #0b9643 !important; /* Green background */
+  color: white !important; /* White text color */
   font-size: 1.2rem;
   text-align: left;
   font-weight: bold;
+  text-transform: capitalize !important;
   padding: 1rem;
-  border: 1px solid #ddd; /* Light border */
+  border: none !important;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.accordion-button.active {
-  background-color: #4CAF50; /* Green background when expanded */
-  color: white; /* White text when active */
+/* Remove Bootstrap's blue highlight when clicking */
+.accordion-button:focus,
+.accordion-button:active {
+  box-shadow: none !important; /* Remove blue shadow */
+  border-color: transparent !important;
 }
 
+/* Ensures the button doesn't get a different color when active */
+.accordion-button:not(.collapsed) {
+  background-color: #4CAF50 !important; /* Green background */
+  color: white !important; /* White text */
+  border-color: transparent !important;
+}
+
+/* When collapsed, revert to default */
 .accordion-button.collapsed {
-  background-color: white;  /* Keep white background when collapsed */
-}
-
-.accordion-body {
-  padding: 1rem;
-  background-color: #f1f1f1; /* Light background for content */
-  border-top: 1px solid #ddd;
-}
-
-.accordion-item {
-  border: 1px solid #ddd; /* Border around the entire accordion item */
-  border-radius: 5px;
-  margin-bottom: 0.5rem;
-}
-
-.accordion-header {
-  padding: 0;
-}
-
-.accordion-collapse {
-  overflow: hidden;
-}
-
-.accordion-button:focus {
-  outline: none; /* Remove focus outline for cleaner UI */
+  background-color: white !important;
+  color: #333 !important;
 }
 

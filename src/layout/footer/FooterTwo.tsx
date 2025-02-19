@@ -60,7 +60,7 @@ const FooterTwo = () => {
                       <PhoneTwoIcon />
                     </i>
                     <Link href="callto:01234525407">
-                      <p>01234 525 407 - 01234 525 407</p>
+                      <p>01234 525 407</p>
                     </Link>
                   </div>
                 </div>
@@ -78,7 +78,10 @@ const FooterTwo = () => {
                   <i>
                     <LocationTwoIcon />
                   </i>
-                  <p>12/7 new town, 245x Street, United State</p>
+                  <div>
+                    <p>76 Cherish Drive, Tarneit, VIC - 3029</p>
+                    <p>2 Fripp Cres, Beverly Hills, NSW 2209</p>
+                  </div>
                 </div>
               </div>
             </div>

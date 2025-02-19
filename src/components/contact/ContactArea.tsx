@@ -33,7 +33,7 @@ const ContactArea = () => {
                 <div>
                   <h4>Phone No:</h4>
                   <a href="callto:01234525407">
-                    <p>01234 525 407 - 01234 525 407</p>
+                    <p>01234 525 407</p>
                   </a>
                 </div>
               </div>
@@ -44,7 +44,9 @@ const ContactArea = () => {
                   </i>
                 </div>
                 <div>
-                  <p>12/7 new town, 245x Town 1214 Street, United State</p>
+                  <h4>Location:</h4>
+                  <p>76 Cherish Drive, Tarneit, VIC - 3029</p>
+                  <p>2 Fripp Cres, Beverly Hills, NSW 2209</p>
                 </div>
               </div>
               <div className="contact-info contact-information">
@@ -55,8 +57,8 @@ const ContactArea = () => {
                 </div>
                 <div>
                   <h4>Email Address:</h4>
-                  <a href="mailto:username@domainname.com">
-                    <p>username@domainname.com</p>
+                  <a href="mailto:info@kangaroosolar.com.au">
+                    <p>info@kangaroosolar.com.au</p>
                   </a>
                 </div>
               </div>

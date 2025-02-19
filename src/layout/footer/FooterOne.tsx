@@ -174,7 +174,7 @@ const FooterOne = () => {
                 <div>
                   <h4>Phone No:</h4>
                   <Link href="callto:01234525407">
-                    <p>01234 525 407 - 01234 525 407</p>
+                    <p>01234 525 407</p>
                   </Link>
                 </div>
               </div>
@@ -186,7 +186,8 @@ const FooterOne = () => {
                   <LocationIcon />
                 </i>
                 <div>
-                  <p>12/7 new town, 245x Town 1214 Street, United State</p>
+                  <p>76 Cherish Drive, Tarneit, VIC - 3029</p>
+                  <p>2 Fripp Cres, Beverly Hills, NSW 2209</p>
                 </div>
               </div>
             </div>

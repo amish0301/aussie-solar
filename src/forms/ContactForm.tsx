@@ -5,7 +5,7 @@ import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from "sonner";
 interface FormData {
-  completeName: string;
+  fullName: string;
   email: string;
   phone: string;
   message: string;
@@ -60,14 +60,15 @@ const ContactForm = () => {
             <div className="contact-form-div">
               <input
                 type="text"
-                placeholder="Complete Name"
-                {...register("completeName", {
-                  required: "Complete Name is required",
+                placeholder="Full Name"
+                {...register("fullName", {
+                  required: "Full Name is required",
                 })}
+                required
               />
-              {errors.completeName && (
+              {errors.fullName && (
                 <span className="error-message">
-                  {errors.completeName.message}
+                  {errors.fullName.message}
                 </span>
               )}
             </div>
@@ -80,6 +81,7 @@ const ContactForm = () => {
                   required: "Email is required",
                 })}
                 placeholder="Email Address"
+                required
               />
               {errors.email && (
                 <span className="error-message">{errors.email.message}</span>
