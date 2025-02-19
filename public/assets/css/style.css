@@ -604,7 +604,7 @@ button.button {
   text-transform: capitalize;
   font-size: 56px;
   line-height: 66px;
-  padding-bottom: 25px;
+  padding-bottom: 45px;
 }
 .renewable-group {
   width: 86%;
@@ -625,9 +625,6 @@ button.button {
 .battery-storage {
   position: relative;
   overflow: hidden;
-}
-.battery-storage.two img {
-  height: 674px !important;
 }
 .battery-storage:before {
   content: "";
@@ -1512,10 +1509,10 @@ footer.one .logo {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #17195a;
+  background-color: #171954;
   left: 0;
   mix-blend-mode: multiply;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 /* 30. header.two */
 header.two {

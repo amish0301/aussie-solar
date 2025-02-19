@@ -4,9 +4,10 @@ import { useForm, SubmitHandler } from "react-hook-form";
 import { toast } from "sonner";
 
 interface FormData {
-  completeName: string;
+  fullName: string;
   email: string;
   phone: string;
+  address: string;
   message: string;
 }
 
@@ -20,7 +21,7 @@ const HomePageContactForm = () => {
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
   
-    const toastId = toast.loading("");
+    const toastId = toast.loading("Sending Info");
     toast.success("Message Send Successfully", { id: toastId, duration: 2000 });
     reset()
   };
@@ -30,13 +31,14 @@ const HomePageContactForm = () => {
         <div className="quote-form-div">
           <input
             type="text"
-            placeholder="Complete Name"
-            {...register("completeName", {
-              required: "Complete Name is required",
+            placeholder="Full Name"
+            required
+            {...register("fullName", {
+              required: "Full Name is required",
             })}
           />
-          {errors.completeName && (
-            <span className="error-message">{errors.completeName.message}</span>
+          {errors.fullName && (
+            <span className="error-message">{errors.fullName.message}</span>
           )}
         </div>
         <div className="quote-form-div">
@@ -45,6 +47,7 @@ const HomePageContactForm = () => {
             {...register("email", {
               required: "Email is required",
             })}
+            required
             placeholder="Email Address"
           />
           {errors.email && (
@@ -57,10 +60,23 @@ const HomePageContactForm = () => {
             {...register("phone", {
               required: "Phone is required",
             })}
+            required
             placeholder="Phone No"
           />
           {errors.phone && (
             <span className="error-message">{errors.phone.message}</span>
+          )}
+        </div>
+        <div className="quote-form-div">
+          <input
+            type="text"
+            {...register("address", {
+              required: "Address is required",
+            })}
+            placeholder="Address"
+          />
+          {errors.address && (
+            <span className="error-message">{errors.address.message}</span>
           )}
         </div>
         <div className="quote-form-div">
@@ -69,6 +85,7 @@ const HomePageContactForm = () => {
             {...register("message", {
               required: "Message is required",
             })}
+            required
           ></textarea>
           {errors.message && (
             <span className="error-message">{errors.message.message}</span>
