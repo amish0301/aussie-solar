@@ -583,6 +583,11 @@
     width: 100% !important;
    
   }
+
+  .battery-storage img {
+    height: 456px !important;
+  }
+
   header.two .menu-bar{
     background-color: #fff !important;
   }

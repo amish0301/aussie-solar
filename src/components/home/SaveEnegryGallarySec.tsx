@@ -21,7 +21,7 @@ const SaveEnegryGallarySec = () => {
     <>
       <section className="gap no-top">
         <div className="container">
-          <div className="row">
+          <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="heading">
                 <p>Welcome to Solar Power Save Energy</p>
@@ -47,8 +47,8 @@ const SaveEnegryGallarySec = () => {
               <div className="battery-storage">
                 <Image
                   alt="chris-hemsworth"
-                  src={battaryStorage}  // tesla powerwall three +
-                  style={{ width: "100%", height: "100%" }} 
+                  src={battaryStorage} // tesla powerwall three +
+                  style={{ width: "100%", height: "100%" }}
                 />
                 <i>
                   <BattaryIcon />
@@ -66,7 +66,7 @@ const SaveEnegryGallarySec = () => {
                     <Image
                       alt="chris-hemsworth"
                       src={battaryStorage2}
-                      style={{ width: "100%", height: "100%" }}
+                      style={{ height: "325px" }}
                     />
                     <i>
                       <InverterIcon />
@@ -85,14 +85,14 @@ const SaveEnegryGallarySec = () => {
                     <Image
                       alt="chris-hemsworth"
                       src={battaryStorage3}
-                      style={{ width: "100%", height: "100%" }}
+                      style={{ width: "100%", height: "325px" }}
                     />
                     <i>
                       <WindKinetic />
                     </i>
                     <div className="battery-storage-text">
                       <Link href="/services">
-                        <h3>Consumption Monitoring</h3>
+                        <h3>Consumption and Monitoring</h3>
                       </Link>
                       <p>Protecting our environment.</p>
                     </div>
@@ -105,7 +105,7 @@ const SaveEnegryGallarySec = () => {
                 <Image
                   alt="chris-hemsworth"
                   src={battaryStorage4} // black solar panel
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height: "674px" }}
                 />
                 <i>
                   <RenewAbleEnergy />

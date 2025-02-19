@@ -626,9 +626,6 @@ button.button {
   position: relative;
   overflow: hidden;
 }
-.battery-storage.two img {
-  height: 674px !important;
-}
 .battery-storage:before {
   content: "";
   position: absolute;
