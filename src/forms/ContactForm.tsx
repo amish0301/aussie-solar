@@ -1,56 +1,63 @@
 "use client";
 import NiceSelect from "@/elements/NiceSelect";
-import { NiceSelcetType } from "@/interFace/interFace";
-import React from "react";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { FormData, NiceSelcetType } from "@/interFace/interFace";
+import { useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
-interface FormData {
-  fullName: string;
-  email: string;
-  phone: string;
-  message: string;
-  postCode: string;
-  location: string;
-  howToKnow: string;
-}
 
 const ContactForm = () => {
   const serviceData: NiceSelcetType[] = [
-    {
-      id: 1,
-      option: "Choose Service",
-    },
-    {
-      id: 2,
-      option: "Select Topic 1",
-    },
-    {
-      id: 3,
-      option: "Select Topic 2",
-    },
-    {
-      id: 4,
-      option: "Select Topic 3",
-    },
-    {
-      id: 5,
-      option: "Select Topic 4",
-    },
+    { id: 1, option: "Choose Service" },
+    { id: 2, option: "Residential Solar" },
+    { id: 3, option: "Commercial Solar" },
+    { id: 4, option: "Battery Storage" },
+    { id: 5, option: "Consumption and Monitoring" },
+    { id: 6, option: "Solar Inverters" },
   ];
-  const selectHandler = () => {};
+
+  const hearOptions: NiceSelcetType[] = [
+    { id: 0, option: "How do you hear about Us?" },
+    { id: 1, option: "Google Search" },
+    { id: 2, option: "LinkedIn" },
+    { id: 3, option: "Facebook" },
+    { id: 4, option: "Instagram" },
+    { id: 5, option: "Twitter (X)" },
+    { id: 6, option: "YouTube" },
+    { id: 7, option: "Referral (Friend/Colleague)" },
+    { id: 8, option: "Advertisement" },
+    { id: 9, option: "Other" },
+  ];
+
+  const [otherSource, setOtherSource] = useState<string>("");
+  const [isHearAboutUsOther, setIsHearAboutUsOther] = useState<boolean>(false);
 
   const {
     register,
     handleSubmit,
     reset,
+    setValue,
     formState: { errors },
   } = useForm<FormData>();
 
+  const selectHandler = (item: NiceSelcetType, name: keyof FormData) => {
+    setValue(name, item.option);
+    if (name === "hearAboutUs") {
+      setIsHearAboutUsOther(!isHearAboutUsOther);
+      if (item.option !== "Other") {
+        setOtherSource("");
+      }
+    }
+  };
+
   const onSubmit: SubmitHandler<FormData> = (data) => {
-    const toastId = toast.loading("");
-    toast.success("Commented Successfully", { id: toastId, duration: 2000 });
+    const toastId = toast.loading("Processing...");
+    toast.success(
+      "Thank you for your Interest, Our Team will reach out to you Soon",
+      { id: toastId, duration: 30000 }
+    );
     reset();
   };
+
   return (
     <>
       <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
@@ -67,9 +74,7 @@ const ContactForm = () => {
                 required
               />
               {errors.fullName && (
-                <span className="error-message">
-                  {errors.fullName.message}
-                </span>
+                <span className="error-message">{errors.fullName.message}</span>
               )}
             </div>
           </div>
@@ -120,10 +125,24 @@ const ContactForm = () => {
             <div className="contact-form-div ">
               <input
                 type="text"
+                {...register("address", {
+                  required: "Address is required",
+                })}
+                placeholder="Address"
+              />
+              {errors.address && (
+                <span className="error-message">{errors.address.message}</span>
+              )}
+            </div>
+          </div>
+          <div className="col-lg-12">
+            <div className="contact-form-div ">
+              <input
+                type="text"
                 {...register("location", {
                   required: "Location is required",
                 })}
-                placeholder="Location?"
+                placeholder="Location"
               />
               {errors.location && (
                 <span className="error-message">{errors.location.message}</span>
@@ -132,25 +151,36 @@ const ContactForm = () => {
           </div>
           <div className="col-lg-12">
             <div className="contact-form-div ">
-              <input
-                type="text"
-                {...register("howToKnow", {})}
-                placeholder="How did you hear of us?"
+              <NiceSelect
+                options={hearOptions}
+                defaultCurrent={0}
+                onChange={selectHandler}
+                name={"hearAboutUs" as keyof FormData}
+                className="nice-select Advice"
               />
-              {errors.howToKnow && (
-                <span className="error-message">
-                  {errors.howToKnow.message}
-                </span>
-              )}
             </div>
           </div>
+          {/* rendering other field input */}
+          {isHearAboutUsOther && (
+              <div className="col-lg-12">
+              <div className="contact-form-div">
+                <input
+                  type="text"
+                  placeholder="Please specify"
+                  value={otherSource}
+                  onChange={(e) => setOtherSource(e.target.value)}
+                  required
+                />
+              </div>
+            </div>
+            )}
           <label>I am interested in renewables for my</label>
           <div className="col-lg-12">
             <NiceSelect
               options={serviceData}
               defaultCurrent={0}
               onChange={selectHandler}
-              name=""
+              name="serviceInterest"
               className="nice-select Advice"
             />
           </div>

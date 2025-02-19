@@ -3362,10 +3362,12 @@ form.contact-form label {
   background-color: white;
 }
 .contact-info.contact-information {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   border-radius: 16px;
   margin-bottom: 30px;
-  padding: 30px 50px;
+  padding: 30px 30px;
 }
 .contact-info.contact-information i {
   margin-bottom: 14px;

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import ContactForm from "@/forms/ContactForm";
 import EmailIcon from "@/svg/EmailIcon";
 import LocationIcon from "@/svg/LocationIcon";
@@ -6,7 +6,6 @@ import PhoneIcon from "@/svg/PhoneIcon";
 import React from "react";
 
 const ContactArea = () => {
-
   return (
     <>
       <section className="gap section-contact">
@@ -18,7 +17,7 @@ const ContactArea = () => {
           </div>
           <div className="row">
             <div className="col-lg-8">
-               <ContactForm/>
+              <ContactForm />
             </div>
             <div className="col-lg-4">
               <div className="contact-information">
@@ -27,7 +26,7 @@ const ContactArea = () => {
               <div className="contact-info contact-information">
                 <div>
                   <i>
-                     <PhoneIcon/>
+                    <PhoneIcon />
                   </i>
                 </div>
                 <div>
@@ -40,19 +39,28 @@ const ContactArea = () => {
               <div className="contact-info contact-information">
                 <div>
                   <i>
-                     <LocationIcon/>
+                    <LocationIcon />
                   </i>
                 </div>
-                <div>
-                  <h4>Location:</h4>
-                  <p>76 Cherish Drive, Tarneit, VIC - 3029</p>
-                  <p>2 Fripp Cres, Beverly Hills, NSW 2209</p>
+                <div className="w-100">
+                  <div className="d-flex flex-wrap align-items-center">
+                    <h4 className="fw-bold me-2 mb-0">Address 1:</h4>
+                    <p className="mb-0">
+                      76 Cherish Drive, Tarneit, VIC - 3029
+                    </p>
+                  </div>
+                  <div className="d-flex flex-wrap align-items-center mt-2">
+                    <h4 className="fw-bold me-2 mb-0">Address 2:</h4>
+                    <p className="mb-0">
+                      2 Fripp Cres, Beverly Hills, NSW 2209
+                    </p>
+                  </div>
                 </div>
               </div>
               <div className="contact-info contact-information">
                 <div>
                   <i>
-                     <EmailIcon/>
+                    <EmailIcon />
                   </i>
                 </div>
                 <div>

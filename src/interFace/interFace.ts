@@ -108,3 +108,15 @@ export interface FAQItem {
   question: string;
   answer: string;
 }
+
+export interface FormData {
+  fullName: string;
+  email: string;
+  phone: string;
+  message: string;
+  postCode: string;
+  location: string;
+  address: string;
+  hearAboutUs: string;
+  serviceInterest: string;
+}

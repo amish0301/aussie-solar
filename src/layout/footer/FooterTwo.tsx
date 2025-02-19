@@ -98,20 +98,25 @@ const FooterTwo = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/packages/commercial-solar">Commercial Package</a>
+                    <a href="/gallery">Image Gallery </a>
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/gallery">Image Gallery </a>
+                    <a href="/packages/commercial-solar">Commercial Package</a>
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
                     <a href="/about">About Us </a>
                   </li>
+                  <li>
+                    <i className="fa-solid fa-caret-right"></i>
+                    <a href="/services">Services</a>
+                  </li>
                   <li className="pb-0">
                     <i className="fa-solid fa-caret-right"></i>
                     <a href="/contact">Contact Us </a>
                   </li>
+                  
                 </ul>
               </div>
             </div>

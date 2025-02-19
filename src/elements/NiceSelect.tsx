@@ -1,5 +1,6 @@
  
 import useGlobalContext from "@/hooks/use-context";
+import { FormData } from "@/interFace/interFace";
 import React, { useState, useCallback, useRef, KeyboardEvent, MouseEvent } from "react";
 import { useClickAway } from "react-use";
 
@@ -13,8 +14,8 @@ interface NiceSelectProps {
   defaultCurrent: number;
   placeholder?: string;
   className?: string;
-  onChange: (item: Option, name: string) => void;
-  name: string;
+  onChange: (item: Option, name: keyof FormData) => void;
+  name: keyof FormData;
 }
 
 const NiceSelect: React.FC<NiceSelectProps> = ({
@@ -62,11 +63,11 @@ const NiceSelect: React.FC<NiceSelectProps> = ({
       role="button"
       tabIndex={0}
       onClick={handleClick}
-      onKeyPress={handleKeyPress}
+      onKeyDown={handleKeyPress}
       ref={ref}
     >
       <span className="current">{current?.option || placeholder}</span>
-      <ul className="list" role="menubar" onClick={stopPropagation} onKeyPress={stopPropagation}>
+      <ul className="list" role="menubar" onClick={stopPropagation} onKeyDown={stopPropagation}>
         {options?.map((item) => (
           <li
             key={item.id}
@@ -74,7 +75,7 @@ const NiceSelect: React.FC<NiceSelectProps> = ({
             className={`option ${item.id === current?.id ? "selected focus" : ""}`}
             role="menuitem"
             onClick={() => currentHandler(item)}
-            onKeyPress={(e: KeyboardEvent<HTMLLIElement>) => {
+            onKeyDown={(e: KeyboardEvent<HTMLLIElement>) => {
               stopPropagation(e);
             }}
           >

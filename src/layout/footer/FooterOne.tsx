@@ -166,7 +166,7 @@ const FooterOne = () => {
 
           {/* Contact Footer */}
           <div className="row contact-footer">
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-3 col-md-6">
               <div className="contact-info">
                 <i>
                   <PhoneIcon />
@@ -180,19 +180,31 @@ const FooterOne = () => {
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-3 col-md-6">
               <div className="contact-info">
                 <i>
                   <LocationIcon />
                 </i>
                 <div>
+                  <h4>Address 1 :</h4>
                   <p>76 Cherish Drive, Tarneit, VIC - 3029</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="col-lg-3 col-md-6">
+              <div className="contact-info">
+                <i>
+                  <LocationIcon />
+                </i>
+                <div>
+                  <h4>Address 2 :</h4>
                   <p>2 Fripp Cres, Beverly Hills, NSW 2209</p>
                 </div>
               </div>
             </div>
 
-            <div className="col-lg-4 col-md-6">
+            <div className="col-lg-3 col-md-6">
               <div className="contact-info">
                 <i>
                   <EmailIcon />
