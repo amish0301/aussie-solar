@@ -133,6 +133,14 @@ const FooterOne = () => {
                     <i className="fa-solid fa-caret-right"></i>
                     <a href="/services-details/4">Solar Batteries</a>
                   </li>
+                  <li>
+                    <i className="fa-solid fa-caret-right"></i>
+                    <a href="/services-details/5">Solar Inverters</a>
+                  </li>
+                  <li>
+                    <i className="fa-solid fa-caret-right"></i>
+                    <a href="/services-details/6">Consumption and Monitoring</a>
+                  </li>
                 </ul>
               </div>
             </div>

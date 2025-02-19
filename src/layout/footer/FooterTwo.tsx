@@ -90,7 +90,7 @@ const FooterTwo = () => {
                 <h6>Useful Links</h6>
                 <div className="line"></div>
                 <ul className="link-style">
-                  <li className="pb-0">
+                  <li>
                     <i className="fa-solid fa-caret-right"></i>
                     <a href="/faq">FAQs</a>
                   </li>

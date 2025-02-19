@@ -2155,9 +2155,9 @@ ul.footer-link-style {
 
 ul.footer-link-style li {
   width: 100%;
-  column-gap: 6px;
+  column-gap: 8px;
   display: flex;
-  align-items: center;
+  align-items: baseline;
 }
 
 /* 44. contact-info.two */

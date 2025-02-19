@@ -46,7 +46,7 @@ const MobileMenu = () => {
             >
               <Link
                 onClick={
-                  (item?.hasDropdown === false || item.id == 2) ? toggleSideMenu : blanklink
+                  (item?.hasDropdown === false || item?.id == 4) ? toggleSideMenu : blanklink
                 }
                 href={item?.link}
               >
