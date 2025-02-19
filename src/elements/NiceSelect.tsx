@@ -1,21 +1,25 @@
- 
 import useGlobalContext from "@/hooks/use-context";
-import { FormData } from "@/interFace/interFace";
-import React, { useState, useCallback, useRef, KeyboardEvent, MouseEvent } from "react";
+import { FormData, NiceSelectType } from "@/interFace/interFace";
+import React, {
+  KeyboardEvent,
+  MouseEvent,
+  useCallback,
+  useRef,
+  useState,
+} from "react";
 import { useClickAway } from "react-use";
 
-interface Option {
-  id: number;
-  option: string;
-}
-
 interface NiceSelectProps {
-  options: Option[];
+  options: NiceSelectType[];
   defaultCurrent: number;
   placeholder?: string;
   className?: string;
-  onChange: (item: Option, name: keyof FormData) => void;
+  onChange: (
+    item: NiceSelectType | NiceSelectType[],
+    name: keyof FormData
+  ) => void;
   name: keyof FormData;
+  isService?: boolean;
 }
 
 const NiceSelect: React.FC<NiceSelectProps> = ({
@@ -23,24 +27,47 @@ const NiceSelect: React.FC<NiceSelectProps> = ({
   defaultCurrent,
   placeholder,
   className,
+  isService,
   onChange,
   name,
 }) => {
   const [open, setOpen] = useState(false);
-  const {setNiceSelectData} = useGlobalContext()
-  const [current, setCurrent] = useState<Option>(options[defaultCurrent]);
+  const { setNiceSelectData } = useGlobalContext();
+  const [current, setCurrent] = useState<NiceSelectType>(
+    options[defaultCurrent]
+  );
+  const [selectedService, setSelectedService] = useState<NiceSelectType[]>([]);
+
   const onClose = useCallback(() => {
-    setOpen(false);
-  }, []);
+    if (!isService) setOpen(false);
+  }, [isService]);
 
   const ref = useRef<HTMLDivElement>(null);
   useClickAway(ref, onClose);
 
-  const currentHandler = (item: Option) => {
+  // Single Select Logic
+  const handleSingleSelect = (item: NiceSelectType) => {
     setCurrent(item);
     onChange(item, name);
     setNiceSelectData(item?.option);
     onClose();
+  };
+
+  // Multi-Select Logic
+  const handleMultiSelect = (item: NiceSelectType) => {
+    setSelectedService((prevSelected) => {
+      const alreadySelected = prevSelected.some(
+        (service) => service.id === item.id
+      );
+      const updatedSelection = alreadySelected
+        ? prevSelected.filter((service) => service.id !== item.id)
+        : [...prevSelected, item]; // Add
+
+      onChange(updatedSelection, name);
+      setNiceSelectData(updatedSelection.map((s) => s.option));
+
+      return updatedSelection;
+    });
   };
 
   const handleClick = () => {
@@ -67,19 +94,48 @@ const NiceSelect: React.FC<NiceSelectProps> = ({
       ref={ref}
     >
       <span className="current">{current?.option || placeholder}</span>
-      <ul className="list" role="menubar" onClick={stopPropagation} onKeyDown={stopPropagation}>
+      <ul
+        className="list"
+        role="menubar"
+        onClick={stopPropagation}
+        onKeyDown={stopPropagation}
+      >
         {options?.map((item) => (
           <li
             key={item.id}
             data-value={item.id}
-            className={`option ${item.id === current?.id ? "selected focus" : ""}`}
+            className={`option ${
+              item.id === current?.id ? "selected focus" : ""
+            }`}
             role="menuitem"
-            onClick={() => currentHandler(item)}
+            onClick={() =>
+              isService ? handleMultiSelect(item) : handleSingleSelect(item)
+            }
             onKeyDown={(e: KeyboardEvent<HTMLLIElement>) => {
               stopPropagation(e);
             }}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "8px",
+              padding: "8px",
+            }}
           >
-            {item.option}
+            {isService && item.id != 1 && (
+              <input
+                type="checkbox"
+                checked={selectedService.some((s) => s.id === item.id)}
+                onChange={() => handleMultiSelect(item)}
+                onClick={(e) => e.stopPropagation()}
+                style={{
+                  width: "16px",
+                  height: "16px",
+                  marginBlock: "auto",
+                  cursor: "pointer",
+                }}
+              />
+            )}
+            <span>{item.option}</span>
           </li>
         ))}
       </ul>
@@ -88,4 +144,3 @@ const NiceSelect: React.FC<NiceSelectProps> = ({
 };
 
 export default NiceSelect;
-

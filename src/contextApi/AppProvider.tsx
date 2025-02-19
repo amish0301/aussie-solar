@@ -9,7 +9,7 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
   const pathName = usePathname();
   // old
   const [scrollDirection, setScrollDirection] = useState("up");
-  const [niceSelectData, setNiceSelectData] = useState<string>("no-data");
+  const [niceSelectData, setNiceSelectData] = useState<string | string[]>("no-data");
  
   // new
   const [openLetterBox, setOpenLetterBox] = useState<boolean>(false);

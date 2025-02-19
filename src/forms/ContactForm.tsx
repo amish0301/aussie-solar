@@ -1,12 +1,12 @@
 "use client";
 import NiceSelect from "@/elements/NiceSelect";
-import { FormData, NiceSelcetType } from "@/interFace/interFace";
+import { FormData, NiceSelectType } from "@/interFace/interFace";
 import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 const ContactForm = () => {
-  const serviceData: NiceSelcetType[] = [
+  const serviceData: NiceSelectType[] = [
     { id: 1, option: "Choose Service" },
     { id: 2, option: "Residential Solar" },
     { id: 3, option: "Commercial Solar" },
@@ -15,7 +15,7 @@ const ContactForm = () => {
     { id: 6, option: "Solar Inverters" },
   ];
 
-  const hearOptions: NiceSelcetType[] = [
+  const hearOptions: NiceSelectType[] = [
     { id: 0, option: "How do you hear about Us?" },
     { id: 1, option: "Google Search" },
     { id: 2, option: "LinkedIn" },
@@ -39,7 +39,16 @@ const ContactForm = () => {
     formState: { errors },
   } = useForm<FormData>();
 
-  const selectHandler = (item: NiceSelcetType, name: keyof FormData) => {
+  const selectHandler = (
+    item: NiceSelectType | NiceSelectType[],
+    name: keyof FormData
+  ) => {
+
+    // if Its Service Selected value -> its an array then don't update
+    if (Array.isArray(item)) {
+      setValue(name, item.map(service => service.option));
+      return;
+    }
     setValue(name, item.option);
     if (name === "hearAboutUs") {
       setIsHearAboutUsOther(!isHearAboutUsOther);
@@ -160,9 +169,10 @@ const ContactForm = () => {
               />
             </div>
           </div>
+
           {/* rendering other field input */}
           {isHearAboutUsOther && (
-              <div className="col-lg-12">
+            <div className="col-lg-12">
               <div className="contact-form-div">
                 <input
                   type="text"
@@ -173,13 +183,14 @@ const ContactForm = () => {
                 />
               </div>
             </div>
-            )}
+          )}
           <label>I am interested in renewables for my</label>
           <div className="col-lg-12">
             <NiceSelect
               options={serviceData}
               defaultCurrent={0}
               onChange={selectHandler}
+              isService={true}
               name="serviceInterest"
               className="nice-select Advice"
             />

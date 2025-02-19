@@ -6,8 +6,8 @@ import React from "react";
 export interface AppContextType {
   scrollDirection?: string;
   setScrollDirection?: React.Dispatch<React.SetStateAction<string>> | undefined;
-  niceSelectData: string;
-  setNiceSelectData: React.Dispatch<React.SetStateAction<string>>;
+  niceSelectData: string | string[];
+  setNiceSelectData: React.Dispatch<React.SetStateAction<string | string[]>>;
   // new
 
   openLetterBox: boolean;
@@ -24,7 +24,7 @@ export interface AppContextType {
 export interface idType {
   id: number;
 }
-export type NiceSelcetType = {
+export type NiceSelectType = {
   id: number;
   option: string;
 };
@@ -118,5 +118,5 @@ export interface FormData {
   location: string;
   address: string;
   hearAboutUs: string;
-  serviceInterest: string;
+  serviceInterest: string[];
 }
