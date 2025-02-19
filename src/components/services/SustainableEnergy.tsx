@@ -10,6 +10,7 @@ import serviceTwo from "../../../public/assets/img/cleaning-1.jpg";
 import serviceThree from "../../../public/assets/img/solar-panels.jpg";
 import serviceFour from "../../../public/assets/img/battery-1.jpeg";
 import serviceFive from "../../../public/assets/img/inverter-1.jpeg";
+import serviceSix from "../../../public/assets/img/wifi.jpg";
 
 const SustainableEnergy = () => {
   return (
@@ -176,6 +177,35 @@ const SustainableEnergy = () => {
             </div>
           </div>
 
+          <div className="row align-items-center mt-md-5 mt-2">
+            <div className="col-lg-7">
+              <div className="services-img two">
+                <figure>
+                  <Image alt="img" src={serviceSix} />
+                </figure>
+              </div>
+            </div>
+            <div className="col-lg-5">
+              <div className="use-energix three">
+                <div className="use-energix-icon">
+                  <i>
+                    <PowerIcon />
+                  </i>
+                </div>
+                <div>
+                  <Link href="/services-details/6">
+                    <h2>Wi-Fi Consumption Monitoring</h2>
+                  </Link>
+                  <p>
+                    leading renewable energy solutions provider that is sources
+                    are harnessed across the world. Present in 18 countries
+                    across Asia, Australia, Europe Africa and the Americas,
+                    Veztaz is powering.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>

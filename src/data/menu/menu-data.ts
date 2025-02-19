@@ -35,6 +35,11 @@ const navMenuData: MenuItem[] = [
         link: "/services-details/1",
       },
       { id: 4.5, label: "Solar Panel Cleaning", link: "/services-details/2" },
+      {
+        id: 4.6,
+        label: "Wi-Fi Consumption Monitoring",
+        link: "/services-details/6",
+      },
     ],
   },
   {
