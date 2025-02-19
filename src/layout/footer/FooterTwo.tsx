@@ -7,6 +7,11 @@ import { usePathname } from "next/navigation";
 import bgImg from "../../../public/assets/img/footer.jpg";
 import Logo from "../../../public/assets/img/logo2.png";
 const FooterTwo = () => {
+  const year: number = new Intl.DateTimeFormat("en-AU", {
+    year: "numeric",
+    timeZone: "Australia/Sydney",
+  }).format(new Date()) as unknown as number;
+
   const pathName = usePathname();
   return (
     <>
@@ -84,7 +89,9 @@ const FooterTwo = () => {
                 <ul className="link-style">
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/packages/residential-solar">Residential Package</a>
+                    <a href="/packages/residential-solar">
+                      Residential Package
+                    </a>
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
@@ -154,7 +161,7 @@ const FooterTwo = () => {
           )}
 
           <div className="footer-bottom">
-            <p>Ⓒ Copyright Kangaroo Solar 2025. All Right Reserved.</p>
+            <p>Ⓒ Copyright Kangaroo Solar {year}. All Right Reserved.</p>
             <ul>
               <li>
                 <Link href="#">Privacy Policy</Link>

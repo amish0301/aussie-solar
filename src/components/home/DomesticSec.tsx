@@ -9,6 +9,12 @@ const DomesticSec = () => {
       <section className="gap">
         <div className="container">
           <div className="row">
+            <div className="heading">
+              <h2 className="text-center">
+                Australia’s Trusted Solar Energy Experts – Powering a
+                Sustainable Future
+              </h2>
+            </div>
             <div className="col-lg-6">
               <div className="domestic">
                 <i>

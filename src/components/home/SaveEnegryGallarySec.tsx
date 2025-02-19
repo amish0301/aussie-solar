@@ -24,7 +24,7 @@ const SaveEnegryGallarySec = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="heading">
-                <p>Welcome to Solar Power Save Energy</p>
+                <p>Welcome to Kangaroo Solar Power Save Energy</p>
                 <div className="line"></div>
                 <h2>Taking the effort out of business energy</h2>
               </div>

@@ -1,11 +1,11 @@
 import React from "react";
 import bgImg from "../../../public/assets/img/request-quote.jpg";
 import HomePageContactForm from "@/forms/HomePageContactForm";
-interface propsClass{
-  noTop:string
-  quoteClass:string;
+interface propsClass {
+  noTop: string;
+  quoteClass: string;
 }
-const RequestAQuote = ({noTop,quoteClass}:propsClass) => {
+const RequestAQuote = ({ noTop, quoteClass }: propsClass) => {
   return (
     <>
       <section className={`gap ${noTop}`}>
@@ -19,7 +19,9 @@ const RequestAQuote = ({noTop,quoteClass}:propsClass) => {
                 <div className="heading">
                   <p>Request A Quote</p>
                   <div className="line"></div>
-                  <h2>talk about how we can help you reduce your energy</h2>
+                  <h2>
+                    talk about how we can help you reduce your energy Bills
+                  </h2>
                   <h6>
                     costs and successfully manage your carbon emissions with
                     investment free solar technologies.
@@ -27,7 +29,7 @@ const RequestAQuote = ({noTop,quoteClass}:propsClass) => {
                 </div>
               </div>
               <div className="col-lg-6">
-                <HomePageContactForm/>
+                <HomePageContactForm />
               </div>
             </div>
           </div>
