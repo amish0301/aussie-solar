@@ -4,17 +4,15 @@ import InverterIcon from "@/svg/InverterIcon";
 import NetWorkIcon from "@/svg/NetWorkIcon";
 import PantographsIcon from "@/svg/PantographsIcon";
 import RenewAbleEnergy from "@/svg/RenewAbleEnergy";
-import WindKinetic from "@/svg/WindKinetic";
-import React from "react";
 import Image from "next/image";
 // import images
-import hemsworth from "../../../public/assets/img/chris-hemsworth.png";
+import CountUpContent from "@/elements/counter/CountUpContent";
+import WifiMonitoring from "@/svg/WifiMonitoring";
+import Link from "next/link";
 import battaryStorage from "../../../public/assets/img/battery-storage-1.jpg";
 import battaryStorage2 from "../../../public/assets/img/battery-storage-2.jpg";
 import battaryStorage3 from "../../../public/assets/img/battery-storage-3.jpg";
-import battaryStorage4 from "../../../public/assets/img/battery-storage-4.jpg";
-import CountUpContent from "@/elements/counter/CountUpContent";
-import Link from "next/link";
+import battaryStorage4 from "../../../public/assets/img/battery-storage-4.jpeg";
 
 const SaveEnegryGallarySec = () => {
   return (
@@ -88,7 +86,7 @@ const SaveEnegryGallarySec = () => {
                       style={{ width: "100%", height: "325px" }}
                     />
                     <i>
-                      <WindKinetic />
+                      <WifiMonitoring />
                     </i>
                     <div className="battery-storage-text">
                       <Link href="/services">

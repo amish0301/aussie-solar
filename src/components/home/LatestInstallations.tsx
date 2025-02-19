@@ -23,7 +23,7 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
       id: 1,
       img: projectOne,
       title: "Explore our Residential Package",
-      kwp: "6.6kW - 13.2kW",
+      kwp: "6.6kW - 19.36kW",
       icon: <EvenoddIcon />,
     },
     {
