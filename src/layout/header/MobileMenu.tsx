@@ -15,8 +15,8 @@ const MobileMenu = () => {
     setopenSubMenu(!openSubMenu);
     setsubMenuNum(index);
   };
+  const blanklink = () => {}
 
-  const blankLink = () => {};
   return (
     <>
       <div
@@ -46,7 +46,7 @@ const MobileMenu = () => {
             >
               <Link
                 onClick={
-                  item?.hasDropdown === false ? toggleSideMenu : blankLink
+                  (item?.hasDropdown === false || item.id == 2) ? toggleSideMenu : blanklink
                 }
                 href={item?.link}
               >

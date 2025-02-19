@@ -153,7 +153,7 @@ const FooterOne = () => {
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/faqs">FAQs</a>
+                    <a href="/faq">FAQs</a>
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
