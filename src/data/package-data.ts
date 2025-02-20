@@ -156,7 +156,7 @@ export const packagesData: packagesType[] = [
         primaryInfo2: "Our 100KW solar power system is a preferred choice for businesses across various industries, helping them significantly reduce energy expenses while promoting sustainability. Designed for efficiency and reliability, this advanced panel and inverter combination delivers ample power to support the operational needs of most commercial establishments. The 100kW package serves as the perfect midpoint solution between smaller 13.2kW systems and our heavy-duty 50KW - 100KW commercial solar installations, making it ideal for businesses looking to scale their renewable energy capabilities.",
         secondaryTitle1: "What is a Tier 1 Solar Panel System?",
         secondaryTitle2: "Quality you can trust",
-        secondaryInfo1: "Our 100kW solar system is specifically designed to meet the energy needs of Australian businesses, offering high efficiency, durability against harsh weather conditions, and reliable performance** to support your daily power requirements.",
+        secondaryInfo1: "Our 100kW solar system is specifically designed to meet the energy needs of Australian businesses, offering high efficiency, durability against harsh weather conditions, and reliable performance to support your daily power requirements.",
         secondaryInfo2: "Kangaroo Solar is 100% Australian owned and operated — and one of the country's leading solar providers. Our 100kW solar panel system is backed by a 25-year performance warranty, a 10-year manufacturer's warranty, and a 5-year workmanship warranty, ensuring long-term reliability and exceptional quality.",
         kwp: "100kW",
         href: "/packages/commercial-solar",
