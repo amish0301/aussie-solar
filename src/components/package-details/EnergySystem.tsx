@@ -25,7 +25,7 @@ const EnergySystem = ({ data }: propsType) => {
             <div className="col-md-5">
               <h4 className="pb-3">{data?.secondaryTitle1}</h4>
               <p className="font-description">
-              Solar power is broadly recognised as a simple and effective way to reduce your CO2 emissions and energy bills, but not all solar panel systems are equal. Some aren't designed to cope with Australia's heat, others don't deliver comparable performance. A poorly performing system will limit your sustainability and financial return. The best way to protect your investment is to select high-quality solar products designed for life in Australia.
+              Solar power is broadly recognised as a simple and effective way to reduce your CO2 emissions and energy bills, but not all solar panel systems are equal. Some aren&#39;t designed to cope with Australia&#39;s heat, others don&#39;t deliver comparable performance. A poorly performing system will limit your sustainability and financial return. The best way to protect your investment is to select high-quality solar products designed for life in Australia.
                 <br />
                 <br />
                 Solar panel manufacturers are ranked into three tiers, 1-3. Tier 1 solar manufacturers gain the top ranking by proving themselves to be reliable and stable and they provide the best value products on the market. Only a small percentage of solar panel manufacturers around the world have achieved the top Tier 1 ranking. Kangaroo Solar only sells and installs Tier 1 products, giving you the peace of mind of receiving quality products that will provide the best return on investment.
