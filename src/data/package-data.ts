@@ -16,7 +16,7 @@ export const packagesData: packagesType[] = [
       {
         id: 101,
         title: "6.6kW Solar Panel System",
-        title2: `Begin Your Journey with a 6.6kW Solar Panel System`,
+        title2: "Begin Your Journey with a 6.6kW Solar Panel System",
         details: "Residential Package",
         img: img6,
         primaryInfo1: "Our 6.6kW solar power system is one of our most popular offerings, making it an excellent choice for four-bedroom family homes, offices, and small commercial spaces. Its popularity is well-earned, as it provides a powerful and cost-effective solar energy solution suitable for a wide range of applications across Australia.",
@@ -122,6 +122,7 @@ export const packagesData: packagesType[] = [
       {
         id: 202,
         title: "30kW Solar Panel System",
+        title2: "Begin Your Journey with a 30kW Solar Panel System",
         details: "Commercial Package",
         img: img7,
         primaryInfo1: "Kangaroo takes pride in its strong reputation as a trusted leader in commercial solar solutions across Australia. If you're looking for a cost-effective 30KW solar system without compromising on quality, we would love to discuss your energy needs. With our 30-Day Price Beat Guarantee, we ensure the most competitive pricing on high-performance commercial solar systems in Australia.",
@@ -136,6 +137,7 @@ export const packagesData: packagesType[] = [
       {
         id: 203,
         title: "50kW Solar Panel System",
+        title2: "Begin Your Journey with a 50kW Solar Panel System",
         details: "Commercial Package",
         img: img10,
         primaryInfo1: "Kangaroo takes pride in its strong reputation as a trusted leader in commercial solar solutions across Australia. If you're looking for a cost-effective 30KW solar system without compromising on quality, we would love to discuss your energy needs. With our 30-Day Price Beat Guarantee, we ensure the most competitive pricing on high-performance commercial solar systems in Australia.",
@@ -151,6 +153,7 @@ export const packagesData: packagesType[] = [
         id: 204,
         title: "100kW Solar Panel System",
         details: "Commercial Package",
+        title2: "Begin Your Journey with a 100kW Solar Panel System",
         img: img13,
         primaryInfo1: "Kangaroo takes pride in its strong reputation as a trusted leader in commercial solar solutions across Australia. If you're looking for a cost-effective 30KW solar system without compromising on quality, we would love to discuss your energy needs. With our 30-Day Price Beat Guarantee, we ensure the most competitive pricing on high-performance commercial solar systems in Australia.",
         primaryInfo2: "Our 100KW solar power system is a preferred choice for businesses across various industries, helping them significantly reduce energy expenses while promoting sustainability. Designed for efficiency and reliability, this advanced panel and inverter combination delivers ample power to support the operational needs of most commercial establishments. The 100kW package serves as the perfect midpoint solution between smaller 13.2kW systems and our heavy-duty 50KW - 100KW commercial solar installations, making it ideal for businesses looking to scale their renewable energy capabilities.",
