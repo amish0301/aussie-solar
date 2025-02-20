@@ -1,4 +1,4 @@
-import aboutImg from '../../../public/assets/img/banners/about-banner.jpg';
+import aboutImg from '../../../public/assets/img/banners/banner-man.jpeg';
 import SolarEnergySec from "../home-two/SolarEnergySec";
 import ProcessSolutionsSec from "../home/ProcessSolutionsSec";
 import TestimonialsSec from "../home/TestimonialsSec";

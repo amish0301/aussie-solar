@@ -1,10 +1,8 @@
-import React from "react";
-import directorImg from "../../../public/assets/img/chris-hemsworth.png";
+import CountUpContent from "@/elements/counter/CountUpContent";
+import ExperienceTwoIcon from "@/svg/ExperienceTwoIcon";
+import Image from "next/image";
 import about1 from "../../../public/assets/img/about-1.jpg";
 import about2 from "../../../public/assets/img/about-2.jpg";
-import Image from "next/image";
-import ExperienceTwoIcon from "@/svg/ExperienceTwoIcon";
-import CountUpContent from "@/elements/counter/CountUpContent";
 const WellComeToSolarSec = () => {
   return (
     <>

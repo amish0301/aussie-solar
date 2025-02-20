@@ -3,11 +3,11 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css/bundle";
-import projectOne from "../../../public/assets/img/packages/word-from-founder.jpg";
+import projectOne from "../../../public/assets/img/residential-1.jpeg";
 import projectTwo from "../../../public/assets/img/solar-panels.jpg";
 import projectThree from "../../../public/assets/img/battery-1.jpeg";
-import projectFour from "../../../public/assets/img/installation-1.jpg";
-import projectFive from "../../../public/assets/img/cleaning-1.jpg"
+import projectFour from "../../../public/assets/img/installation-2.jpeg";
+import projectFive from "../../../public/assets/img/cleaning-1.jpg";
 import Image from "next/image";
 import EvenoddIcon from "@/svg/EvenoddIcon";
 import Link from "next/link";
@@ -108,15 +108,47 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
                   <div className="item">
                     <div className="recent-projects-img">
                       <figure>
-                        <Image alt="our-packages" src={item?.img} />
+                        <Image
+                          alt="our-packages"
+                          src={item?.img}
+                          style={{ width: "670px", height: "427px" }}
+                        />
                       </figure>
                       <div className="recent-projects-text">
-                        <Link href={item.id === 1 ? "/packages/residential-solar" : item.id === 2 ? "/packages/commercial-solar" : item.id === 4 ? '/services-details/1' : item.id === 5 ? '/services-details/2' : item.id === 4 ? '/services-details/4' : '/services'}>
+                        <Link
+                          href={
+                            item.id === 1
+                              ? "/packages/residential-solar"
+                              : item.id === 2
+                              ? "/packages/commercial-solar"
+                              : item.id === 4
+                              ? "/services-details/1"
+                              : item.id === 5
+                              ? "/services-details/2"
+                              : item.id === 4
+                              ? "/services-details/4"
+                              : "/services"
+                          }
+                        >
                           <h5>{item?.title}</h5>
                         </Link>
                         <h6>{item?.kwp}</h6>
                         {item?.kwp && <span>KWP SYSTEM</span>}
-                        <Link href={item.id === 1 ? "/packages/residential-solar" : item.id === 2 ? "/packages/commercial-solar" : item.id === 4 ? '/services-details/1' : item.id === 5 ? '/services-details/2' : item.id === 4 ? '/services-details/4' : '/services'}>
+                        <Link
+                          href={
+                            item.id === 1
+                              ? "/packages/residential-solar"
+                              : item.id === 2
+                              ? "/packages/commercial-solar"
+                              : item.id === 4
+                              ? "/services-details/1"
+                              : item.id === 5
+                              ? "/services-details/2"
+                              : item.id === 4
+                              ? "/services-details/4"
+                              : "/services"
+                          }
+                        >
                           <i>{item?.icon}</i>
                         </Link>
                       </div>

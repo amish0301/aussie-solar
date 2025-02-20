@@ -7,7 +7,7 @@ import IndustrialSolarEnergy from "@/svg/IndustrialSolarEnergy";
 const SolarPV = () => {
   return (
     <>
-      <section className="gap no-top">
+      <section className="gap">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">

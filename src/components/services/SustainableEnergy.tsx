@@ -8,9 +8,9 @@ import Image from "next/image";
 import Link from "next/link";
 import serviceFour from "../../../public/assets/img/battery-1.jpeg";
 import serviceTwo from "../../../public/assets/img/cleaning-1.jpg";
-import serviceOne from "../../../public/assets/img/installation-1.jpg";
+import serviceOne from "../../../public/assets/img/battery-storage-4.jpeg";
 import serviceFive from "../../../public/assets/img/inverter-1.jpeg";
-import serviceThree from "../../../public/assets/img/solar-panels.jpg";
+import serviceThree from "../../../public/assets/img/solar-panel.jpeg";
 import serviceSix from "../../../public/assets/img/wifi.jpg";
 
 const SustainableEnergy = () => {
@@ -41,11 +41,14 @@ const SustainableEnergy = () => {
                     <h2>Solar Panel Installation</h2>
                   </Link>
                   <p>
-                    leading renewable energy solutions provider that is sources
-                    are harnessed across the world. Present in 18 countries
-                    across Asia, Australia, Europe Africa and the Americas,
-                    Veztaz is powering.
+                    Maximize your energy efficiency with our expert solar panel
+                    installation services. We provide tailored solutions that
+                    harness the sun's power, reducing your energy bills while
+                    promoting sustainability.
                   </p>
+                  <Link href="/services-details/1" className="button">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -78,11 +81,14 @@ const SustainableEnergy = () => {
                     <h2>Solar Panel Cleaning</h2>
                   </Link>
                   <p>
-                    leading renewable energy solutions provider that is sources
-                    are harnessed across the world. Present in 18 countries
-                    across Asia, Australia, Europe Africa and the Americas,
-                    Veztaz is powering.
+                    Keep your solar panels operating at peak efficiency with our
+                    professional cleaning services. We ensure maximum energy
+                    absorption by removing dust, dirt, and debris that hinder
+                    performance.
                   </p>
+                  <Link href="/services-details/2" className="button">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -101,11 +107,14 @@ const SustainableEnergy = () => {
                     <h2>Solar Panels</h2>
                   </Link>
                   <p>
-                    leading renewable energy solutions provider that is sources
-                    are harnessed across the world. Present in 18 countries
-                    across Asia, Australia, Europe Africa and the Americas,
-                    Veztaz is powering.
+                    Invest in high-quality, durable solar panels designed for
+                    optimal energy conversion. Our advanced solar technology
+                    helps you generate clean, renewable power for your home or
+                    business.
                   </p>
+                  <Link href="/services-details/2" className="button">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -138,11 +147,13 @@ const SustainableEnergy = () => {
                     <h2>Solar Battery</h2>
                   </Link>
                   <p>
-                    leading renewable energy solutions provider that is sources
-                    are harnessed across the world. Present in 18 countries
-                    across Asia, Australia, Europe Africa and the Americas,
-                    Veztaz is powering.
+                    Store excess solar energy efficiently with our advanced
+                    solar batteries. Enjoy uninterrupted power supply, reduce
+                    dependency on the grid, and maximize your energy savings.
                   </p>
+                  <Link href="/services-details/4" className="button">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -161,11 +172,14 @@ const SustainableEnergy = () => {
                     <h2>Solar Inverter</h2>
                   </Link>
                   <p>
-                    leading renewable energy solutions provider that is sources
-                    are harnessed across the world. Present in 18 countries
-                    across Asia, Australia, Europe Africa and the Americas,
-                    Veztaz is powering.
+                    Convert solar energy into usable electricity with our
+                    high-performance solar inverters. Designed for efficiency
+                    and reliability, they ensure a seamless transition to
+                    renewable energy.
                   </p>
+                  <Link href="/services-details/5" className="button">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>
@@ -198,11 +212,14 @@ const SustainableEnergy = () => {
                     <h2>Wi-Fi Consumption Monitoring</h2>
                   </Link>
                   <p>
-                    leading renewable energy solutions provider that is sources
-                    are harnessed across the world. Present in 18 countries
-                    across Asia, Australia, Europe Africa and the Americas,
-                    Veztaz is powering.
+                    Take control of your energy usage with our Wi-Fi-based
+                    consumption monitoring system. Get real-time insights, track
+                    efficiency, and optimize your solar power consumption
+                    effortlessly.
                   </p>
+                  <Link href="/services-details/6" className="button">
+                    Read More
+                  </Link>
                 </div>
               </div>
             </div>

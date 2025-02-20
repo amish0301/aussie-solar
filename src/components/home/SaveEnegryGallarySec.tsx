@@ -11,7 +11,7 @@ import WifiMonitoring from "@/svg/WifiMonitoring";
 import Link from "next/link";
 import battaryStorage from "../../../public/assets/img/battery-storage-1.jpg";
 import battaryStorage2 from "../../../public/assets/img/battery-storage-2.jpg";
-import battaryStorage3 from "../../../public/assets/img/battery-storage-3.jpg";
+import battaryStorage3 from "../../../public/assets/img/battery-storage-3.jpeg";
 import battaryStorage4 from "../../../public/assets/img/battery-storage-4.jpeg";
 
 const SaveEnegryGallarySec = () => {
@@ -45,7 +45,7 @@ const SaveEnegryGallarySec = () => {
               <div className="battery-storage">
                 <Image
                   alt="chris-hemsworth"
-                  src={battaryStorage} // tesla powerwall three +
+                  src={battaryStorage}
                   style={{ width: "100%", height: "100%" }}
                 />
                 <i>
@@ -83,6 +83,7 @@ const SaveEnegryGallarySec = () => {
                     <Image
                       alt="chris-hemsworth"
                       src={battaryStorage3}
+                      loading="lazy"
                       style={{ width: "100%", height: "325px" }}
                     />
                     <i>
@@ -102,7 +103,8 @@ const SaveEnegryGallarySec = () => {
               <div className="battery-storage two">
                 <Image
                   alt="chris-hemsworth"
-                  src={battaryStorage4} // black solar panel
+                  src={battaryStorage4}
+                  loading="eager"
                   style={{ width: "100%", height: "674px" }}
                 />
                 <i>
