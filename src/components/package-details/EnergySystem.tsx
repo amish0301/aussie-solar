@@ -27,7 +27,7 @@ const EnergySystem = ({ data }: propsType) => {
               <p className="font-description">
                 Solar power is broadly recognised as a simple and effective way
                 to reduce your CO2 emissions and energy bills, but not all solar
-                panel systems are equal. Some aren’t designed to cope with
+                panel systems are equal. Some aren't designed to cope with
                 Australia's heat, others don't deliver comparable performance. A
                 poorly performing system will limit your sustainability and
                 financial return. The best way to protect your investment is to
