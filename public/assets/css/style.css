@@ -2457,7 +2457,7 @@ ul.categories.meta li a {
 }
 .custom-listing-stlyes li {
   font-size: 15px;
-  font-family: "Epilogue";
+  font-family: "Sora";
   font-weight: 600;
   color: #555;
   display: flex;
@@ -2881,11 +2881,19 @@ ul.pagination li {
 }
 .solar-system h2 {
   font-weight: bold;
-  font-size: 70px;
+  font-size: 50px;
   line-height: 80px;
   padding-top: 6px;
   padding-bottom: 20px;
 }
+
+.cta-line {
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
 /* 59. information */
 ul.information li h6 {
   font-weight: bold;
@@ -2906,7 +2914,7 @@ ul.information {
 .clean-energy h5 {
   font-size: 40px;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-block: 20px;
   line-height: 50px;
   display: block;
 }

@@ -1,77 +1,136 @@
-
+import { packageSizeMap } from "@/data/package-data";
+import { TserviceData } from "@/interFace/interFace";
 import BattaryIconTwo from "@/svg/BattaryIconTwo";
 import InvestmentIcon from "@/svg/InvestmentIcon";
 import SolarEnergyTwoIcon from "@/svg/SolarEnergyTwoIcon";
+import { useParams } from "next/navigation";
 import React from "react";
 
-const EnergySystem = () => {
+interface propsType {
+  data: TserviceData;
+}
+
+const EnergySystem = ({ data }: propsType) => {
+  const params = useParams();
+  const paramsId = params?.id;
+
+  const packageSize = packageSizeMap[paramsId as keyof typeof packageSizeMap] || "Custom";
+
   return (
     <>
       <section className="clean-energy mt-60">
         <div className="container">
-          <h5>Clean Energy System</h5>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim ven iam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure anim id est labor
-            ums nisi ut aliquip ex ea commosi ut aliquip ex ea commodo
-            consequatdo.
-          </p>
+          {/* Info */}
           <div className="row">
+            <div className="col-md-5">
+              <h4 className="pb-3">{data?.secondaryTitle1}</h4>
+              <p className="font-description">
+                Solar power is broadly recognised as a simple and effective way
+                to reduce your CO2 emissions and energy bills, but not all solar
+                panel systems are equal. Some aren’t designed to cope with
+                Australia's heat, others don't deliver comparable performance. A
+                poorly performing system will limit your sustainability and
+                financial return. The best way to protect your investment is to
+                select high quality solar products designed for life in
+                Australia.
+                <br />
+                <br />
+                Solar panel manufacturers are ranked into three tiers, 1-3. Tier
+                1 solar manufacturers gain the top ranking by proving themselves
+                to be reliable and stable and they provide the best value
+                products on the market. Only a small percentage of solar panels
+                manufacturers around the world have achieved the top Tier 1
+                ranking. Kangaroo Solar only sells and installs Tier 1 products,
+                giving you the peace of mind of receiving quality products that
+                will provide the best return on investment.
+                <br />
+                <br />
+                {data?.secondaryInfo1}
+              </p>
+            </div>
+            <div className="col-md-5">
+              <h4 className="pb-3">{data?.secondaryTitle2}</h4>
+              <p className="font-description">{data?.secondaryInfo2}</p>
+            </div>
+
+            <p className="cta-line">
+              Call us at <a href="callto:1300-274-737">1300 274 737</a> or{" "}
+              <a href="/contact">get a quote</a> today to determine if a{" "}
+              {packageSize} solar panel system is the perfect fit for your home
+              or business.
+            </p>
+          </div>
+
+          <h5>Sustainable Energy Systems</h5>
+          <p>
+            Our cutting-edge clean energy solutions are designed to power homes
+            and businesses across Australia with maximum efficiency and
+            reliability. By harnessing advanced solar technology, we provide a
+            sustainable and cost-effective way to reduce electricity bills while
+            minimizing environmental impact. Our expertly engineered systems
+            ensure long-term energy independence with minimal maintenance,
+            making clean energy more accessible than ever.
+          </p>
+
+          {/* Bullet Point Content */}
+          <div className="row py-3">
             <div className="col-lg-6">
               <ul className="custom-listing-stlyes">
                 <li>
-                  <div className="bol"></div>Far curiosity incommode now led
-                  smallness allowance.
+                  <div className="bol"></div>High-performance solar panels with
+                  superior energy conversion efficiency.
                 </li>
                 <li>
-                  <div className="bol"></div>Favour bed assure son things yet.
+                  <div className="bol"></div>Tailored solutions for residential
+                  and commercial energy needs.
                 </li>
                 <li>
-                  <div className="bol"></div>She consisted consulted elsewhere
-                  happiness
+                  <div className="bol"></div>Seamless integration with existing
+                  power systems for optimal performance.
                 </li>
                 <li>
-                  <div className="bol"></div>Disposing household any old the.
+                  <div className="bol"></div>Durable and weather-resistant
+                  technology built for Australian conditions.
                 </li>
                 <li>
-                  <div className="bol"></div>Widow downs you new shade drift
-                  hopes small.
+                  <div className="bol"></div>Government rebates and incentives
+                  available to maximize savings.
                 </li>
                 <li>
-                  <div className="bol"></div>Interested discretion estimating on
-                  stimulated.
+                  <div className="bol"></div>Expert installation and ongoing
+                  support from our certified professionals.
                 </li>
               </ul>
             </div>
             <div className="col-lg-6">
               <ul className="custom-listing-stlyes">
                 <li>
-                  <div className="bol"></div>Far curiosity incommode now led
-                  smallness allowance.
+                  <div className="bol"></div>Advanced monitoring systems for
+                  real-time energy tracking.
                 </li>
                 <li>
-                  <div className="bol"></div>Favour bed assure son things yet.
+                  <div className="bol"></div>Battery storage options for
+                  enhanced energy security.
                 </li>
                 <li>
-                  <div className="bol"></div>She consisted consulted elsewhere
-                  happiness
+                  <div className="bol"></div>Eco-friendly power generation with
+                  a reduced carbon footprint.
                 </li>
                 <li>
-                  <div className="bol"></div>Disposing household any old the.
+                  <div className="bol"></div>Future-proof technology that
+                  evolves with your energy needs.
                 </li>
                 <li>
-                  <div className="bol"></div>Widow downs you new shade drift
-                  hopes small.
+                  <div className="bol"></div>Industry-leading warranties for
+                  long-term peace of mind.
                 </li>
                 <li>
-                  <div className="bol"></div>Interested discretion estimating on
-                  stimulated.
+                  <div className="bol"></div>Dedicated Australian support team
+                  ensuring exceptional service.
                 </li>
               </ul>
             </div>
-            <div className="quote quote-two">
+            <div className="quote quote-two mt-5">
               <div>
                 <i>
                   <svg
@@ -89,12 +148,13 @@ const EnergySystem = () => {
                 </i>
               </div>
               <h3>
-                “Success is the result of perfection, hard work, learning from
-                failure, loyalty, and persistence”
+                “Success is built on innovation, dedication, and a commitment to
+                a sustainable future.”
               </h3>
             </div>
           </div>
-          <h5 className="mb-5">Clean Energy System</h5>
+
+          <h5 className="pb-4">Advanced Solar Energy Solutions</h5>
           <div className="row">
             <div className="col-lg-4 col-md-6">
               <div className="use-energix two">
@@ -104,12 +164,11 @@ const EnergySystem = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
-                    <h4>Battery Storage Solutions</h4>
+                  <a href="/services-details/4">
+                    <h4>Smart Battery Storage</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  Optimize energy usage with our advanced battery storage solutions, ensuring uninterrupted power supply even at night.
                   </p>
                 </div>
               </div>
@@ -122,12 +181,11 @@ const EnergySystem = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
-                    <h4>Commercial solar energy</h4>
+                  <a href="/packages/residential-solar">
+                    <h4>Commercial & Residential Solar</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  Harness the power of solar energy for your home or business, reducing electricity costs and contributing to a greener planet.
                   </p>
                 </div>
               </div>
@@ -140,12 +198,11 @@ const EnergySystem = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="#">
-                    <h4>High Return On Investment</h4>
+                  <a href="/contact">
+                    <h4>Cost Savings & ROI</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  Invest in solar and enjoy long-term financial benefits with reduced electricity bills and government incentives.
                   </p>
                 </div>
               </div>

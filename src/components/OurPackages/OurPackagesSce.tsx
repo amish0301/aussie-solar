@@ -43,63 +43,9 @@ const OurProjectsSce = ({ packages }: propType) => {
                     </div>
                   </div>
                 )
-            )}  
-            {/* {packages?.map(
-              (item, index) =>
-                item.id === 105 && (
-                  <div key={index} className="col-lg-12">
-                    <div className="recent-projects-img">
-                      <Image
-                        alt="custom-sol-img"
-                        src={item?.img as StaticImageData}
-                        style={{ width: "100%", height: "auto" }}
-                      />
-                      <div className="recent-projects-text">
-                        <Link href={item?.href ?? "/contact"}>
-                          <h5>{item?.title}</h5>
-                        </Link>
-                        <h6>{item?.kwp}</h6>
-                        <p>You can Contact Our Experts for Customize Size based on space at your Place </p>
-                        <Link href={item?.href ?? "/"}>
-                          <i>
-                            <ArrowIcon />
-                          </i>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-                )
-            )} */}
+            )}
 
             {/* Brands Scroller */}
-           
-
-
-            {/* {projectData?.slice(8, 10)?.map((item, index) => (
-              <div key={index} className="col-lg-6">
-                <div className="recent-projects-img">
-                  <figure>
-                    <Image
-                      alt="recent-projects"
-                      src={item?.img}
-                      style={{ width: "100%", height: "auto" }}
-                    />
-                  </figure>
-                  <div className="recent-projects-text">
-                    <Link href={`/projects-details/${item?.id}`}>
-                      <h5>{item?.title}</h5>
-                    </Link>
-                    <h6>{item?.kwp}</h6>
-                    <span>KWP SYSTEM</span>
-                    <Link href={`/projects-details/${item?.id}`}>
-                      <i>
-                        <ArrowIcon />
-                      </i>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            ))} */}
 
             {/* Pagination */}
             {/* <ul className="pagination d-flex justify-content-center pt-3">
@@ -132,8 +78,8 @@ const OurProjectsSce = ({ packages }: propType) => {
                 </Link>
               </li>
             </ul> */}
-          <GetInTouch />
-          <Sponsors />
+            <GetInTouch />
+            <Sponsors />
           </div>
         </div>
       </section>

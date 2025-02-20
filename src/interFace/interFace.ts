@@ -58,11 +58,18 @@ export type TprojectData = {
 export type TserviceData = {
   id: number;
   title: string;
+  title2?: string;
   details: string;
   img?: StaticImageData;
   kwp?: string;
   href?: string;
-  faqData?: FAQItem[]
+  faqData?: FAQItem[];
+  primaryInfo1?: string;
+  primaryInfo2?: string;
+  secondaryTitle1?: string;
+  secondaryInfo1?: string;
+  secondaryTitle2?: string;
+  secondaryInfo2?: string;
 };
 
 export type AccordianPropTypes = {

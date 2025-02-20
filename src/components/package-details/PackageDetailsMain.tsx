@@ -31,7 +31,7 @@ const PackageDetailsMain = ({ id }: idType) => {
         <>
           <SolarSystemInfo data={data as TserviceData} />
           <Thumbnail />
-          <EnergySystem />
+          <EnergySystem data={data as TserviceData}  />
           <LatestInstallations classOne="two" noBottom="" />
         </>
       ) : (

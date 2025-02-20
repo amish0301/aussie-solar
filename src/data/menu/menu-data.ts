@@ -105,7 +105,7 @@ const navMenuData: MenuItem[] = [
           },
           {
             id: 16.5,
-            label: "100kW Solar System",
+            label: "100kW Solar System",  
             link: "/package-details/204",
           },
           { id: 16.6, label: "Custom Size Solution", link: "/contact" },
