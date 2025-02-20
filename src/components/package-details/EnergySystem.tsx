@@ -148,8 +148,8 @@ const EnergySystem = ({ data }: propsType) => {
                 </i>
               </div>
               <h3>
-                “Success is built on innovation, dedication, and a commitment to
-                a sustainable future.”
+              &lsquo;Success is built on innovation, dedication, and a commitment to
+                a sustainable future.&rsquo;
               </h3>
             </div>
           </div>

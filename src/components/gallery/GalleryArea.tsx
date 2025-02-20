@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import "./GalleryArea.css";
+import Image from "next/image";
 
 const GalleryArea = () => {
   return (
@@ -78,7 +79,7 @@ const GalleryArea = () => {
                           <div className="panel-title">{panel.title}</div>
                           <div className="panel-tags">
                             <span className="tag-icon">
-                              <img
+                              <Image
                                 className="tag-icon-img"
                                 src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg"
                                 alt="Tag Icon"
@@ -87,18 +88,18 @@ const GalleryArea = () => {
                             <span className="tags-list">{panel.tags}</span>
                           </div>
                         </div>
-                        <img
+                        <Image
                           className="panel-gradient"
                           src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png"
                           alt="Gradient"
                         />
-                        <img
+                        <Image
                           className="panel-vingette"
                           src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png"
                           alt="Darken Gradient"
                         />
                       </div>
-                      <img
+                      <Image
                         className="panel-img"
                         src={panel.img}
                         alt={panel.title}
