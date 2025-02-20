@@ -3580,15 +3580,23 @@ figure {
   width: 35%;
   height: 100%;
   background-color: #fff;
-  padding: 50px 40px 15px;
-  z-index: 5;
-  transition: 0.45s ease-in-out;
+  padding: 30px 40px 15px 25px;
+  z-index: 1000;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transform: translateX(-101%);
-  -webkit-transform: translateX(-101%);
-  -moz-transform: translateX(-101%);
-  -o-transform: translateX(-101%);
+  opacity: 0;
+  visibility: hidden;
   overflow-y: auto;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 0px 10px;
 }
+
+/* Sidebar visible when open */
+.mobile-nav.open {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+
 .mobile-nav ul li a svg {
   width: 11px;
 }
@@ -3829,8 +3837,8 @@ li.menu-item-has-children.active {
   background-image: url("../img/remove.svg");
   background-repeat: no-repeat;
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 32px;
+  right: 30px;
 }
 .bar-menu {
   display: none;

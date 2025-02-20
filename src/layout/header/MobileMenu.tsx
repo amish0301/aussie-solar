@@ -1,10 +1,8 @@
 import navMenuData from "@/data/menu/menu-data";
 import useGlobalContext from "@/hooks/use-context";
-import LogoIcon from "@/svg/LogoIcon";
-import LogoTwoIcon from "@/svg/LogoTwoIcon";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import { useState } from "react";
 import Logo from "../../../public/assets/img/logo.png";
 
 const MobileMenu = () => {
@@ -22,7 +20,6 @@ const MobileMenu = () => {
       <div
         className={`mobile-nav hmburger-menu ${sideMenuOpen ? "open" : ""}`}
         id="mobile-nav"
-        style={{ display: sideMenuOpen ? "block" : "none" }}
       >
         <div className="mobilemenu-logo">
           <Link href="/">
