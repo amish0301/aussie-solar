@@ -18,31 +18,17 @@ const EnergySystem = ({ data }: propsType) => {
 
   return (
     <>
-      <section className="clean-energy mt-60">
+     <section className="clean-energy mt-60">
         <div className="container">
           {/* Info */}
           <div className="row">
             <div className="col-md-5">
               <h4 className="pb-3">{data?.secondaryTitle1}</h4>
               <p className="font-description">
-                Solar power is broadly recognised as a simple and effective way
-                to reduce your CO2 emissions and energy bills, but not all solar
-                panel systems are equal. Some aren't designed to cope with
-                Australia's heat, others don't deliver comparable performance. A
-                poorly performing system will limit your sustainability and
-                financial return. The best way to protect your investment is to
-                select high quality solar products designed for life in
-                Australia.
+              Solar power is broadly recognised as a simple and effective way to reduce your CO2 emissions and energy bills, but not all solar panel systems are equal. Some aren't designed to cope with Australia's heat, others don't deliver comparable performance. A poorly performing system will limit your sustainability and financial return. The best way to protect your investment is to select high-quality solar products designed for life in Australia.
                 <br />
                 <br />
-                Solar panel manufacturers are ranked into three tiers, 1-3. Tier
-                1 solar manufacturers gain the top ranking by proving themselves
-                to be reliable and stable and they provide the best value
-                products on the market. Only a small percentage of solar panels
-                manufacturers around the world have achieved the top Tier 1
-                ranking. Kangaroo Solar only sells and installs Tier 1 products,
-                giving you the peace of mind of receiving quality products that
-                will provide the best return on investment.
+                Solar panel manufacturers are ranked into three tiers, 1-3. Tier 1 solar manufacturers gain the top ranking by proving themselves to be reliable and stable and they provide the best value products on the market. Only a small percentage of solar panel manufacturers around the world have achieved the top Tier 1 ranking. Kangaroo Solar only sells and installs Tier 1 products, giving you the peace of mind of receiving quality products that will provide the best return on investment.
                 <br />
                 <br />
                 {data?.secondaryInfo1}
@@ -63,13 +49,7 @@ const EnergySystem = ({ data }: propsType) => {
 
           <h5>Sustainable Energy Systems</h5>
           <p>
-            Our cutting-edge clean energy solutions are designed to power homes
-            and businesses across Australia with maximum efficiency and
-            reliability. By harnessing advanced solar technology, we provide a
-            sustainable and cost-effective way to reduce electricity bills while
-            minimizing environmental impact. Our expertly engineered systems
-            ensure long-term energy independence with minimal maintenance,
-            making clean energy more accessible than ever.
+          Our cutting-edge clean energy solutions are designed to power homes and businesses across Australia with maximum efficiency and reliability. By harnessing advanced solar technology, we provide a sustainable and cost-effective way to reduce electricity bills while minimizing environmental impact. Our expertly engineered systems ensure long-term energy independence with minimal maintenance, making clean energy more accessible than ever.
           </p>
 
           {/* Bullet Point Content */}
@@ -148,8 +128,8 @@ const EnergySystem = ({ data }: propsType) => {
                 </i>
               </div>
               <h3>
-              &lsquo;Success is built on innovation, dedication, and a commitment to
-                a sustainable future.&rsquo;
+              &ldquo;Success is built on innovation, dedication, and a commitment to
+                a sustainable future.&rdquo;
               </h3>
             </div>
           </div>
@@ -210,7 +190,7 @@ const EnergySystem = ({ data }: propsType) => {
           </div>
         </div>
       </section>
-    </>
+    </> 
   );
 };
 
