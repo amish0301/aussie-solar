@@ -1,51 +1,133 @@
-import { TserviceData } from "@/interFace/interFace";
+import { TserviceData, TServiceProductData } from "@/interFace/interFace";
+import ServiceProducts from "../services/ServiceProducts";
+import Image from "next/image";
+import battaryStorage from "../../../public/assets/img/battery-storage-1.jpg";
+import battaryStorage2 from "../../../public/assets/img/battery-storage-2.jpg";
+import battaryStorage3 from "../../../public/assets/img/battery-storage-3.jpeg";
+import battaryStorage4 from "../../../public/assets/img/battery-storage-4.jpeg";
+import Link from "next/link";
+
+// import cleaningVideo from '../../../public/assets/cleaningVideo.webm';
 
 interface propsType {
   data: TserviceData;
+  productData: TServiceProductData;
 }
 
-const SolarSystemInfo = ({ data }: propsType) => {
+const SolarSystemInfo = ({ data, productData }: propsType) => {
+  const isServiceProductData =
+    data?.id === 3 || data?.id === 4 || data?.id === 5 || data?.id === 6;
+  const isSolarPanelCleaning = data?.id === 2;
+
   return (
     <>
       <section className="gap no-bottom">
         <div className="container">
           <div className="row align-items-center">
-            <div className="col-lg-7">
-              <div className="solar-system">
-                <span className="d-flex">Kangaroo Solar</span>
-                <h2> {data?.title} </h2>
-                <p>
-                  At Kangaroo Solar, we have access to a trusted installation
-                  network spanning across the entire country. From inner city
-                  Sydney through to the suburbs of Brisbane and Adelaide, we can
-                  install solar panels quickly and with minimum disruption to
-                  your daily schedule. Our team of installers are fully
-                  qualified and have experience working in a range of
-                  residential and commercial environments.
-                  <br />
-                  <br />
-                </p>
+            {/* Flex container for text and image */}
+            <div className="d-flex flex-column flex-lg-row align-items-lg-start">
+              {/* Text Section */}
+              <div className="col-lg-6">
+                <div className="solar-system me-lg-4">
+                  <span className="d-flex">Kangaroo Solar</span>
+                  <h2>{data?.title}</h2>
+                  <p>
+                    {productData?.primaryInfo ??
+                      "At Kangaroo Solar, we have access to a trusted installation network spanning across the entire country. From inner city Sydney through to the suburbs of Brisbane and Adelaide, we can install solar panels quickly and with minimum disruption to your daily schedule. Our team of installers are fully qualified and have experience working in a range of residential and commercial environments."}
+                    <br />
+                    <br />
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="col-lg-5">
-              <ul className="information">
-                <li>
-                  <span>SYSTEM SIZE</span>
-                  <h6>6.6kW - Custom Segment</h6>
-                </li>
-                <li>
-                  <span>Energy Generation</span>
-                  <h6>80,000 kWh / Year</h6>
-                </li>
-                <li>
-                  <span>Carbon Savings</span>
-                  <h6>87 Tons / Year</h6>
-                </li>
-              </ul>
+
+              {/* Image Section */}
+              <div className="col-lg-6">
+                <div className="services-img three">
+                  <figure className="m-0">
+                    <Image src={productData?.img ?? ""} alt="img" />
+                  </figure>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div className="row align-items-center">
+          {/* Service Products */}
+          {isServiceProductData && (
+            <ServiceProducts data={productData as TServiceProductData} />
+          )}
+
+          {/* panel gallery */}
+          {isSolarPanelCleaning && (
+            <div className="row mt-5">
+              <div className="col-xl-6">
+                <div className="battery-storage">
+                  <Image
+                    alt="chris-hemsworth"
+                    src={battaryStorage}
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                  <div className="battery-storage-text">
+                    <Link href="/services">
+                      <h3>Battery Storage</h3>
+                    </Link>
+                    <p>Protecting our environment needn't cost the earth.</p>
+                  </div>
+                </div>
+                <div className="row mt-3">
+                  <div className="col-md-6">
+                    <div className="battery-storage">
+                      <Image
+                        alt="chris-hemsworth"
+                        src={battaryStorage2}
+                        style={{ height: "325px" }}
+                      />
+                      <div className="battery-storage-text">
+                        <Link href="/services">
+                          {" "}
+                          <h3>Inverter</h3>
+                        </Link>
+                        <p>Protecting our environment.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="battery-storage">
+                      <Image
+                        alt="chris-hemsworth"
+                        src={battaryStorage3}
+                        loading="lazy"
+                        style={{ width: "100%", height: "325px" }}
+                      />
+                      <div className="battery-storage-text">
+                        <Link href="/services">
+                          <h3>Consumption and Monitoring</h3>
+                        </Link>
+                        <p>Protecting our environment.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6">
+                <div className="battery-storage">
+                  <Image
+                    alt="chris-hemsworth"
+                    src={battaryStorage4}
+                    style={{ width: "100%", height: "674px" }}
+                  />
+                  <div className="battery-storage-text">
+                    <Link href="/services">
+                      <h3>Consumption and Monitoring</h3>
+                    </Link>
+                    <p>Protecting our environment.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
+          {/* replace below with new component of service product */}
+          {/* <div className="row align-items-center">
             <div className="col-lg-7">
               <h2 className="mb-3">What is a CEC accredited installer?</h2>
               <p>
@@ -69,7 +151,7 @@ const SolarSystemInfo = ({ data }: propsType) => {
               We believe in solar power and do everything we can to get this wonderful technology into the hands of more people. Along with our reliable products, expert installation services, and advanced consumer protections, we also offer a variety of flexible finance solutions, a 10% price beat guarantee, and no lock-in contracts. If you’re looking for solar panel products and installation you can trust, from one of the biggest names in the country, please give us a call.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

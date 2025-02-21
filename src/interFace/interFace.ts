@@ -72,6 +72,33 @@ export type TserviceData = {
   secondaryInfo2?: string;
 };
 
+export interface productType {
+  id: number;
+  title: string;
+  details: string;
+  img: StaticImageData;
+  btnContent?: string;
+  btnHref?: string;
+}
+
+export type TServiceProductData = {
+  id: number;
+  tagLine?: string;
+  img?: StaticImageData;
+  primaryTitle: string;
+  primaryInfo: string;
+  
+  // optional parameters
+  secondaryTitle?: string;
+  secondaryInfo?: string;
+  types?: productType[];
+}
+
+// Service Product,
+// 3 title, 3 details, 1 img
+// 1. battery, inverter, solar panel
+
+
 export type AccordianPropTypes = {
   title: string,
   content: string,
