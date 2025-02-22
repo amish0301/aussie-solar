@@ -73,7 +73,7 @@ const ProcessSolutionsSec = ({ propsClass }: propsType) => {
                   <span>4</span>
                 </div>
                 <p>
-                  Kangaroo Solar's expert team offers over a decade of
+                  Kangaroo Solar&apos;s expert team offers over a decade of
                   experience, delivering top-notch solar solutions for a
                   sustainable, greener future.
                 </p>
