@@ -2,6 +2,12 @@ import CalculationIcon from "@/svg/CalculationIcon";
 import EstimateCalculationIcon from "@/svg/EstimateCalculationIcon";
 import ProjectIcon from "@/svg/ProjectIcon";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLightbulb,
+  faShieldAlt,
+  faSolarPanel,
+} from "@fortawesome/free-solid-svg-icons";
 
 interface propsType {
   propsClass: string;
@@ -32,7 +38,7 @@ const ProcessSolutionsSec = ({ propsClass }: propsType) => {
               </div>
             </div>
             <div className="col-lg-4 col-md-6">
-              <div className="free-consultation mt-lg-0">
+              <div className="free-consultation">
                 <div className="free-consultation-number">
                   <h3>Estimate the Calculation</h3>
                   <span>2</span>
@@ -57,6 +63,63 @@ const ProcessSolutionsSec = ({ propsClass }: propsType) => {
                   to your needs.
                 </p>
                 <ProjectIcon />
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="col-lg-4 col-md-6">
+              <div className="free-consultation">
+                <div className="free-consultation-number">
+                  <h3>Industry Expertise</h3>
+                  <span>4</span>
+                </div>
+
+                <p>
+                  Kangaroo Solar's expert team offers over a decade of
+                  experience, delivering top-notch solar solutions for a
+                  sustainable, greener future.
+                </p>
+                <FontAwesomeIcon
+                  icon={faLightbulb}
+                  style={{ color: "#0A9642", width: "60px", height: "60px" }}
+                />
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="free-consultation">
+                <div className="free-consultation-number">
+                  <h3>Commitment to Quality</h3>
+                  <span>5</span>
+                </div>
+
+                <p>
+                  Kangaroo Solar prioritizes quality, offering high-performance,
+                  durable solar solutions that meet top industry standards for
+                  reliable, efficient, and sustainable energy savings.
+                </p>
+                <FontAwesomeIcon
+                  icon={faShieldAlt}
+                  style={{ color: "#0A9642", width: "60px", height: "60px" }}
+                />
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <div className="free-consultation">
+                <div className="free-consultation-number">
+                  <h3>Trusted Solar Provider</h3>
+                  <span>6</span>
+                </div>
+
+                <p>
+                  Kangaroo Solar offers reliable, efficient energy solutions
+                  with maximum rebates, expert support, seamless installations,
+                  and a customer-first approach for sustainable power.
+                </p>
+                <FontAwesomeIcon
+                  icon={faSolarPanel}
+                  style={{ color: "#0A9642", width: "60px", height: "60px" }}
+                />
               </div>
             </div>
           </div>
