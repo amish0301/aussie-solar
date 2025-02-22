@@ -22,10 +22,10 @@ export const testimonialData: TtestimonialType[] = [
   {
     id: 2,
     review:
-      "Accredited Master Electricians guarantee top-tier electrical workmanship in solar projects, ensuring safety, compliance, and efficiency.",
-    name: "Accredited Master Electricians",
-    title: "Solar Energy Specialist",
-    img: union1,
+      "Solar Accreditation Australia certifies professionals who meet industry standards for solar panel installation, ensuring high-quality workmanship.",
+    name: "Solar Accreditation Australia",
+    title: "Certified Solar Technician",
+    img: union3,
   },
   {
     id: 5,

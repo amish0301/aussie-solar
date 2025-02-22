@@ -18,31 +18,24 @@ const HeroSlider = () => {
   const sliderData = [
     {
       id: 1,
-      bgImg: sliderImg1,
-      title: "installation and maintenance of solar panels",
+      bgImg: sliderImg2,
+      title: "Expert Solar & Electrical Solutions",
       subTitle:
-        "Practical renewable energy technology thatreduces costs and helps the environment",
+        "Our in-house team of experienced electricians and solar specialists ensures seamless installation, reducing your energy costs.",
     },
     {
       id: 2,
-      bgImg: sliderImg2,
-      title: "energize society using sustainable & reliable",
+      bgImg: sliderImg3,
+      title: "Proudly Australian-Owned Company",
       subTitle:
-        "Practical renewable energy technology thatreduces costs and helps the environment",
+        "Experience superior after-sales service and support from a trusted, locally owned and operated Australian company.",
     },
     {
       id: 3,
-      bgImg: sliderImg3,
-      title: "shapehero img Renewable Energy Solutions Deliver",
-      subTitle:
-        "Practical renewable energy technology thatreduces costs and helps the environment",
-    },
-    {
-      id: 4,
       bgImg: sliderImg4,
-      title: "leading supplier of sloar materials for contractors",
+      title: "Premium Tier 1 Solar Technology",
       subTitle:
-        "Practical renewable energy technology thatreduces costs and helps the environment",
+        "We prioritize top-tier quality solar products with cutting-edge technology for maximum efficiency and durability.",
     },
   ];
 

@@ -1,10 +1,10 @@
 import { TserviceData, TServiceProductData } from "@/interFace/interFace";
 import ServiceProducts from "../services/ServiceProducts";
 import Image from "next/image";
-import battaryStorage from "../../../public/assets/img/battery-storage-1.jpg";
+import battaryStorage from "../../../public/assets/img/installation-3.jpeg";
 import battaryStorage2 from "../../../public/assets/img/battery-storage-2.jpg";
 import battaryStorage3 from "../../../public/assets/img/battery-storage-3.jpeg";
-import battaryStorage4 from "../../../public/assets/img/battery-storage-4.jpeg";
+import battaryStorage4 from "../../../public/assets/cleaning-video.gif";
 import Link from "next/link";
 
 // import cleaningVideo from '../../../public/assets/cleaningVideo.webm';
@@ -58,69 +58,69 @@ const SolarSystemInfo = ({ data, productData }: propsType) => {
 
           {/* panel gallery */}
           {isSolarPanelCleaning && (
-            <div className="row mt-5">
+            <div className="row mt-5 service-cleaning">
               <div className="col-xl-6">
-                <div className="battery-storage">
+                <div className="battery-storage-two">
                   <Image
                     alt="chris-hemsworth"
                     src={battaryStorage}
                     style={{ width: "100%", height: "100%" }}
                   />
-                  <div className="battery-storage-text">
+                  {/* <div className="battery-storage-text">
                     <Link href="/services">
                       <h3>Battery Storage</h3>
                     </Link>
                     <p>Protecting our environment didn&apos;t cost the earth.</p>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="row mt-3">
                   <div className="col-md-6">
-                    <div className="battery-storage">
+                    <div className="battery-storage-two">
                       <Image
                         alt="chris-hemsworth"
                         src={battaryStorage2}
                         style={{ height: "325px" }}
                       />
-                      <div className="battery-storage-text">
+                      {/* <div className="battery-storage-text">
                         <Link href="/services">
                           {" "}
                           <h3>Inverter</h3>
                         </Link>
                         <p>Protecting our environment.</p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                   <div className="col-md-6">
-                    <div className="battery-storage">
+                    <div className="battery-storage-two">
                       <Image
                         alt="chris-hemsworth"
                         src={battaryStorage3}
                         loading="lazy"
                         style={{ width: "100%", height: "325px" }}
                       />
-                      <div className="battery-storage-text">
+                      {/* <div className="battery-storage-text">
                         <Link href="/services">
                           <h3>Consumption and Monitoring</h3>
                         </Link>
                         <p>Protecting our environment.</p>
-                      </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-xl-6">
-                <div className="battery-storage">
+                <div className="battery-storage-two">
                   <Image
                     alt="chris-hemsworth"
                     src={battaryStorage4}
-                    style={{ width: "100%", height: "674px" }}
+                    style={{ width: "100%" }}
                   />
-                  <div className="battery-storage-text">
+                  {/* <div className="battery-storage-text">
                     <Link href="/services">
                       <h3>Consumption and Monitoring</h3>
                     </Link>
                     <p>Protecting our environment.</p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import thumbImg from "../../../public/assets/img/information.jpg"
+import thumbImg from "../../../public/assets/img/package-thumb.jpeg"
 const Thumbnail = () => {
   return (
     <>

@@ -27,9 +27,10 @@ const FooterOne = () => {
                   <Image src={Logo} alt="logo" width={180} />
                 </Link>
                 <p>
-                  Solar energy’s exceptional synergies with energy storage,
-                  electric vehicles, and smart grids mean the industry works on
-                  the frontline of technology and system change.
+                  <strong>Powering Australia with Smart Solar Solutions</strong> - Kangaroo Solar
+                  revolutionizes energy with high-performance solar, battery
+                  storage, and smart solutions, maximizing savings and
+                  sustainability for homes and businesses.
                 </p>
                 <ul className="d-flex social-media">
                   <li>

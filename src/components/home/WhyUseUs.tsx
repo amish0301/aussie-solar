@@ -1,13 +1,17 @@
 "use client";
-import React, { useState } from "react";
-
-import TimeSaveIcon from "@/svg/TimeSaveIcon";
+import { useState } from "react";
 import SaveMoneyIcon from "@/svg/SaveMoneyIcon";
-import ObligationIcon from "@/svg/ObligationIcon";
-import videoIcon from "../../../public/assets/img/video.jpg";
+import {
+  faHeadset,
+  faMedal,
+  faSolarPanel,
+  faUsersLine,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image, { StaticImageData } from "next/image";
-import ModalVideo from "react-modal-video";
 import Link from "next/link";
+import savings from "../../../public/assets/img/savings.svg";
+import videoIcon from "../../../public/assets/img/whyus-video.gif";
 interface propsType {
   bgImg: StaticImageData | null;
   propsClass: string;
@@ -36,12 +40,18 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 <h2>Why Choose Kangaroo Solar?</h2>
               </div>
               <div className="use-energix-grid d-grid">
-
                 {/* premium quality */}
                 <div className="use-energix">
                   <div className="use-energix-icon">
                     <i>
-                      <TimeSaveIcon />
+                      <FontAwesomeIcon
+                        icon={faMedal}
+                        style={{
+                          color: "#0A9642",
+                          width: "60px",
+                          height: "60px",
+                        }}
+                      />
                     </i>
                   </div>
                   <h4>Uncompromised Quality</h4>
@@ -51,7 +61,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 <div className="use-energix">
                   <div className="use-energix-icon">
                     <i>
-                      <SaveMoneyIcon />
+                      <Image alt="img" src={savings} width={60} height={60} />
                     </i>
                   </div>
                   <h4>Best Value Pricing</h4>
@@ -60,7 +70,14 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 <div className="use-energix">
                   <div className="use-energix-icon">
                     <i>
-                      <SaveMoneyIcon />
+                      <FontAwesomeIcon
+                        icon={faSolarPanel}
+                        style={{
+                          color: "#0A9642",
+                          width: "60px",
+                          height: "60px",
+                        }}
+                      />
                     </i>
                   </div>
                   <h4>Comprehensive Solar Solutions</h4>
@@ -69,7 +86,14 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 <div className="use-energix">
                   <div className="use-energix-icon">
                     <i>
-                      <ObligationIcon />
+                      <FontAwesomeIcon
+                        icon={faHeadset}
+                        style={{
+                          color: "#0A9642",
+                          width: "60px",
+                          height: "60px",
+                        }}
+                      />
                     </i>
                   </div>
                   <h4>Exceptional After-Sales Support</h4>
@@ -79,7 +103,14 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 <div className="use-energix">
                   <div className="use-energix-icon">
                     <i>
-                      <ObligationIcon />
+                      <FontAwesomeIcon
+                        icon={faUsersLine}
+                        style={{
+                          color: "#0A9642",
+                          width: "60px",
+                          height: "60px",
+                        }}
+                      />
                     </i>
                   </div>
                   <h4>Trusted Solar Advisors</h4>
@@ -89,7 +120,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 <div className="use-energix">
                   <div className="use-energix-icon">
                     <i>
-                      <ObligationIcon />
+                      <SaveMoneyIcon />
                     </i>
                   </div>
                   <h4>Flexible Payment Plans</h4>
@@ -112,7 +143,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                   }}
                   type="button"
                 >
-                  <i>
+                  {/* <i>
                     <svg
                       width="11"
                       height="17"
@@ -125,7 +156,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                         fill="white"
                       />
                     </svg>
-                  </i>
+                  </i> */}
                 </button>
               </div>
               <div className="d-sm-flex mt-4">
@@ -144,14 +175,14 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
           </div>
         </div>
       </section>
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         isOpen={isOpen}
         videoId="xKxrkht7CpY"
         onClose={() => {
           openVideoModal();
         }}
-      />
+      /> */}
     </>
   );
 };

@@ -25,7 +25,7 @@ const HomeMain = () => {
       <Sponsors />
       <ProcessSolutionsSec propsClass="gap"/>
       <TestimonialsSec propsClass="no-top" />
-      <HomeBlogSec />
+      {/* <HomeBlogSec /> */}
     </>
   );
 };

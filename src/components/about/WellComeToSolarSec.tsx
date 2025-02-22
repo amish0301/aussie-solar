@@ -1,7 +1,7 @@
 import CountUpContent from "@/elements/counter/CountUpContent";
 import ExperienceTwoIcon from "@/svg/ExperienceTwoIcon";
 import Image from "next/image";
-import about1 from "../../../public/assets/img/about-1.jpg";
+import about1 from "../../../public/assets/img/about-1.jpeg";
 import about2 from "../../../public/assets/img/about-2.jpg";
 const WellComeToSolarSec = () => {
   return (

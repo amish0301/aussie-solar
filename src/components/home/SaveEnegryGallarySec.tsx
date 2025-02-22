@@ -83,7 +83,6 @@ const SaveEnegryGallarySec = () => {
                     <Image
                       alt="chris-hemsworth"
                       src={battaryStorage3}
-                      loading="lazy"
                       style={{ width: "100%", height: "325px" }}
                     />
                     <i>
@@ -104,7 +103,6 @@ const SaveEnegryGallarySec = () => {
                 <Image
                   alt="chris-hemsworth"
                   src={battaryStorage4}
-                  loading="eager"
                   style={{ width: "100%", height: "674px" }}
                 />
                 <i>

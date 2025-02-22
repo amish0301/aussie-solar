@@ -27,7 +27,7 @@ const TestimonialsSec = ({ propsClass }: propsType) => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="nav-c-slider">
-                {testimonialData?.slice(0, 5)?.map((item) => (
+                {testimonialData?.slice(0, 3)?.map((item) => (
                   <button
                     onClick={() => handleCurrentData(item.id)}
                     key={item.id}

@@ -33,9 +33,9 @@ const GetInTouch = () => {
                 </i>
               </div>
               <div className="d-flex align-items-center mt-2">
-                <h4>Phone No:</h4>
+                <h4>Call Us Now: </h4>
                 <a href="callto:01234525407">
-                  <p>01234 525 407</p>
+                  <p className="mx-2">01234 525 407</p>
                 </a>
               </div>
             </div>

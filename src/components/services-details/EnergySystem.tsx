@@ -3,6 +3,9 @@ import BattaryIconTwo from "@/svg/BattaryIconTwo";
 import InvestmentIcon from "@/svg/InvestmentIcon";
 import SolarEnergyTwoIcon from "@/svg/SolarEnergyTwoIcon";
 import FAQAccordion from "./FAQAccordion";
+import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 interface propType {
   faqData: FAQItem[];
@@ -11,7 +14,7 @@ interface propType {
 const EnergySystem = ({ faqData }: propType) => {
   return (
     <>
-      <section className="clean-energy mt-60">
+      <section className="clean-energy mt-30">
         <div className="container">
           <h5>Consumer protections</h5>
           <p>
@@ -119,7 +122,7 @@ const EnergySystem = ({ faqData }: propType) => {
           <FAQAccordion faqData={faqData} />
 
           <h5 className="my-5">Clean Energy System</h5>
-          <div className="row">
+          <div className="row pb-5">
             <div className="col-lg-4 col-md-6">
               <div className="use-energix two">
                 <div className="use-energix-icon">
@@ -129,12 +132,24 @@ const EnergySystem = ({ faqData }: propType) => {
                 </div>
                 <div>
                   <a href="/service-details/4">
-                    <h4>Battery Storage Solutions</h4>
+                    <h4>Maximize Your Energy Efficiency</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                    Store excess solar energy efficiently, reduce grid reliance,
+                    and ensure uninterrupted power supply anytime.
                   </p>
+                  <a href={"/services"} className="button">
+                    {" "}
+                    Learn More{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      style={{
+                        width: "18px",
+                        height: "18px",
+                        display: "inline",
+                      }}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -147,12 +162,24 @@ const EnergySystem = ({ faqData }: propType) => {
                 </div>
                 <div>
                   <a href="/packages/residential-solar">
-                    <h4>Commercial solar energy</h4>
+                    <h4>Commercial Solar Energy</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                    Power your business with cost-effective solar solutions,
+                    reducing energy bills and ensuring long-term sustainability.
                   </p>
+                  <a href={"/packages/commercial-solar"} className="button">
+                    {" "}
+                    Explore Packages{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      style={{
+                        width: "18px",
+                        height: "18px",
+                        display: "inline",
+                      }}
+                    />{" "}
+                  </a>
                 </div>
               </div>
             </div>
@@ -165,12 +192,24 @@ const EnergySystem = ({ faqData }: propType) => {
                 </div>
                 <div>
                   <a href="/contact">
-                    <h4>High Return On Investment</h4>
+                    <h4>High Return on Investment</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                    Switch to solar for reduced electricity costs, government
+                    incentives, and long-term financial sustainability benefits.
                   </p>
+                  <a href={"/packages/commercial-solar"} className="button">
+                    {" "}
+                    Get a Free Consultation{" "}
+                    <FontAwesomeIcon
+                      icon={faArrowRight}
+                      style={{
+                        width: "18px",
+                        height: "18px",
+                        display: "inline",
+                      }}
+                    />
+                  </a>
                 </div>
               </div>
             </div>

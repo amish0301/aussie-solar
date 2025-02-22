@@ -7,12 +7,14 @@ import SolarEnergyIcon from "@/svg/SolarEnergyIcon";
 import TechnologiesIcon from "@/svg/TechnologiesIcon";
 import PhoneIcon from "@/svg/PhoneIcon";
 import arista from "../../../public/assets/img/arista-square-1.png";
-import videoTwo from "../../../public/assets/img/video-2.jpg";
+import videoTwo from "../../../public/assets/img/about-video.gif";
 import ModalVideo from "react-modal-video";
 import BattaryIconTwo from "@/svg/BattaryIconTwo";
 import InvestmentIcon from "@/svg/InvestmentIcon";
 import CommercialSolarEnergyIcon from "@/svg/CommercialSolarEnergyIcon";
 import useGlobalContext from "@/hooks/use-context";
+import SolarRetailer from "@/svg/SolarRetailer";
+import ExpertiseIcon from "@/svg/ExpertiseIcon";
 
 const SolarEnergySec = () => {
   const { openLetterBox, setOpenLetterBox } = useGlobalContext();
@@ -23,9 +25,9 @@ const SolarEnergySec = () => {
       <section className="section-solar-energy gap">
         <div className="container">
           <div className="heading">
-            <p>Solutions of Solar Energy</p>
+            <p>Our Solar Energy Solutions</p>
             <div className="line"></div>
-            <h2>Produce Your Own Clean Save ourthe Environment</h2>
+            <h2>Harness Clean Energy, Reduce Costs, and Build a Sustainable Future</h2>
           </div>
           <div className="row">
             <div className="col-xl-3 col-lg-4 ">
@@ -40,8 +42,7 @@ const SolarEnergySec = () => {
                     <h4>Battery Storage Solutions</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  Enhance your energy independence with cutting-edge battery storage solutions, ensuring reliable power even during outages.
                   </p>
                 </div>
               </div>
@@ -51,7 +52,7 @@ const SolarEnergySec = () => {
                 <figure>
                   <Image alt="img" src={videoTwo} style={{ width: "100%", height: "auto" }}/>
                 </figure>
-                <button
+                {/* <button
                   onClick={() => {
                     openVideoModal();
                   }}
@@ -71,7 +72,7 @@ const SolarEnergySec = () => {
                       ></path>
                     </svg>
                   </i>
-                </button>
+                </button> */}
               </div>
             </div>
             <div className="col-xl-3 col-lg-4 col-md-6">
@@ -86,8 +87,7 @@ const SolarEnergySec = () => {
                     <h4>Commercial solar energy</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  Optimize your business operations with advanced commercial solar systems, maximizing energy efficiency and cost savings.
                   </p>
                 </div>
               </div>
@@ -96,16 +96,15 @@ const SolarEnergySec = () => {
               <div className="use-energix two mt-xl-5">
                 <div className="use-energix-icon">
                   <i>
-                    <InvestmentIcon />
+                    <SolarRetailer />
                   </i>
                 </div>
                 <div>
                   <a href="/contact">
-                    <h4>High Return On Investment</h4>
+                    <h4>Recognized Approved Solar Homes Retailer</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  As an Approved Solar Homes Retailer, we guarantee high-quality solar solutions with full compliance, unlocking government incentives for you.
                   </p>
                 </div>
               </div>
@@ -122,8 +121,7 @@ const SolarEnergySec = () => {
                     <h4>Boost Green Credentials</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  Strengthen your sustainability efforts with our eco-friendly solar installations, reducing your carbon footprint and energy expenses.
                   </p>
                 </div>
               </div>
@@ -132,16 +130,15 @@ const SolarEnergySec = () => {
               <div className="use-energix two mt-xl-5">
                 <div className="use-energix-icon">
                   <i>
-                    <SolarEnergyIcon />
+                    <ExpertiseIcon />
                   </i>
                 </div>
                 <div>
                   <a href="/packages/commercial-solar">
-                    <h4>Industrial Solar Energy</h4>
+                    <h4>Industry Expertise</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  Backed by years of experience, our expert team delivers efficient, high-performance solar solutions tailored to your needs.
                   </p>
                 </div>
               </div>
@@ -155,11 +152,10 @@ const SolarEnergySec = () => {
                 </div>
                 <div>
                   <a href="/contact">
-                    <h4>Scale With New Technologies</h4>
+                    <h4>Comprehensive Energy Solution</h4>
                   </a>
                   <p>
-                    We fully utilise the latest corporate renewable energy
-                    technology to generate significant energy.
+                  From consultation to installation, we provide end-to-end solar solutions, ensuring maximum savings and sustainability for every customer.
                   </p>
                 </div>
               </div>
@@ -174,9 +170,9 @@ const SolarEnergySec = () => {
             <div className="row">
               <div className="col-lg-7">
                 <div className="heading">
-                  <h2>Get in touch to discuss how we can help you!</h2>
+                  <h2>Connect with us to explore premium solar solutions</h2>
                   <h6>
-                    {`We're`} pleased to be welcoming customers to join us.
+                    {`We're`} excited to welcome you as a valued customer 
                   </h6>
                 </div>
                 <div className="d-md-flex align-items-center mt-md-5">
@@ -207,14 +203,14 @@ const SolarEnergySec = () => {
           </div>
         </div>
       </section>
-      <ModalVideo
+      {/* <ModalVideo
         channel="youtube"
         isOpen={isOpen}
         videoId="xKxrkht7CpY"
         onClose={() => {
           openVideoModal();
         }}
-      />
+      /> */}
     </>
   );
 };

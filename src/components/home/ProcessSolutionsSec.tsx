@@ -65,16 +65,13 @@ const ProcessSolutionsSec = ({ propsClass }: propsType) => {
                 <ProjectIcon />
               </div>
             </div>
-          </div>
 
-          <div className="row">
             <div className="col-lg-4 col-md-6">
               <div className="free-consultation">
                 <div className="free-consultation-number">
                   <h3>Industry Expertise</h3>
                   <span>4</span>
                 </div>
-
                 <p>
                   Kangaroo Solar's expert team offers over a decade of
                   experience, delivering top-notch solar solutions for a

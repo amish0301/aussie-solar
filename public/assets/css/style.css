@@ -139,7 +139,7 @@ img {
   object-fit: cover;
 }
 .gap {
-  padding: 120px 0;
+  padding: 80px 0;
 }
 .no-top {
   padding-top: 0;
@@ -430,6 +430,7 @@ button.header-button {
 }
 .featured-area-one {
   position: relative;
+  /* margin-left: 35px; */
   z-index: 11;
 }
 .featured-area-one h6 {
@@ -498,7 +499,7 @@ button.button {
   background-color: #17195acf;
   z-index: 2;
   transform: rotate(317deg);
-  left: 30px;
+  left: 0;
   top: -7%;
   animation-duration: 1s;
   animation-name: fade-down;
@@ -622,11 +623,11 @@ button.button {
   color: #555;
 }
 /* 7. battery-storage */
-.battery-storage {
+.battery-storage, .battery-storage-two {
   position: relative;
   overflow: hidden;
 }
-.battery-storage:before {
+.battery-storage:before, .battery-storage-two:before {
   content: "";
   position: absolute;
   background-color: black;
@@ -635,10 +636,19 @@ button.button {
   border-radius: 16px;
   opacity: 0.6;
 }
+
+.service-cleaning.row {
+  row-gap: 10px !important;
+}
+
+.battery-storage-two:before {
+  opacity: .3;
+}
+
 .battery-storage-text p {
   color: white;
 }
-.battery-storage img {
+.battery-storage img, .battery-storage-two img {
   border-radius: 16px;
   width: 100%;
 }
@@ -793,7 +803,7 @@ button.button {
   background-color: #fafafa;
   width: 100%;
   height: 100%;
-  opacity: 0.8;
+  opacity: 0.85;
 }
 
 .energix > .container h1 {
@@ -807,6 +817,7 @@ button.button {
 .heading {
   position: relative;
 }
+
 /* 11. use-energix */
 .use-energix {
   position: relative;
@@ -816,7 +827,17 @@ button.button {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  text-align: center;
+  /* padding: 15px; */
 }
+
+.use-energix.three {
+  text-align: justify;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+
 .use-energix h6 {
   color: #666;
 }
@@ -829,8 +850,7 @@ button.button {
 
 .use-energix-grid {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(3,auto);
+  grid-template-columns: repeat(2, 1fr); /* Default: 3 columns */
   gap: 20px;
   text-align: center;
 }
@@ -847,6 +867,13 @@ button.button {
   position: relative;
   z-index: 1;
 }
+
+.use-energix-icon i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .use-energix-icon i:before {
   transform: rotate(100deg);
   width: 110px;
@@ -1159,12 +1186,16 @@ button.button {
   right: 9%;
 }
 .nav-c-slider button:nth-child(2) {
-  top: 20%;
-  right: -6%;
+  /* top: 20%; */
+  top: 37%;
+  /* right: -6%; */
+  right: -8%;
 }
 .nav-c-slider button:nth-child(3) {
-  top: 44%;
-  right: -11%;
+  /* top: 44%; */
+  top: 76%;
+  /* right: -11%; */
+  right: 9%;
 }
 .nav-c-slider button:nth-child(4) {
   top: 68%;

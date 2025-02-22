@@ -20,9 +20,8 @@ const ServiceProducts = ({ data }: propType) => {
           {data?.secondaryInfo && (
             <div className="row align-items-center mb-5">
               <p>{data.secondaryInfo}</p>
-              </div>
-            )
-            }
+            </div>
+          )}
 
           {/* types are render */}
           {data?.types?.map((item, i) => (
@@ -34,15 +33,15 @@ const ServiceProducts = ({ data }: propType) => {
                       <div>
                         <h2>{item.title}</h2>
                         <p>{item.details}</p>
+                        {item?.btnContent && (
+                          <Link
+                            href={item?.btnHref ?? "/services"}
+                            className="button"
+                          >
+                            {item?.btnContent ?? "Read More"}
+                          </Link>
+                        )}
                       </div>
-                      {item?.btnContent && (
-                        <Link
-                          href={item?.btnHref ?? "/services"}
-                          className="button"
-                        >
-                          {item?.btnContent ?? "Read More"}
-                        </Link>
-                      )}
                     </div>
                   </div>
                   <div className="col-lg-6 col-md-12 order-2">
@@ -68,22 +67,21 @@ const ServiceProducts = ({ data }: propType) => {
                       <div>
                         <h2>{item.title}</h2>
                         <p>{item.details}</p>
+                        {item?.btnContent && (
+                          <Link
+                            href={item?.btnHref ?? "/services"}
+                            className="button"
+                          >
+                            {item?.btnContent ?? "Read More"}
+                          </Link>
+                        )}
                       </div>
-                      {item?.btnContent && (
-                        <Link
-                          href={item?.btnHref ?? "/services"}
-                          className="button"
-                        >
-                          {item?.btnContent ?? "Read More"}
-                        </Link>
-                      )}
                     </div>
                   </div>
                 </>
               )}
             </div>
           ))}
-          
         </div>
       </section>
     </>

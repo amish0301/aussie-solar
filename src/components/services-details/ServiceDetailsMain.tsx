@@ -12,12 +12,13 @@ const ServiceDetailsMain = ({ id }: idType) => {
   const data = serviceData?.find((item) => item.id == id);
   const productData = serviceProductData?.find((item) => item.id == id);
   const faqData = data?.faqData;
+  const dontShowThumbnail = data?.id == 2 || data?.id == 3 || data?.id == 4 || data?.id == 5;
 
   return (
     <>
       <BreadCambThree subPage={data?.title ?? ''} title = "Service Details" pages="Services" bgImg={data?.img} />
       <SolarSystemInfo data={data as TserviceData} productData={productData as TServiceProductData}/>
-      {data?.id != 2 && <Thumbnail />}
+      {!dontShowThumbnail && <Thumbnail />}
       <EnergySystem faqData={faqData ?? []}/>
       <GetInTouch />
       <LatestInstallations classOne="two" noBottom=""/> 
