@@ -70,7 +70,7 @@ const SolarSystemInfo = ({ data, productData }: propsType) => {
                     <Link href="/services">
                       <h3>Battery Storage</h3>
                     </Link>
-                    <p>Protecting our environment needn't cost the earth.</p>
+                    <p>Protecting our environment didn&apos;t cost the earth.</p>
                   </div>
                 </div>
                 <div className="row mt-3">

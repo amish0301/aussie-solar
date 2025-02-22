@@ -11,7 +11,7 @@ const DomesticSec = () => {
           <div className="row">
             <div className="heading">
               <h2 className="text-center">
-                Australia's Trusted Solar Energy Experts - Powering a
+                Australia&apos;s Trusted Solar Energy Experts - Powering a
                 Sustainable Future
               </h2>
             </div>
