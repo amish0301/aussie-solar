@@ -41,7 +41,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
               </div>
               <div className="use-energix-grid d-grid">
                 {/* premium quality */}
-                <div className="use-energix">
+                <div className="use-energix two">
                   <div className="use-energix-icon">
                     <i>
                       <FontAwesomeIcon
@@ -58,7 +58,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 </div>
 
                 {/* competitive pricing */}
-                <div className="use-energix">
+                <div className="use-energix two">
                   <div className="use-energix-icon">
                     <i>
                       <Image alt="img" src={savings} width={60} height={60} />
@@ -67,7 +67,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                   <h4>Best Value Pricing</h4>
                 </div>
 
-                <div className="use-energix">
+                <div className="use-energix two">
                   <div className="use-energix-icon">
                     <i>
                       <FontAwesomeIcon
@@ -83,7 +83,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                   <h4>Comprehensive Solar Solutions</h4>
                 </div>
 
-                <div className="use-energix">
+                <div className="use-energix two">
                   <div className="use-energix-icon">
                     <i>
                       <FontAwesomeIcon
@@ -100,7 +100,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 </div>
 
                 {/* solar consultants */}
-                <div className="use-energix">
+                <div className="use-energix two">
                   <div className="use-energix-icon">
                     <i>
                       <FontAwesomeIcon
@@ -117,7 +117,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 </div>
 
                 {/* finance option */}
-                <div className="use-energix">
+                <div className="use-energix two">
                   <div className="use-energix-icon">
                     <i>
                       <SaveMoneyIcon />
