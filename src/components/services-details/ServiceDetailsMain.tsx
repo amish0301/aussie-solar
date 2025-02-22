@@ -17,7 +17,7 @@ const ServiceDetailsMain = ({ id }: idType) => {
     <>
       <BreadCambThree subPage={data?.title ?? ''} title = "Service Details" pages="Services" bgImg={data?.img} />
       <SolarSystemInfo data={data as TserviceData} productData={productData as TServiceProductData}/>
-      <Thumbnail />
+      {data?.id != 2 && <Thumbnail />}
       <EnergySystem faqData={faqData ?? []}/>
       <GetInTouch />
       <LatestInstallations classOne="two" noBottom=""/> 
