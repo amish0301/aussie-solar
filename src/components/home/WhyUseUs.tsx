@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 import TimeSaveIcon from "@/svg/TimeSaveIcon";
@@ -8,75 +8,102 @@ import videoIcon from "../../../public/assets/img/video.jpg";
 import Image, { StaticImageData } from "next/image";
 import ModalVideo from "react-modal-video";
 import Link from "next/link";
-interface propsType{
-  bgImg:StaticImageData | null;
-  propsClass:string;
+interface propsType {
+  bgImg: StaticImageData | null;
+  propsClass: string;
 }
-const WhyUseEnergix = ({bgImg,propsClass}:propsType) => {
+const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
   const [isOpen, setIsOpen] = useState(false);
   const openVideoModal = () => setIsOpen(!isOpen);
   return (
     <>
       <section
         className={`energix gap ${propsClass}`}
-        style={{ backgroundImage: `url(${bgImg ? bgImg.src : ''})` }}
+        style={{ backgroundImage: `url(${bgImg ? bgImg.src : ""})` }}
       >
         <div className="container">
           <div className="row align-items-center">
-            <div className="heading"><h2 className="text-center">Expert In-House Team of Electricians and Solar Specialists with Over 8 Years of Experience</h2></div>
-            <div className="col-xl-5">
+            <div className="heading">
+              <h2 className="text-center">
+                Expert In-House Team of Electricians and Solar Specialists with
+                Over 8 Years of Experience
+              </h2>
+            </div>
+            <div className="col-xl-6">
               <div className="heading">
-                <p>Worldwithout Waste</p>
+                <p>Commitment to a Sustainable Future</p>
                 <div className="line"></div>
-                <h2>Why Use Kangaroo Solars?</h2>
+                <h2>Why Choose Kangaroo Solar?</h2>
               </div>
-              <div className="use-energix d-flex">
-                <div className="use-energix-icon">
-                  <i>
-                    <TimeSaveIcon />
-                  </i>
+              <div className="use-energix-grid d-grid">
+
+                {/* premium quality */}
+                <div className="use-energix">
+                  <div className="use-energix-icon">
+                    <i>
+                      <TimeSaveIcon />
+                    </i>
+                  </div>
+                  <h4>Uncompromised Quality</h4>
                 </div>
-                <div>
-                  <h4>Save Time</h4>
-                  <h6>
-                    Get up to 3 quotes from our selected suppliers by filling in
-                    only 1 form
-                  </h6>
+
+                {/* competitive pricing */}
+                <div className="use-energix">
+                  <div className="use-energix-icon">
+                    <i>
+                      <SaveMoneyIcon />
+                    </i>
+                  </div>
+                  <h4>Best Value Pricing</h4>
                 </div>
-              </div>
-              <div className="use-energix d-flex">
-                <div className="use-energix-icon">
-                  <i>
-                    <SaveMoneyIcon />
-                  </i>
+
+                <div className="use-energix">
+                  <div className="use-energix-icon">
+                    <i>
+                      <SaveMoneyIcon />
+                    </i>
+                  </div>
+                  <h4>Comprehensive Solar Solutions</h4>
                 </div>
-                <div>
-                  <h4>Save Money</h4>
-                  <h6>
-                    Get up to 3 quotes from our selected suppliers by filling in
-                    only 1 form
-                  </h6>
+
+                <div className="use-energix">
+                  <div className="use-energix-icon">
+                    <i>
+                      <ObligationIcon />
+                    </i>
+                  </div>
+                  <h4>Exceptional After-Sales Support</h4>
                 </div>
-              </div>
-              <div className="use-energix mb-0 d-flex">
-                <div className="use-energix-icon">
-                  <i>
-                    <ObligationIcon />
-                  </i>
+
+                {/* solar consultants */}
+                <div className="use-energix">
+                  <div className="use-energix-icon">
+                    <i>
+                      <ObligationIcon />
+                    </i>
+                  </div>
+                  <h4>Trusted Solar Advisors</h4>
                 </div>
-                <div>
-                  <h4>Free and No Obligation</h4>
-                  <h6>
-                    Get up to 3 quotes from our selected suppliers by filling in
-                    only 1 form
-                  </h6>
+
+                {/* finance option */}
+                <div className="use-energix">
+                  <div className="use-energix-icon">
+                    <i>
+                      <ObligationIcon />
+                    </i>
+                  </div>
+                  <h4>Flexible Payment Plans</h4>
                 </div>
               </div>
             </div>
-            <div className="col-xl-7">
+            <div className="col-xl-6">
               <div className="video">
                 <figure>
-                  <Image alt="img" src={videoIcon} style={{ width: "100%", height: "auto" }}/>
+                  <Image
+                    alt="img"
+                    src={videoIcon}
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </figure>
 
                 <button

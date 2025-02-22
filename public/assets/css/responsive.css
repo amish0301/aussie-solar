@@ -1262,6 +1262,10 @@
   .battery-storage img {
    height: 350px;
   }
+  .use-energix-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
   .call-for a {
     font-size: 18px;
   }
