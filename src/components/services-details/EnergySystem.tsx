@@ -25,7 +25,7 @@ const EnergySystem = ({ faqData }: propType) => {
             <br />
             <br />
             We provide an industry leading 5 year warranty on our installation
-            services and workmanship, a 10-12 year manufacturer's warranty on
+            services and workmanship, a 10-12 year manufacturer&apos;s warranty on
             our products, and a lengthy 25 to 30-year performance warranty on
             all of our solar products.
           </p>
