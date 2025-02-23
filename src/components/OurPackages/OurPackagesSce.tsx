@@ -5,6 +5,7 @@ import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Sponsors from "../home/Sponsors";
 import GetInTouch from "../shearedComponents/GetInTouch";
+import { allBrands } from "@/data/service-product-data";
 
 interface propType {
   packages: TserviceData[];
@@ -34,7 +35,7 @@ const OurProjectsSce = ({ packages }: propType) => {
                         </Link>
                         <h6>{item?.kwp}</h6>
                         <span>SYSTEM</span>
-                        <Link href={item?.href ?? "#"}>
+                        <Link href={`/package-details/${item?.id}`}>
                           <i>
                             <ArrowIcon />
                           </i>
@@ -79,7 +80,7 @@ const OurProjectsSce = ({ packages }: propType) => {
               </li>
             </ul> */}
             <GetInTouch />
-            <Sponsors />
+            <Sponsors brands={allBrands} />
           </div>
         </div>
       </section>

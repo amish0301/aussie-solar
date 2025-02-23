@@ -1,12 +1,18 @@
 import { TServiceProductData } from "@/interFace/interFace";
 import Image from "next/image";
 import Link from "next/link";
+import Sponsors from "../home/Sponsors";
 
 interface propType {
   data: TServiceProductData;
 }
 
 const ServiceProducts = ({ data }: propType) => {
+
+
+  // fetching brands data
+  const brands = data?.brands;
+
   return (
     <>
       <section className="services gap">
@@ -83,6 +89,9 @@ const ServiceProducts = ({ data }: propType) => {
             </div>
           ))}
         </div>
+          
+        {/* pass brands data */}
+        <Sponsors brands={brands ?? []} />
       </section>
     </>
   );

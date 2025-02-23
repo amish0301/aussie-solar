@@ -286,15 +286,28 @@ figure {
   transform: translateX(0);
 }
 
-.navbar-dropdown.has-children > a i.fa-angle-right {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 14px;
-    color: #707070;
-    transition: 0.3s;
+.navbar-dropdown {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.navbar-dropdown a {
+  flex-grow: 1;
+  padding-right: 20px;
+  position: relative;
+}
+.navbar-dropdown i.fa-angle-right {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  color: #707070;
+  transition: 0.3s;
+}
+
 .navbar-links
   li.navbar-dropdown:hover
   .dropdown
@@ -372,7 +385,7 @@ figure {
   margin-top: -52px;
   z-index: 444;
   position: relative;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .menu-bar.sticky {
@@ -383,9 +396,8 @@ figure {
   z-index: 1000;
   background: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
-
 
 button.search-btn svg {
   width: 30px;
@@ -623,11 +635,13 @@ button.button {
   color: #555;
 }
 /* 7. battery-storage */
-.battery-storage, .battery-storage-two {
+.battery-storage,
+.battery-storage-two {
   position: relative;
   overflow: hidden;
 }
-.battery-storage:before, .battery-storage-two:before {
+.battery-storage:before,
+.battery-storage-two:before {
   content: "";
   position: absolute;
   background-color: black;
@@ -642,13 +656,14 @@ button.button {
 }
 
 .battery-storage-two:before {
-  opacity: .3;
+  opacity: 0.3;
 }
 
 .battery-storage-text p {
   color: white;
 }
-.battery-storage img, .battery-storage-two img {
+.battery-storage img,
+.battery-storage-two img {
   border-radius: 16px;
   width: 100%;
 }
@@ -1069,7 +1084,7 @@ button.button {
   margin-top: 4px;
 }
 .solar-energy > img {
-    object-fit: cover;
+  object-fit: cover;
 }
 /* 17. solar-energy */
 .solar-energy {
@@ -1207,8 +1222,8 @@ button.button {
 }
 .slider-main-img {
   position: absolute;
-  left: 50%;
-  top: 50%;
+  left: 45%;
+  top: 45%;
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
@@ -1254,7 +1269,7 @@ button.next-slide.nav-active {
   border-radius: 16px;
   padding: 70px;
   position: relative;
-  margin-top: -227px;
+  margin-bottom: 1.2rem;
 }
 .request-quote .heading h2 {
   font-size: 50px;
@@ -1355,13 +1370,15 @@ form.request-quote-form {
 }
 /* 23. sponsors */
 .sponsors-section h2 {
-    text-align: center;
-    font-weight: bold;
-    padding: 1rem 0;
+  text-align: center;
+  font-weight: bold;
+  padding: 1rem 0;
 }
 
 .sponsors-section {
-    margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
 }
 
 /* 24. footer */
@@ -1392,34 +1409,33 @@ footer.one .logo {
 }
 
 .footer-widget h4 {
-    font-size: 18px;
-    margin-bottom: 15px;
-    font-weight: bold;
-  }
-  
-  .footer-widget ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-widget ul li {
-    margin-bottom: 8px;
-  }
+  font-size: 18px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
 
-  .footer-widget h4 {
-    color: #fffffe;
-  }
-  
-  .footer-widget ul li a {
-    color: #ddd;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-widget ul li a:hover {
-    color: #fe5716;
-  }
-  
+.footer-widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-widget ul li {
+  margin-bottom: 8px;
+}
+
+.footer-widget h4 {
+  color: #fffffe;
+}
+
+.footer-widget ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-widget ul li a:hover {
+  color: #fe5716;
+}
 
 /* 25. footer social-media */
 .social-media li a {
@@ -2183,11 +2199,13 @@ ul.link-style li {
   align-items: center;
   padding-bottom: 25px;
 }
-ul.link-style li i, ul.footer-link-style li i {
+ul.link-style li i,
+ul.footer-link-style li i {
   font-size: 14px;
   color: #fe5716;
 }
-ul.link-style li a, ul.footer-link-style li i a {
+ul.link-style li a,
+ul.footer-link-style li i a {
   color: #dadada;
   line-height: 0;
   margin-left: 16px;
@@ -3220,38 +3238,37 @@ input:checked ~ .tab-content {
 }
 
 .price-container {
-    text-align: center;
-    margin-bottom: 15px;
-    padding: 15px;
-    background: linear-gradient(135deg, #f9f9f9, #ffffff);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
-  }
-  
-  .original-price {
-    text-decoration: line-through;
-    color: #888;
-    font-size: 1.3rem;
-    font-weight: 500;
-    margin-right: 10px;
-  }
-  
-  .discounted-price {
-    color: #ff5722;
-    font-size: 2rem;
-    font-weight: 700;
-    padding: 5px 12px;
-    background: rgba(255, 87, 34, 0.1);
-    border-radius: 5px;
-  }
-  
-  .savings-text {
-    font-size: 1.1rem;
-    color: #28a745;
-    font-weight: bold;
-    margin-top: 5px;
-  }
-  
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 15px;
+  background: linear-gradient(135deg, #f9f9f9, #ffffff);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: #ff5722;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 5px 12px;
+  background: rgba(255, 87, 34, 0.1);
+  border-radius: 5px;
+}
+
+.savings-text {
+  font-size: 1.1rem;
+  color: #28a745;
+  font-weight: bold;
+  margin-top: 5px;
+}
 
 /* 65. 404 pag */
 .error-section {
@@ -3632,7 +3649,8 @@ figure {
   background-color: #fff;
   padding: 30px 40px 15px 25px;
   z-index: 1000;
-  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
   transform: translateX(-101%);
   opacity: 0;
   visibility: hidden;
@@ -3829,7 +3847,6 @@ i#nav-icon4 {
 .mobilemenu-logo img {
   margin: auto;
 }
-
 
 .mobile-nav .donation {
   display: flex;

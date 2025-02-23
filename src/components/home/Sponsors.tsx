@@ -1,35 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper";
 import "swiper/css";
 import "swiper/css/autoplay";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-import sponsors1 from "../../../public/assets/img/solar-brands/sungrow.png";
-import sponsors2 from "../../../public/assets/img/solar-brands/goodwe.png";
-import sponsors3 from "../../../public/assets/img/solar-brands/solax.webp";
-import sponsors4 from "../../../public/assets/img/solar-brands/byd.webp";
-import sponsors5 from "../../../public/assets/img/solar-brands/5.png";
-import sponsors6 from "../../../public/assets/img/solar-brands/3.png";
-import sponsors7 from "../../../public/assets/img/solar-brands/6.webp";
-import sponsors8 from "../../../public/assets/img/solar-brands/solax.webp";
+// import sponsors7 from "../../../public/assets/img/solar-brands/6.webp";
+import { brandsType } from "@/interFace/interFace";
 
-const Sponsors = () => {
-  const sponsors = [
-    sponsors1,
-    sponsors2,
-    sponsors3,
-    sponsors4,
-    sponsors5,
-    sponsors6,
-    sponsors7,
-    sponsors8,
-  ];
+interface propType {
+  brands: brandsType[];
+}
 
+const Sponsors = ({ brands }: propType) => {
   return (
-    <div className="container sponsors-section mt-4">
-      <h2>Brands We Offer</h2>
+    <div className="container sponsors-section">
+      <h2>
+        Powering Your Future with the{" "}
+        <strong style={{ color: "#FFA500" }}>Best Solar Brands</strong>
+      </h2>
       <div className="heading d-flex justify-content-center">
         <div className="line "></div>
       </div>
@@ -44,10 +34,20 @@ const Sponsors = () => {
         }}
         speed={4000}
         modules={[Autoplay]}
+        breakpoints={{
+          320: { slidesPerView: 2, spaceBetween: 10 }, // Extra small screens
+          480: { slidesPerView: 2, spaceBetween: 15 }, // Small devices
+          768: { slidesPerView: 4, spaceBetween: 15 }, // Tablets
+          1024: { slidesPerView: 5, spaceBetween: 20 }, // Large devices
+        }}
       >
-        {sponsors.concat(sponsors).map((sponsor, index) => (
+        {brands?.concat(brands).map((sponsor, index) => (
           <SwiperSlide key={index}>
-            <Image src={sponsor} alt="Sponsor" />
+            <Image
+              id={sponsor?.id.toString()}
+              src={sponsor?.img}
+              alt={sponsor?.alt}
+            />
           </SwiperSlide>
         ))}
       </Swiper>

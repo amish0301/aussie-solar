@@ -49,7 +49,7 @@ const HeaderOne = () => {
           <div className="container">
             <div className="top-bar-text">
               <ul className="d-flex">
-                <li>
+                {/* <li>
                   <Link href="https://www.facebook.com/">
                     <i className="fa-brands fa-facebook"></i>facebook
                   </Link>
@@ -63,7 +63,7 @@ const HeaderOne = () => {
                   <Link href="https://www.instagram.com/">
                     <i className="fa-brands fa-instagram"></i>instagram
                   </Link>
-                </li>
+                </li> */}
               </ul>
               <div className="d-flex top-bar-mail">
                 <div className="d-flex align-items-center  me-4">
@@ -109,14 +109,14 @@ const HeaderOne = () => {
                           <li
                             key={subItem.id}
                             className={`navbar-dropdown ${
-                              subItem.hasDropdown ? "has-children" : ""
+                              subItem.hasDropdown ? "" : ""
                             }`}
                           >
-                            <Link href={subItem.link} className="menu-item">
+                            <Link href={subItem.link}>
                               {subItem.label}
-                              {subItem.hasDropdown ? (
-                                <i className="fas fa-angle-right"></i>
-                              ) : null}
+                              {subItem.hasDropdown && (
+                                <i className="fa-solid fa-angle-right"></i>
+                              )}
                             </Link>
                             {subItem.hasDropdown && subItem.subMenu && (
                               <ul className="dropdown inner-dropdown">
@@ -124,7 +124,7 @@ const HeaderOne = () => {
                                   <li key={nestedItem.id}>
                                     <Link
                                       href={nestedItem.link}
-                                      className="menu-item"
+                                      // className="menu-item"
                                     >
                                       {nestedItem.label}
                                     </Link>

@@ -6,6 +6,7 @@ import sectorImg4 from "../../public/assets/img/banners/solar-panel-service-deta
 import sectorImg5 from "../../public/assets/img/banners/solar-panel-service-detail.jpg";
 import sectorImg6 from "../../public/assets/img/banners/solar-panel-service-detail.jpg";
 
+
 export const serviceData: TserviceData[] = [
   {
     id: 1,
@@ -13,6 +14,7 @@ export const serviceData: TserviceData[] = [
     details:
       "We fully utilise the latest corporate renewable energy technology to generate significant energy savings for your business",
     img: sectorImg1,
+    tagLine: "Seamless solar panel installation to power your home or business with clean energy.",
     faqData: [
       {
         question: "What is the installation process for solar panels?",
@@ -48,6 +50,7 @@ export const serviceData: TserviceData[] = [
     details:
       "We fully utilise the latest corporate renewable energy technology to generate significant energy savings for your business",
     img: sectorImg2,
+    tagLine: "Keep your solar panels spotless and maximize efficiency with professional cleaning services.",
     faqData: [
       {
         question: "How often do I need to clean my solar panels?",
@@ -77,6 +80,7 @@ export const serviceData: TserviceData[] = [
     details:
       "We fully utilise the latest corporate renewable energy technology to generate significant energy savings for your business",
     img: sectorImg3,
+    tagLine: "High-performance solar panels designed for maximum energy generation and long-term reliability.",
   },
   {
     id: 4,
@@ -84,6 +88,7 @@ export const serviceData: TserviceData[] = [
     details:
       "We fully utilise the latest corporate renewable energy technology to generate significant energy savings for your business",
     img: sectorImg4,
+    tagLine: "Store solar energy efficiently and power your home even when the sun isn't shining.",
     faqData: [
       {
         question: "What is a solar inverter?",
@@ -118,6 +123,7 @@ export const serviceData: TserviceData[] = [
     details:
       "We fully utilise the latest corporate renewable energy technology to generate significant energy savings for your business",
     img: sectorImg5,
+    tagLine: "Advanced solar inverters that convert sunlight into usable electricity for your home or business.",
     faqData: [
       {
         question: "What is a solar inverter?",
@@ -152,6 +158,7 @@ export const serviceData: TserviceData[] = [
     details:
       "Monitor energy output and detect issues early to maintain optimal performance for your solar panels and installation.",
     img: sectorImg6,
+    tagLine: "Real-time Wi-Fi monitoring to track solar energy usage and optimize system performance.",
     faqData: [
       {
         question:

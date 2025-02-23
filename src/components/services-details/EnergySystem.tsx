@@ -25,14 +25,14 @@ const EnergySystem = ({ faqData }: propType) => {
             <br />
             <br />
             We provide an industry leading 5 year warranty on our installation
-            services and workmanship, a 10-12 year manufacturer’s warranty on
+            services and workmanship, a 10-12 year manufacturer's warranty on
             our products, and a lengthy 25 to 30-year performance warranty on
             all of our solar products.
           </p>
 
           <h5>Comprehensive Solar Panel Installation by Kangaroo</h5>
           <p className="mb-4">
-            At Kangaroo Company, we specialize in delivering top-notch solar
+            At Kangaroo Solar, we specialize in delivering top-notch solar
             panel installation services for residential and commercial spaces.
             Our team of experts ensures a seamless and efficient setup, helping
             you harness the power of the sun to reduce energy costs and promote
@@ -131,14 +131,14 @@ const EnergySystem = ({ faqData }: propType) => {
                   </i>
                 </div>
                 <div>
-                  <a href="/service-details/4">
+                  <a href="/services-details/4">
                     <h4>Maximize Your Energy Efficiency</h4>
                   </a>
                   <p>
                     Store excess solar energy efficiently, reduce grid reliance,
                     and ensure uninterrupted power supply anytime.
                   </p>
-                  <a href={"/services"} className="button">
+                  <a href={"/services-details/4"} className="button">
                     {" "}
                     Learn More{" "}
                     <FontAwesomeIcon
@@ -198,7 +198,7 @@ const EnergySystem = ({ faqData }: propType) => {
                     Switch to solar for reduced electricity costs, government
                     incentives, and long-term financial sustainability benefits.
                   </p>
-                  <a href={"/packages/commercial-solar"} className="button">
+                  <a href={"/contact"} className="button">
                     {" "}
                     Get a Free Consultation{" "}
                     <FontAwesomeIcon

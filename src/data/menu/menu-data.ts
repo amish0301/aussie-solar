@@ -105,7 +105,7 @@ const navMenuData: MenuItem[] = [
           },
           {
             id: 16.5,
-            label: "100kW Solar System",  
+            label: "100kW Solar System",
             link: "/package-details/204",
           },
           { id: 16.6, label: "Custom Size Solution", link: "/contact" },
@@ -124,7 +124,7 @@ const navMenuData: MenuItem[] = [
       { id: 9, label: "FAQs", link: "/faq" },
       // { id: 10, label: "projects details", link: "/projects-details" },
       // { id: 11, label: "support", link: "/support" },
-      { id: 12, label: "pricing plan", link: "/pricing-plan" },
+      { id: 12, label: "Payment Plans", link: "/payment-options" },
       { id: 14, label: "Gallery", link: "/gallery" },
       { id: 15, label: "Contact Us", link: "/contact" },
     ],

@@ -20,12 +20,12 @@ const SustainableEnergy = () => {
       <section className="services gap no-bottom">
         <div className="container">
           <div className="heading">
-            <p>process and the solutions we can provide</p>
+            <p>Our Process & Tailored Energy Solutions</p>
             <div className="line"></div>
-            <h2>Smart & sustainable energy consumption</h2>
+            <h2>Premium Solar Solutions for a Brighter Future</h2>
             <span>
-              Powerful & intelligent energy storage solutions,helping you
-              maximize your energy potential.
+            From seamless solar panel installation to intelligent energy storage and 
+            real-time monitoring, we empower you with cost-effective and eco-friendly energy solutions.
             </span>
           </div>
 

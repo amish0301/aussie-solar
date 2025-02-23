@@ -55,10 +55,18 @@ export type TprojectData = {
   // href?: string;
 };
 
+export type brandsType = {
+  id: number;
+  img: StaticImageData;
+  alt: string;
+}
+
+
 export type TserviceData = {
   id: number;
   title: string;
   title2?: string;
+  tagLine?: string;
   details: string;
   img?: StaticImageData;
   kwp?: string;
@@ -88,10 +96,10 @@ export type TServiceProductData = {
   primaryTitle: string;
   primaryInfo: string;
   
-  // optional parameters
   secondaryTitle?: string;
   secondaryInfo?: string;
   types?: productType[];
+  brands?: brandsType[];
 }
 
 // Service Product,

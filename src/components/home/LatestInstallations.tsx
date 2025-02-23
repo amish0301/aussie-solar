@@ -37,7 +37,7 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
       id: 4,
       img: projectFour,
       title: "Solar Panel Installation",
-      // kwp: "250.43",
+      kwp: "Solar Panel Installation",
       icon: <EvenoddIcon />,
     },
     {

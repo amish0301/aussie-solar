@@ -1,16 +1,14 @@
-import React from "react";
-import HeroSlider from "./HeroSlider";
-import DomesticSec from "./DomesticSec";
-import SaveEnegryGallarySec from "./SaveEnegryGallarySec";
-import LatestInstallations from "./LatestInstallations";
-import WhyUse from "./WhyUseUs";
-import ProcessSolutionsSec from "./ProcessSolutionsSec";
-import TestimonialsSec from "./TestimonialsSec";
-import PricingPlan from "./PricingPlan";
-import RequestAQuote from "./RequestAQuote";
-import HomeBlogSec from "./HomeBlogSec";
-import Sponsors from "./Sponsors";
+import { allBrands } from "@/data/service-product-data";
 import bgImg from "../../../public/assets/img/whyus-bg.jpeg";
+import DomesticSec from "./DomesticSec";
+import HeroSlider from "./HeroSlider";
+import LatestInstallations from "./LatestInstallations";
+import ProcessSolutionsSec from "./ProcessSolutionsSec";
+import RequestAQuote from "./RequestAQuote";
+import SaveEnegryGallarySec from "./SaveEnegryGallarySec";
+import Sponsors from "./Sponsors";
+import TestimonialsSec from "./TestimonialsSec";
+import WhyUse from "./WhyUseUs";
 
 const HomeMain = () => {
   return (
@@ -20,10 +18,10 @@ const HomeMain = () => {
       <SaveEnegryGallarySec />
       <LatestInstallations classOne="" noBottom="no-bottom"/>
       <WhyUse bgImg={bgImg} propsClass=''/>
-      <PricingPlan />
-      <RequestAQuote noTop="no-top" quoteClass=""/>
-      <Sponsors />
+      {/* <PricingPlan /> */}
+      <Sponsors brands={allBrands ?? []} />
       <ProcessSolutionsSec propsClass="gap"/>
+      <RequestAQuote noTop="no-top" quoteClass=""/>
       <TestimonialsSec propsClass="no-top" />
       {/* <HomeBlogSec /> */}
     </>

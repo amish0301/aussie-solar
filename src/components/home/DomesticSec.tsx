@@ -20,10 +20,9 @@ const DomesticSec = () => {
                 <i>
                   <DomesticSvgIcon />
                 </i>
-                <h3>Domestic Installation</h3>
+                <h3>Residential Installation</h3>
                 <p>
-                  Solar PV, Battery Storage, Heat Recovery Ventilation Systems &
-                  EV Charging
+                Cost-effective residential solar packages with high-quality panel installation, battery storage, and efficient energy management solutions.  
                 </p>
                 <Link href="/packages/residential-solar" className="button">
                   Read More
@@ -37,8 +36,7 @@ const DomesticSec = () => {
                 </i>
                 <h3>Commercial Installation</h3>
                 <p>
-                  Solar PV, Battery Storage, Heat Recovery Ventilation Systems &
-                  EV Charging
+                Scalable and high-performance commercial solar installations designed to reduce energy costs, enhance efficiency, and ensure long-term sustainability.  
                 </p>
                 <Link href="/packages/commercial-solar" className="button">
                   Read More

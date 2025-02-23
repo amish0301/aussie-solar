@@ -3,10 +3,11 @@ import bgImgOptional from "../../../public/assets/img/banners/solar-panel-servic
 import { StaticImageData } from "next/image";
 interface propsType {
   title: string;
+  bannerTagLine?: string;
   bgImg?: StaticImageData;
 }
 
-const BreadCamb = ({ title, bgImg }: propsType) => {
+const BreadCamb = ({ title, bgImg, bannerTagLine }: propsType) => {
   return (
     <>
       <section
@@ -17,8 +18,7 @@ const BreadCamb = ({ title, bgImg }: propsType) => {
           <div className="banner-text">
             <h2>{title}</h2>
             <p>
-              Practical renewable energy technology thatreduces costs and helps
-              the environment
+             {bannerTagLine ?? 'Comprehensive Solar Solutions for Every Need - From Installation to Monitoring, We Power Your Future with Excellence.'}
             </p>
             <ul className="page-breadcrumb">
               <li>

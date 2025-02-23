@@ -27,8 +27,8 @@ const SolarSystemInfo = ({ data }: propsType) => {
             <div className="col-lg-5">
               <ul className="information">
                 <li>
-                  <span>CLIENT</span>
-                  <h6>Residential & Commercial Properties</h6>
+                  <span>SOLAR BRANDS</span>
+                  <h6>Jinko, Longi, JaSolar....</h6>
                 </li>
                 <li>
                   <span>TECHNOLOGY</span>
@@ -47,8 +47,8 @@ const SolarSystemInfo = ({ data }: propsType) => {
                   <h6>25 Years Performance Guarantee</h6>
                 </li>
                 <li>
-                  <span>BATTERY COMPATIBILITY</span>
-                  <h6>Supports Battery Storage Integration</h6>
+                  <span>BATTERY & INVERTERS</span>
+                  <h6>AlphaESS, Tesla Powerwall & Fronius, Sungrow, goodwe, Solis....</h6>
                 </li>
               </ul>
             </div>

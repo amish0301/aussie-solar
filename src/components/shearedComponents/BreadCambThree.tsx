@@ -5,10 +5,11 @@ interface propsType {
   pages: string;
   subPage: string;
   redirect?: string;
-  bgImg?: StaticImageData
+  bgImg?: StaticImageData;
+  tagLine?: string;
 }
 
-const BreadCambThree = ({ title, pages, subPage, bgImg, redirect }: propsType) => {
+const BreadCambThree = ({ title, pages, subPage, bgImg, redirect, tagLine }: propsType) => {
   return (
     <>
       <section
@@ -19,8 +20,7 @@ const BreadCambThree = ({ title, pages, subPage, bgImg, redirect }: propsType) =
           <div className="banner-text">
             <h2>{title}</h2>
             <p>
-              Practical renewable energy technology that reduces costs and helps
-              the environment
+              {tagLine ?? "Comprehensive Solar Solutions for Every Need - From Installation to Monitoring, We Power Your Future with Excellence."}
             </p>
             <ul className="page-breadcrumb">
               <li>
