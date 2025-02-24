@@ -8,9 +8,9 @@ import sp6 from '../../public/assets/img/cleaning-1.jpg'
 import sp1 from '../../public/assets/img/solar-panel.jpeg'
 import teslaBat from '../../public/assets/img/solar-battery-testla.jpg'
 
-import spt1 from '../../public/assets/img/string-inverter.png'
+import spt1 from '../../public/assets/img/solis-inverter.jpg'
 import spt2 from '../../public/assets/img/micro-inverter.webp'
-import spt3 from '../../public/assets/img/growatt.jpg'
+import spt3 from '../../public/assets/img/goodwe-inverter.png'
 import spt31 from '../../public/assets/img/battery-2.png'
 
 
@@ -25,6 +25,7 @@ import tesla from '../../public/assets/img/solar-brands/tesla.png';
 import alphaEss from '../../public/assets/img/solar-brands/alpha-ess.png';
 import swatten from '../../public/assets/img/solar-brands/swatten.webp';
 import foxess from '../../public/assets/img/solar-brands/foxEss.png'
+
 
 
 // panel brands
@@ -265,8 +266,8 @@ export const serviceProductData: TServiceProductData[] = [
 export const allBrands = [
     {
         id: 1,
-        img: jaSolar,
-        alt: 'jaSolar'
+        img: jinko,
+        alt: 'jinko'
     },
     {
         id: 2,

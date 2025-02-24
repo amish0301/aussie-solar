@@ -124,7 +124,7 @@ const navMenuData: MenuItem[] = [
       { id: 9, label: "FAQs", link: "/faq" },
       // { id: 10, label: "projects details", link: "/projects-details" },
       // { id: 11, label: "support", link: "/support" },
-      { id: 12, label: "Payment Plans", link: "/payment" },
+      { id: 12, label: "Payment", link: "/payment" },
       { id: 14, label: "Gallery", link: "/gallery" },
       { id: 15, label: "Contact Us", link: "/contact" },
     ],
