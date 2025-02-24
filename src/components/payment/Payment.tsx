@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const Payment = () => {
   const handlePayment = async () => {
     window.open("https://buy.stripe.com/test_cN2bLb4hogSU3dK9AC", "_blank");
@@ -20,24 +22,24 @@ const Payment = () => {
               {/* Payment Description */}
               <p className="text-muted">
                 Pay securely using your debit or credit card. You will be
-                redirected to Stripe's secure payment page.
+                redirected to Stripe&apos;s secure payment page.
               </p>
 
               {/* Card Icons (Using Online URLs) */}
               <div className="mb-3">
-                <img
+                <Image
                   src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
                   alt="Visa"
                   className="mx-1"
                   width="60"
                 />
-                <img
+                <Image
                   src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg"
                   alt="Mastercard"
                   className="mx-1"
                   width="60"
                 />
-                <img
+                <Image
                   src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
                   alt="PayPal"
                   className="mx-1"
