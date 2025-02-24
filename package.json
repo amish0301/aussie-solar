@@ -13,6 +13,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.7.2",
     "@fortawesome/react-fontawesome": "^0.2.2",
     "@popperjs/core": "^2.11.8",
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.6.0",
     "bootstrap": "5.2.2",
     "next": "14.0.3",
     "next-google-fonts": "^2.2.0",
@@ -28,6 +30,7 @@
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.63.4",
     "sonner": "^1.4.41",
+    "stripe": "^17.6.0",
     "swiper": "^9.4.1",
     "wowjs": "^1.1.3"
   },

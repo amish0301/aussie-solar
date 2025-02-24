@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import savings from "../../../public/assets/img/savings.svg";
-import videoIcon from "../../../public/assets/img/whyus-video.gif";
+import videoIcon from "../../../public/assets/residential_gif.gif";
 interface propsType {
   bgImg: StaticImageData | null;
   propsClass: string;

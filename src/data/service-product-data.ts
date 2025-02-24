@@ -24,6 +24,7 @@ import saj from '../../public/assets/img/solar-brands/saj.webp';
 import tesla from '../../public/assets/img/solar-brands/tesla.png';
 import alphaEss from '../../public/assets/img/solar-brands/alpha-ess.png';
 import swatten from '../../public/assets/img/solar-brands/swatten.webp';
+import foxess from '../../public/assets/img/solar-brands/foxEss.png'
 
 
 // panel brands
@@ -234,8 +235,8 @@ export const serviceProductData: TServiceProductData[] = [
             // ********* didnt found ************
             {
                 id: 7,
-                img: growwat,
-                alt: "FocEss"
+                img: foxess,
+                alt: "FoxEss"
             }
         ]
     },
@@ -307,4 +308,9 @@ export const allBrands = [
         img: swatten,
         alt: 'swatten'
     },
+    {
+        id: 10,
+        img: foxess,
+        alt: 'foxess'
+    }
 ]

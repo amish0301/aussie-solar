@@ -636,12 +636,13 @@ button.button {
 }
 /* 7. battery-storage */
 .battery-storage,
-.battery-storage-two {
+.battery-storage.two {
   position: relative;
   overflow: hidden;
 }
+
 .battery-storage:before,
-.battery-storage-two:before {
+.battery-storage.two:before {
   content: "";
   position: absolute;
   background-color: black;
@@ -3469,7 +3470,7 @@ form.contact-form label {
 .services-img:hover img,
 .our-blog-text:hover .our-blog-text-img img,
 .recent-projects-img:hover img,
-.video:hover img,
+/* .video:hover img, */
 .sectors:hover img,
 .blog-text:hover .blog-img img,
 .energize-society:hover img {

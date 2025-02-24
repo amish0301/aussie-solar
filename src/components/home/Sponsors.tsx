@@ -25,7 +25,7 @@ const Sponsors = ({ brands }: propType) => {
       </div>
       <Swiper
         slidesPerView={5}
-        spaceBetween={20}
+        spaceBetween={25}
         loop={true}
         autoplay={{
           delay: 0,
@@ -37,8 +37,8 @@ const Sponsors = ({ brands }: propType) => {
         breakpoints={{
           320: { slidesPerView: 2, spaceBetween: 10 }, // Extra small screens
           480: { slidesPerView: 2, spaceBetween: 15 }, // Small devices
-          768: { slidesPerView: 4, spaceBetween: 15 }, // Tablets
-          1024: { slidesPerView: 5, spaceBetween: 20 }, // Large devices
+          768: { slidesPerView: 4, spaceBetween: 20 }, // Tablets
+          1024: { slidesPerView: 5, spaceBetween: 25 }, // Large devices
         }}
       >
         {brands?.concat(brands).map((sponsor, index) => (

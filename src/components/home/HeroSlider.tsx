@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css/bundle";
 import sliderImg1 from "../../../public/assets/img/featured-area.jpg";
-import sliderImg2 from "../../../public/assets/img/featured-area-2.jpg";
+import sliderImg2 from "../../../public/assets/img/tesla-battery.jpg";
 import sliderImg3 from "../../../public/assets/img/featured-area-3.jpg";
 import sliderImg4 from "../../../public/assets/img/featured-area-4.jpg";
 import useGlobalContext from "@/hooks/use-context";

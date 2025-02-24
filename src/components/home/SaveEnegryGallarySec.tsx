@@ -9,7 +9,7 @@ import Image from "next/image";
 import CountUpContent from "@/elements/counter/CountUpContent";
 import WifiMonitoring from "@/svg/WifiMonitoring";
 import Link from "next/link";
-import battaryStorage from "../../../public/assets/img/battery-storage-1.jpg";
+import battaryStorage from "../../../public/assets/img/tesla-battery-2.jpg";
 import battaryStorage2 from "../../../public/assets/img/battery-storage-2.jpg";
 import battaryStorage3 from "../../../public/assets/img/battery-storage-3.jpeg";
 import battaryStorage4 from "../../../public/assets/img/battery-storage-4.jpeg";
@@ -72,7 +72,7 @@ const SaveEnegryGallarySec = () => {
                     <div className="battery-storage-text">
                       <Link href="/services">
                         {" "}
-                        <h3>Inverter</h3>
+                        <h3>Solar Inverters</h3>
                       </Link>
                       <p>Protecting our environment.</p>
                     </div>
@@ -103,7 +103,7 @@ const SaveEnegryGallarySec = () => {
                 <Image
                   alt="chris-hemsworth"
                   src={battaryStorage4}
-                  style={{ width: "100%", height: "674px" }}
+                  style={{ width: "100%", height: "714px" }}
                 />
                 <i>
                   <RenewAbleEnergy />

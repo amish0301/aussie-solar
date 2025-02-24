@@ -6,7 +6,7 @@ import SolarPanelIcon from "@/svg/SolarPanelIcon";
 import WifiMonitoring from "@/svg/WifiMonitoring";
 import Image from "next/image";
 import Link from "next/link";
-import serviceFour from "../../../public/assets/img/battery-1.jpeg";
+import serviceFour from "../../../public/assets/img/tesla-battery-2.jpg";
 import serviceTwo from "../../../public/assets/img/cleaning-1.jpg";
 import serviceOne from "../../../public/assets/img/battery-storage-4.jpeg";
 // import serviceFive from "../../../public/assets/img/inverter-1.jpeg";

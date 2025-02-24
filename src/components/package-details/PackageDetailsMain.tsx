@@ -18,6 +18,9 @@ const PackageDetailsMain = ({ id }: idType) => {
     .flatMap((category) => category.packages)
     .find((pkg) => pkg.id === numericId);
 
+  // is residential page check
+  const isResidentialPackage = (numericId >= 101 && numericId <= 105);
+
   return (
     <>
       <BreadCambThree
@@ -30,7 +33,7 @@ const PackageDetailsMain = ({ id }: idType) => {
       {data ? (
         <>
           <SolarSystemInfo data={data as TserviceData} />
-          <Thumbnail />
+          <Thumbnail isResidentialPackage={isResidentialPackage}/>
           <EnergySystem data={data as TserviceData}  />
           <LatestInstallations classOne="two" noBottom="" />
         </>
