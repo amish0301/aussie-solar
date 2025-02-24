@@ -14,6 +14,11 @@ test.ts
 /.next/
 /out/
 
+# custom
+/src/app/api
+/src/app/payment
+/src/components/payment
+
 # production
 /build
 
