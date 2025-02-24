@@ -7,6 +7,12 @@ import img10 from "../../public/assets/img/packages/10kw.webp";
 import img13 from "../../public/assets/img/packages/13.2kw.jpg";
 import custom_sol from "../../public/assets/img/packages/custom_solution.png";
 
+// commercial img load
+import img14 from '../../public/assets/img/battery-storage-4.jpeg';
+import img15 from '../../public/assets/img/solar-panel.jpeg';
+import img16 from '../../public/assets/img/installation-2.jpeg';
+import img17 from '../../public/assets/img/battery-storage-3.jpeg';
+
 export const packagesData: packagesType[] = [
   {
     id: 1,
@@ -109,7 +115,7 @@ export const packagesData: packagesType[] = [
         title: "20kW Solar Panel System",
         title2: "Begin Your Journey with a 20kW Solar Panel System",
         details: "Commercial Package",
-        img: img6,
+        img: img14,
         primaryInfo1: "Kangaroo takes pride in its strong reputation as a trusted leader in commercial solar solutions across Australia. If you're looking for a cost-effective 30KW solar system without compromising on quality, we would love to discuss your energy needs. With our 30-Day Price Beat Warranty, we ensure the most competitive pricing on high-performance commercial solar systems in Australia.",
         primaryInfo2: "Our 20kW solar power system is a preferred choice for businesses across various industries, helping them significantly reduce energy expenses while promoting sustainability. Designed for efficiency and reliability, this advanced panel and inverter combination delivers ample power to support the operational needs of most commercial establishments. The 20kW package serves as the perfect midpoint solution between smaller 13.2kW systems and our heavy-duty 50KW - 100KW commercial solar installations, making it ideal for businesses looking to scale their renewable energy capabilities.",
         secondaryTitle1: "What is a Tier 1 Solar Panel System?",
@@ -124,7 +130,7 @@ export const packagesData: packagesType[] = [
         title: "30kW Solar Panel System",
         title2: "Begin Your Journey with a 30kW Solar Panel System",
         details: "Commercial Package",
-        img: img7,
+        img: img15,
         primaryInfo1: `Kangaroo takes pride in its strong reputation as a trusted leader in commercial solar solutions across Australia. If you're looking for a cost-effective 30KW solar system without compromising on quality, we would love to discuss your energy needs. With our 30-Day Price Beat Warranty, we ensure the most competitive pricing on high-performance commercial solar systems in Australia.`,
         primaryInfo2: `Our 30kW solar power system is a preferred choice for businesses across various industries, helping them significantly reduce energy expenses while promoting sustainability. Designed for efficiency and reliability, this advanced panel and inverter combination delivers ample power to support the operational needs of most commercial establishments. The 30kW package serves as the perfect midpoint solution between smaller 13.2kW systems and our heavy-duty 50KW - 100KW commercial solar installations, making it ideal for businesses looking to scale their renewable energy capabilities.`,
         secondaryTitle1: "What is a Tier 1 Solar Panel System?",
@@ -139,7 +145,7 @@ export const packagesData: packagesType[] = [
         title: "50kW Solar Panel System",
         title2: "Begin Your Journey with a 50kW Solar Panel System",
         details: "Commercial Package",
-        img: img10,
+        img: img16,
         primaryInfo1: `Kangaroo takes pride in its strong reputation as a trusted leader in commercial solar solutions across Australia. If you're looking for a cost-effective 30KW solar system without compromising on quality, we would love to discuss your energy needs. With our 30-Day Price Beat Warranty, we ensure the most competitive pricing on high-performance commercial solar systems in Australia.`,
         primaryInfo2: `Our 50kW solar power system is a preferred choice for businesses across various industries, helping them significantly reduce energy expenses while promoting sustainability. Designed for efficiency and reliability, this advanced panel and inverter combination delivers ample power to support the operational needs of most commercial establishments. The 50kW package serves as the perfect midpoint solution between smaller 13.2KW systems and our heavy-duty 50KW - 100KW commercial solar installations, making it ideal for businesses looking to scale their renewable energy capabilities.`,
         secondaryTitle1: "What is a Tier 1 Solar Panel System?",
@@ -154,7 +160,7 @@ export const packagesData: packagesType[] = [
         title: "100kW Solar Panel System",
         details: "Commercial Package",
         title2: "Begin Your Journey with a 100kW Solar Panel System",
-        img: img13,
+        img: img17,
         primaryInfo1: `Kangaroo takes pride in its strong reputation as a trusted leader in commercial solar solutions across Australia. If you're looking for a cost-effective 30KW solar system without compromising on quality, we would love to discuss your energy needs. With our 30-Day Price Beat Warranty, we ensure the most competitive pricing on high-performance commercial solar systems in Australia.`,
         primaryInfo2: `Our 100KW solar power system is a preferred choice for businesses across various industries, helping them significantly reduce energy expenses while promoting sustainability. Designed for efficiency and reliability, this advanced panel and inverter combination delivers ample power to support the operational needs of most commercial establishments. The 100kW package serves as the perfect midpoint solution between smaller 13.2kW systems and our heavy-duty 50KW - 100KW commercial solar installations, making it ideal for businesses looking to scale their renewable energy capabilities.`,
         secondaryTitle1: "What is a Tier 1 Solar Panel System?",
