@@ -1,5 +1,5 @@
 import LetterBox from "@/components/home-two/LetterBox";
-import Payment from "@/components/payment/Payment";
+// import Payment from "@/components/payment/Payment";
 import MobileSearch from "@/components/shearedComponents/MobileSearch";
 import Wrapper from "@/layout/DefaultWrapper";
 
@@ -8,7 +8,7 @@ const page = () => {
     <>
       <Wrapper>
         <main>
-          <Payment />
+          {/* <Payment /> */}
           <LetterBox/>
         </main>
       </Wrapper>
