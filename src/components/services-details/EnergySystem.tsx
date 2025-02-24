@@ -24,18 +24,18 @@ const EnergySystem = ({ faqData }: propType) => {
             our solar products and services.
             <br />
             <br />
-            We provide an industry leading 5 year warranty on our installation
-            services and workmanship, a 10-12 year manufacturer&apos;s warranty on
+            We provide an industry leading 10 year warranty on our installation
+            services and workmanship, a 25 year manufacturer&apos;s warranty on
             our products, and a lengthy 25 to 30-year performance warranty on
             all of our solar products.
           </p>
 
           <h5>Comprehensive Solar Panel Installation by Kangaroo</h5>
           <p className="mb-4">
-            At Kangaroo Solar, we specialize in delivering top-notch solar
-            panel installation services for residential and commercial spaces.
-            Our team of experts ensures a seamless and efficient setup, helping
-            you harness the power of the sun to reduce energy costs and promote
+            At Kangaroo Solar, we specialize in delivering top-notch solar panel
+            installation services for residential and commercial spaces. Our
+            team of experts ensures a seamless and efficient setup, helping you
+            harness the power of the sun to reduce energy costs and promote
             sustainability. With a focus on quality and customer satisfaction,
             Kangaroo Company is your trusted partner in the transition to clean
             energy.

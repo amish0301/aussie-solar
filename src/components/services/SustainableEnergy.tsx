@@ -6,7 +6,7 @@ import SolarPanelIcon from "@/svg/SolarPanelIcon";
 import WifiMonitoring from "@/svg/WifiMonitoring";
 import Image from "next/image";
 import Link from "next/link";
-import serviceFour from "../../../public/assets/img/tesla-battery-2.jpg";
+import serviceFour from "../../../public/assets/img/battery-storage-5.png";
 import serviceTwo from "../../../public/assets/img/cleaning-1.jpg";
 import serviceOne from "../../../public/assets/img/battery-storage-4.jpeg";
 // import serviceFive from "../../../public/assets/img/inverter-1.jpeg";
@@ -24,8 +24,9 @@ const SustainableEnergy = () => {
             <div className="line"></div>
             <h2>Premium Solar Solutions for a Brighter Future</h2>
             <span>
-            From seamless solar panel installation to intelligent energy storage and 
-            real-time monitoring, we empower you with cost-effective and eco-friendly energy solutions.
+              From seamless solar panel installation to intelligent energy
+              storage and real-time monitoring, we empower you with
+              cost-effective and eco-friendly energy solutions.
             </span>
           </div>
 

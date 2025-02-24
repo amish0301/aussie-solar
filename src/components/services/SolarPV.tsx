@@ -18,11 +18,13 @@ const SolarPV = () => {
             <div className="col-lg-6">
               <div className="renewable-group">
                 <p>
-                  leading renewable energy solutions provider that is
-                  revolutionising and redefining the way sustainable energy
-                  sources are harnessed across the world. Present in 18
-                  countries across Asia, Australia, Europe Africa and the
-                  Americas, Veztaz is powering.
+                  PV solar is generally worth it due to significant cost savings
+                  on electricity bills, environmental benefits from clean
+                  energy, potential property value increase, and low
+                  maintenance. It’s a good investment, especially with
+                  government incentives. Key considerations include sunlight
+                  availability, energy usage, installation costs, and local
+                  subsidies.
                 </p>
               </div>
             </div>
@@ -46,7 +48,7 @@ const SolarPV = () => {
                     </li>
                     <li className="pb-0">
                       <Image alt="check-mark" src={checkImg} />
-                      25 Year Panel Warranty
+                      25 - 30 Year Panel Warranty
                     </li>
                   </ul>
                 </div>
@@ -55,7 +57,7 @@ const SolarPV = () => {
             <div className="col-xl-4 col-lg-6">
               <div className="solar-pv">
                 <i>
-                  <CommercialSolarEnergyTwoIcon/>
+                  <CommercialSolarEnergyTwoIcon />
                 </i>
                 <h4>Commercial solar energy</h4>
                 <div className="team-info">
@@ -70,7 +72,7 @@ const SolarPV = () => {
                     </li>
                     <li className="pb-0">
                       <Image alt="check-mark" src={checkImg} />
-                      25 Year Panel Warranty
+                      25 - 30 Year Panel Warranty
                     </li>
                   </ul>
                 </div>
@@ -79,7 +81,7 @@ const SolarPV = () => {
             <div className="col-xl-4 col-lg-6">
               <div className="solar-pv">
                 <i>
-                  <IndustrialSolarEnergy/>
+                  <IndustrialSolarEnergy />
                 </i>
                 <h4>Industrial solar energy</h4>
                 <div className="team-info">
@@ -94,7 +96,7 @@ const SolarPV = () => {
                     </li>
                     <li className="pb-0">
                       <Image alt="check-mark" src={checkImg} />
-                      25 Year Panel Warranty
+                      25 - 30 Year Panel Warranty
                     </li>
                   </ul>
                 </div>
