@@ -23,7 +23,7 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
       id: 1,
       img: projectOne,
       title: "Explore our Residential Package",
-      kwp: "6.6kW - 19.36kW",
+      kwp: "6.6kW - 39.6kW",
       icon: <EvenoddIcon />,
     },
     {
@@ -133,7 +133,7 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
                           <h5>{item?.title}</h5>
                         </Link>
                         <h6>{item?.kwp}</h6>
-                        {item?.kwp && <span>KWP SYSTEM</span>}
+                        {item?.kwp && <span>KWP Package</span>}
                         <Link
                           href={
                             item.id === 1

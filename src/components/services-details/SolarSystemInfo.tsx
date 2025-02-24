@@ -150,7 +150,7 @@ const SolarSystemInfo = ({ data, productData }: propsType) => {
             <div className="col-lg-5">
               <h2 className="mb-3">The Kangaroo Solar Difference</h2>
               <p>
-              We believe in solar power and do everything we can to get this wonderful technology into the hands of more people. Along with our reliable products, expert installation services, and advanced consumer protections, we also offer a variety of flexible finance solutions, a 10% price beat guarantee, and no lock-in contracts. If you’re looking for solar panel products and installation you can trust, from one of the biggest names in the country, please give us a call.
+              We believe in solar power and do everything we can to get this wonderful technology into the hands of more people. Along with our reliable products, expert installation services, and advanced consumer protections, we also offer a variety of flexible finance solutions, a 10% price beat Warranty, and no lock-in contracts. If you’re looking for solar panel products and installation you can trust, from one of the biggest names in the country, please give us a call.
               </p>
             </div>
           </div>

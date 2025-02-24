@@ -27,7 +27,7 @@ const Payment = () => {
 
               {/* Card Icons (Using Online URLs) */}
               <div className="mb-3">
-                <Image
+                {/* <Image
                   src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
                   alt="Visa"
                   className="mx-1"
@@ -44,7 +44,7 @@ const Payment = () => {
                   alt="PayPal"
                   className="mx-1"
                   width="60"
-                />
+                /> */}
               </div>
 
               {/* Pay Button */}

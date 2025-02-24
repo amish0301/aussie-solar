@@ -21,14 +21,14 @@ const HeroSlider = () => {
       bgImg: sliderImg1,
       title: "Energize Society Reliable Energy",
       subTitle:
-        "Practical renewable energy technology thatreduces costs and helps the environment",
+        "Practical renewable energy technology that reduces costs and helps the environment",
     },
     {
       id: 2,
       bgImg: sliderImg2,
       title: "Energize Society Reliable Energy",
       subTitle:
-        "Practical renewable energy technology thatreduces costs and helps the environment",
+        "Practical renewable energy technology that reduces costs and helps the environment",
     },
   ];
   return (

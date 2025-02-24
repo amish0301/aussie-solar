@@ -16,7 +16,7 @@ const BreadCambDefault = ({
           <div className="banner-text">
             <h2>{title}</h2>
             <p>
-              Practical renewable energy technology thatreduces costs and helps
+              Practical renewable energy technology that reduces costs and helps
               the environment
             </p>
             <ul className="page-breadcrumb">

@@ -6,7 +6,7 @@ import CredentialsIcon from "@/svg/CredentialsIcon";
 import SolarEnergyIcon from "@/svg/SolarEnergyIcon";
 import TechnologiesIcon from "@/svg/TechnologiesIcon";
 import PhoneIcon from "@/svg/PhoneIcon";
-import arista from "../../../public/assets/img/arista-square-1.png";
+import arista from "../../../public/assets/img/get-in-touch.png";
 import videoTwo from "../../../public/assets/img/about-video.gif";
 import ModalVideo from "react-modal-video";
 import BattaryIconTwo from "@/svg/BattaryIconTwo";
@@ -104,7 +104,7 @@ const SolarEnergySec = () => {
                     <h4>Recognized Approved Solar Homes Retailer</h4>
                   </a>
                   <p>
-                  As an Approved Solar Homes Retailer, we guarantee high-quality solar solutions with full compliance, unlocking government incentives for you.
+                  As an Approved Solar Homes Retailer, we Warranty high-quality solar solutions with full compliance, unlocking government incentives for you.
                   </p>
                 </div>
               </div>
@@ -170,7 +170,7 @@ const SolarEnergySec = () => {
             <div className="row">
               <div className="col-lg-7">
                 <div className="heading">
-                  <h2>Connect with us to explore premium solar solutions</h2>
+                  <h2>Connect with us to explore Comprehensive solar solutions</h2>
                   <h6>
                     {`We're`} excited to welcome you as a valued customer 
                   </h6>

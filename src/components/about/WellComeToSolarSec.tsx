@@ -19,7 +19,7 @@ const WellComeToSolarSec = () => {
                 <p>
                   Founded with a commitment to sustainability and energy
                   efficiency, Kangaroo Solar has become a trusted name in the
-                  renewable energy industry. With over a decade of experience,
+                  renewable energy industry. With over a years of experience,
                   our team of skilled electricians and industry experts
                   specializes in delivering cutting-edge solar solutions for
                   both residential and commercial clients—helping them save

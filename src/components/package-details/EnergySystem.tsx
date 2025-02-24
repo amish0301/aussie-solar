@@ -13,6 +13,7 @@ interface propsType {
 const EnergySystem = ({ data }: propsType) => {
   const params = useParams();
   const paramsId = params?.id;
+  const isResidentialPackage = (Number(paramsId) >= 101 && Number(paramsId) <= 105);
 
   const packageSize = packageSizeMap[paramsId as keyof typeof packageSizeMap] || "Custom";
 
@@ -42,8 +43,7 @@ const EnergySystem = ({ data }: propsType) => {
             <p className="cta-line">
               Call us at <a href="callto:1300-274-737">1300 274 737</a> or{" "}
               <a href="/contact">get a quote</a> today to determine if a{" "}
-              {packageSize} solar panel system is the perfect fit for your home
-              or business.
+              {packageSize} solar panel system is the perfect fit for your {isResidentialPackage ? 'Home' : 'Business'}.
             </p>
           </div>
 
@@ -136,6 +136,23 @@ const EnergySystem = ({ data }: propsType) => {
 
           <h5 className="pb-4">Advanced Solar Energy Solutions</h5>
           <div className="row">
+          <div className="col-lg-4 col-md-6">
+              <div className="use-energix two">
+                <div className="use-energix-icon">
+                  <i>
+                    <SolarEnergyTwoIcon />
+                  </i>
+                </div>
+                <div>
+                  <a href="/packages/residential-solar">
+                    <h4>Residential & Commercial Solar</h4>
+                  </a>
+                  <p>
+                  Harness the power of solar energy for your home or business, reducing electricity costs and contributing to a greener planet.
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-4 col-md-6">
               <div className="use-energix two">
                 <div className="use-energix-icon">
@@ -149,23 +166,6 @@ const EnergySystem = ({ data }: propsType) => {
                   </a>
                   <p>
                   Optimize energy usage with our advanced battery storage solutions, ensuring uninterrupted power supply even at night.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <div className="use-energix two">
-                <div className="use-energix-icon">
-                  <i>
-                    <SolarEnergyTwoIcon />
-                  </i>
-                </div>
-                <div>
-                  <a href="/packages/residential-solar">
-                    <h4>Commercial & Residential Solar</h4>
-                  </a>
-                  <p>
-                  Harness the power of solar energy for your home or business, reducing electricity costs and contributing to a greener planet.
                   </p>
                 </div>
               </div>

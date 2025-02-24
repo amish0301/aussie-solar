@@ -2,7 +2,7 @@
 import useGlobalContext from "@/hooks/use-context";
 import Image from "next/image";
 import bgImg from "../../../public/assets/img/get-in-touch-bgimg.jpg";
-import arista from "../../../public/assets/img/arista-square-1.png";
+import arista from "../../../public/assets/img/get-in-touch.png";
 import PhoneIcon from "@/svg/PhoneIcon";
 
 const GetInTouch = () => {

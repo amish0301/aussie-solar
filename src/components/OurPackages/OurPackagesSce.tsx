@@ -34,7 +34,7 @@ const OurProjectsSce = ({ packages }: propType) => {
                           <h5>{item?.title}</h5>
                         </Link>
                         <h6>{item?.kwp}</h6>
-                        <span>SYSTEM</span>
+                        <span style={{color: "black", fontWeight: "bold"}}>Package</span>
                         <Link href={`/package-details/${item?.id}`}>
                           <i>
                             <ArrowIcon />

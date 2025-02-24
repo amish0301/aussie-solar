@@ -21,7 +21,7 @@ import sungrow from '../../public/assets/img/solar-brands/sungrow.png';
 import growwat from '../../public/assets/img/solar-brands/growtt.png';
 import solaris from '../../public/assets/img/solar-brands/solaris.png';
 import saj from '../../public/assets/img/solar-brands/saj.webp';
-import tesla from '../../public/assets/img/solar-brands/tesla.png';
+import tesla from '../../public/assets/img/solar-brands/tesla-powerwall.png';
 import alphaEss from '../../public/assets/img/solar-brands/alpha-ess.png';
 import swatten from '../../public/assets/img/solar-brands/swatten.webp';
 import foxess from '../../public/assets/img/solar-brands/foxEss.png'
@@ -168,11 +168,6 @@ export const serviceProductData: TServiceProductData[] = [
                 alt: "growwat"
             },
             {
-                id: 5,
-                img: solaris,
-                alt: "solaris"
-            },
-            {
                 id: 6,
                 img: saj,
                 alt: "SAJ"
@@ -288,11 +283,6 @@ export const allBrands = [
         id: 5,
         img: growwat,
         alt: 'growwat'
-    },
-    {
-        id: 6,
-        img: solaris,
-        alt: 'solaris'
     },
     {
         id: 7,

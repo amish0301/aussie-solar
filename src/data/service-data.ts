@@ -40,7 +40,7 @@ export const serviceData: TserviceData[] = [
       {
         question: "What warranties come with solar panels?",
         answer:
-          "Most solar panels come with a 20-25 year performance warranty, which guarantees a certain level of efficiency over the years. You should also check for additional warranties on the inverter and other components.",
+          "Most solar panels come with a 20-25 year performance warranty, which Warrantys a certain level of efficiency over the years. You should also check for additional warranties on the inverter and other components.",
       },
     ],
   },

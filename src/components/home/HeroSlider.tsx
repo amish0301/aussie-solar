@@ -19,7 +19,7 @@ const HeroSlider = () => {
     {
       id: 1,
       bgImg: sliderImg2,
-      title: "Expert Solar & Electrical Solutions",
+      title: "Industry Experts Solar Solutions",
       subTitle:
         "Our in-house team of experienced electricians and solar specialists ensures seamless installation, reducing your energy costs.",
     },

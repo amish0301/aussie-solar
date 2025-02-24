@@ -13,7 +13,7 @@ const SolarSystemInfo = ({ data }: propsType) => {
             <div className="col-lg-7">
               <div className="solar-system">
                 <span className="d-flex">
-                  Solar Energy Solutions for Homes & Businesses
+                  Solar Energy Solutions for Homes
                 </span>
                 <h2> {data?.title2} </h2>
                 <p>
@@ -28,7 +28,7 @@ const SolarSystemInfo = ({ data }: propsType) => {
               <ul className="information">
                 <li>
                   <span>SOLAR BRANDS</span>
-                  <h6>Jinko, Longi, JaSolar....</h6>
+                  <h6>Jinko, Longi, JA Solar & Many More</h6>
                 </li>
                 <li>
                   <span>TECHNOLOGY</span>
@@ -44,11 +44,11 @@ const SolarSystemInfo = ({ data }: propsType) => {
                 </li>
                 <li>
                   <span>WARRANTY</span>
-                  <h6>25 Years Performance Guarantee</h6>
+                  <h6>25-30 Years Performance Warranty</h6>
                 </li>
                 <li>
                   <span>BATTERY & INVERTERS</span>
-                  <h6>AlphaESS, Tesla Powerwall & Fronius, Sungrow, goodwe, Solis....</h6>
+                  <h6>AlphaESS, Tesla Powerwall 3 & Fronius, Sungrow, Goodwe, Solis & Many More</h6>
                 </li>
               </ul>
             </div>

@@ -39,11 +39,6 @@ const FooterOne = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href="https://twitter.com/">
-                      <i className="fa-brands fa-twitter"></i> Twitter
-                    </Link>
-                  </li>
-                  <li>
                     <Link href="https://www.instagram.com/">
                       <i className="fa-brands fa-instagram"></i> Instagram
                     </Link>

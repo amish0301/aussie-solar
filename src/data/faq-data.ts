@@ -14,12 +14,12 @@ export const faqData: FAQItem[] = [
   {
     question: "What is the warranty on your solar panels?",
     answer:
-      "We offer a 25-year warranty on our solar panels, ensuring that they remain functional and efficient for many years. The warranty covers defects in materials and workmanship, as well as a minimum level of performance over time.",
+      "We offer a 25-30 year warranty on our solar panels, ensuring that they remain functional and efficient for many years. The warranty covers defects in materials and workmanship, as well as a minimum level of performance over time.",
   },
   {
     question: "How much can I save by installing solar panels?",
     answer:
-      "The amount you can save depends on your energy consumption, location, and the size of the solar panel system. On average, homeowners can save between 20-50% on their electricity bills, and with incentives like tax credits, the initial investment can be recouped in 5-10 years.",
+      "The amount you can save depends on your energy consumption, location, and the size of the solar panel system. On average, homeowners can save between 25-75% on their electricity bills, and with incentives like tax credits, the initial investment can be recouped in 5-10 years.",
   },
   {
     question: "Is your company B2C or B2B?",
@@ -34,7 +34,7 @@ export const faqData: FAQItem[] = [
   {
     question: "How do I know if my roof is suitable for solar panels?",
     answer:
-      "At Kangaroo Solar, our industry experts and electricians will help you choose the best solar system to suit your needs. We evaluate your roof's size, orientation, and location to determine the optimal placement of solar panels, maximizing energy efficiency and reducing your energy bills. If your roof isn't ideal, we can recommend alternative solutions, including ground-mounted systems.",
+      "At Kangaroo Solar, our industry experts and electricians will help you choose the best solar system to suit your needs. We evaluate your roof's size, orientation, and location to determine the optimal placement of solar panels, maximizing energy efficiency and reducing your energy bills. If your roof isn't ideal.",
   },
   {
     question:

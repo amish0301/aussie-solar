@@ -758,7 +758,7 @@ button.button {
 .recent-projects-text span {
   color: #666;
   font-weight: 500;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .recent-projects-text i:hover svg {
   fill: white;
@@ -1836,7 +1836,7 @@ header.two button.search-btn svg {
 .arista-square-img {
   position: relative;
   margin-top: -60px;
-  margin-bottom: -172px;
+  margin-bottom: -68px;
   z-index: 1;
 }
 .request-quote.two {
