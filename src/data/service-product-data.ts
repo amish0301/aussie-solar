@@ -1,12 +1,12 @@
 import { TServiceProductData } from "@/interFace/interFace";
 import blackSolarPanel from '../../public/assets/img/solar-panel-black.jpeg';
 import sp2 from '../../public/assets/img/solar-inverter.jpeg';
-import sp3 from '../../public/assets/img/battery-1.jpeg'
+import sp3 from '../../public/assets/img/battery-storage-5.png'
 import sp4 from '../../public/assets/img/consumption-1.jpeg'
 import sp5 from '../../public/assets/img/installation-3.jpeg'
 import sp6 from '../../public/assets/img/cleaning-1.jpg'
 import sp1 from '../../public/assets/img/solar-panel.jpeg'
-import teslaBat from '../../public/assets/img/solar-battery-testla.jpg'
+import teslaBat from '../../public/assets/img/tesla-battery-2.jpg'
 
 import spt1 from '../../public/assets/img/solis-inverter.jpg'
 import spt2 from '../../public/assets/img/micro-inverter.webp'

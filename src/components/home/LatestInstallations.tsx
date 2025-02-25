@@ -5,7 +5,7 @@ import { Autoplay, Navigation, Pagination, Scrollbar, A11y } from "swiper";
 import "swiper/css/bundle";
 import projectOne from "../../../public/assets/img/residential-1.jpeg";
 import projectTwo from "../../../public/assets/img/solar-panels.jpg";
-import projectThree from "../../../public/assets/img/battery-1.jpeg";
+import projectThree from "../../../public/assets/img/battery-storage-5.png";
 import projectFour from "../../../public/assets/img/installation-2.jpeg";
 import projectFive from "../../../public/assets/img/cleaning-1.jpg";
 import Image from "next/image";

@@ -7,7 +7,7 @@ import SolarEnergyIcon from "@/svg/SolarEnergyIcon";
 import TechnologiesIcon from "@/svg/TechnologiesIcon";
 import PhoneIcon from "@/svg/PhoneIcon";
 import arista from "../../../public/assets/img/get-in-touch.png";
-import videoTwo from "../../../public/assets/img/about-video.gif";
+import videoTwo from "../../../public/assets/residential_gif.gif";
 import ModalVideo from "react-modal-video";
 import BattaryIconTwo from "@/svg/BattaryIconTwo";
 import InvestmentIcon from "@/svg/InvestmentIcon";

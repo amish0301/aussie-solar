@@ -1,63 +1,54 @@
 "use client";
 
 import Image from "next/image";
+import visa from "../../../public/assets/img/Visa.png";
+import mastercard from "../../../public/assets/img/master-card.png";
+import paypal from "../../../public/assets/img/pay-pal.png";
 
 const Payment = () => {
-  const handlePayment = async () => {
+  const handlePayment = () => {
     window.open("https://buy.stripe.com/test_cN2bLb4hogSU3dK9AC", "_blank");
   };
 
   return (
     <section className="container py-5">
-      <h2 className="text-center mb-4">Kangaroo Solar - Secure Payment</h2>
+      <h2 className="text-center mb-4">Complete Your Payment Securely</h2>
 
       <div className="row justify-content-center">
         {/* Left Card - Stripe Payment */}
         <div className="col-md-6">
-          <div className="card shadow-lg border-0 rounded-3">
+          <div className="card shadow-lg border-0 rounded-4 p-4">
             <div className="card-body text-center">
               {/* Title */}
-              <h4 className="card-title fw-bold">Secure Online Payment</h4>
+              <h4 className="card-title fw-bold text-primary mb-3">
+                Secure Online Payment
+              </h4>
 
               {/* Payment Description */}
               <p className="text-muted">
-                Pay securely using your debit or credit card. You will be
-                redirected to Stripe&apos;s secure payment page.
+                Make payments securely using your debit/credit card.
+                All transactions are encrypted and processed through a secure
+                gateway to ensure your financial information remains protected.
               </p>
 
-              {/* Card Icons (Using Online URLs) */}
-              <div className="mb-3">
-                {/* <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
-                  alt="Visa"
-                  className="mx-1"
-                  width="60"
-                />
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg"
-                  alt="Mastercard"
-                  className="mx-1"
-                  width="60"
-                />
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
-                  alt="PayPal"
-                  className="mx-1"
-                  width="60"
-                /> */}
+              {/* Payment Icons */}
+              <div className="d-flex justify-content-center align-items-center gap-3 my-3">
+                <Image src={visa} alt="Visa" width="50" />
+                <Image src={mastercard} alt="Mastercard" width="50" />
+                <Image src={paypal} alt="PayPal" width="50" />
               </div>
 
               {/* Pay Button */}
               <button
-                className="btn btn-primary w-25 py-2"
+                className="btn btn-primary w-100 py-2 fw-semibold"
                 onClick={handlePayment}
               >
-                Pay
+                Proceed to Payment
               </button>
 
-              {/* Security Note */}
+              {/* Security Badge */}
               <p className="text-success mt-3 fw-bold">
-                🔒 100% Secure Payment via Stripe
+                🔒 100% Secure & Encrypted Transactions
               </p>
             </div>
           </div>
@@ -94,4 +85,3 @@ const Payment = () => {
 };
 
 export default Payment;
-
