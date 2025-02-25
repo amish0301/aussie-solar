@@ -156,7 +156,7 @@ export default function QuotePopup() {
           </h2>
           <p className="text-center text-muted">
             Slash your electricity bills with our top-rated solar solutions! Act
-            now - this <strong>exclusive offer</strong> won't last long! ⏳
+            now - this <strong>exclusive offer</strong> won&apos;t last long! ⏳
           </p>
           <form className="mt-3" onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-3">
