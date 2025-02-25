@@ -5,6 +5,7 @@ if (typeof window !== "undefined") {
 import "../style/index.scss";
 import AppProvider from "@/contextApi/AppProvider";
 import { Toaster } from "sonner";
+import QuotePopup from "@/forms/PopUpHomeQuote";
 export const metadata = {
   title: "Kangaroo Solar",
   description: "A B2C Truly Australian Based Company",
@@ -65,6 +66,7 @@ export default function RootLayout({
         <body suppressHydrationWarning={true}>
           <AppProvider>
             {children}
+            <QuotePopup />
             <Toaster position="bottom-center" richColors />
           </AppProvider>
         </body>

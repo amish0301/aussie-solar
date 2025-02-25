@@ -12,7 +12,7 @@ import serviceOne from "../../../public/assets/img/battery-storage-4.jpeg";
 // import serviceFive from "../../../public/assets/img/inverter-1.jpeg";
 import serviceFive from "../../../public/assets/img/solar-inverter.jpeg";
 import serviceThree from "../../../public/assets/img/solar-panel.jpeg";
-import serviceSix from "../../../public/assets/img/wifi.jpg";
+import serviceSix from "../../../public/assets/img/WiFi-monitoring-service-main.png";
 
 const SustainableEnergy = () => {
   return (

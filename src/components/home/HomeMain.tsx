@@ -16,12 +16,12 @@ const HomeMain = () => {
       <HeroSlider />
       <DomesticSec />
       <SaveEnegryGallarySec />
-      <LatestInstallations classOne="" noBottom="no-bottom"/>
-      <WhyUse bgImg={bgImg} propsClass=''/>
+      <LatestInstallations classOne="" noBottom="no-bottom" />
+      <WhyUse bgImg={bgImg} propsClass="" />
       {/* <PricingPlan /> */}
       <Sponsors brands={allBrands ?? []} />
-      <ProcessSolutionsSec propsClass="gap"/>
-      <RequestAQuote noTop="no-top" quoteClass=""/>
+      <ProcessSolutionsSec propsClass="gap" />
+      <RequestAQuote noTop="no-top" quoteClass="" />
       <TestimonialsSec propsClass="no-top" />
       {/* <HomeBlogSec /> */}
     </>

@@ -88,6 +88,8 @@ html,
 body {
   font-family: "Sora";
   overflow-x: hidden;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
 }
 p {
   font-size: 16px;
@@ -158,6 +160,11 @@ li {
 figure {
   overflow: hidden;
 }
+
+body::-webkit-scrollbar {
+  display: none; /* WebKit browsers */
+}
+
 /* 1. header */
 /* top-bar */
 .top-bar-text {
@@ -3356,6 +3363,13 @@ button.error-button {
   width: 80%;
   margin: auto;
 }
+
+.nice-select.upward .list {
+  bottom: 100%;
+  top: auto;
+}
+
+
 form.contact-form input::placeholder,
 form.contact-form textarea::placeholder {
   color: #666;
@@ -3424,7 +3438,7 @@ form.contact-form label {
   border-right: 3px solid #000;
   margin-top: -6px;
 }
-.nice-select:before {
+/* .nice-select:before {
   content: "";
   display: block;
   height: 49px;
@@ -3436,7 +3450,7 @@ form.contact-form label {
   border-radius: 50%;
   border: 1px solid #c1c1c1;
   background-color: white;
-}
+} */
 .contact-info.contact-information {
   display: flex;
   align-items: center;

@@ -156,9 +156,10 @@ export interface FormData {
   email: string;
   phone: string;
   message: string;
-  postCode: string;
+  postalCode: string;
   location: string;
-  address: string;
-  hearAboutUs: string;
-  serviceInterest: string[];
+  address?: string;
+  countryCode?: string;
+  hearAboutUs?: string;
+  serviceInterest?: string[];
 }

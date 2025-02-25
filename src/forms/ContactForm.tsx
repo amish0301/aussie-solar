@@ -1,4 +1,5 @@
 "use client";
+import { hearOptions, serviceData } from "@/data/form-data";
 import NiceSelect from "@/elements/NiceSelect";
 import { FormData, NiceSelectType } from "@/interFace/interFace";
 import { useState } from "react";
@@ -6,28 +7,6 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { toast } from "sonner";
 
 const ContactForm = () => {
-  const serviceData: NiceSelectType[] = [
-    { id: 1, option: "Choose Service" },
-    { id: 2, option: "Residential Solar" },
-    { id: 3, option: "Commercial Solar" },
-    { id: 4, option: "Battery Storage" },
-    { id: 5, option: "Consumption and Monitoring" },
-    { id: 6, option: "Solar Inverters" },
-  ];
-
-  const hearOptions: NiceSelectType[] = [
-    { id: 0, option: "How do you hear about Us?" },
-    { id: 1, option: "Google Search" },
-    { id: 2, option: "LinkedIn" },
-    { id: 3, option: "Facebook" },
-    { id: 4, option: "Instagram" },
-    // { id: 5, option: "Twitter (X)" },
-    // { id: 6, option: "YouTube" },
-    { id: 7, option: "Referral (Friend/Colleague)" },
-    { id: 8, option: "Advertisement" },
-    { id: 9, option: "Other" },
-  ];
-
   const [otherSource, setOtherSource] = useState<string>("");
   const [isHearAboutUsOther, setIsHearAboutUsOther] = useState<boolean>(false);
 
@@ -36,6 +15,7 @@ const ContactForm = () => {
     handleSubmit,
     reset,
     setValue,
+    getValues,
     formState: { errors },
   } = useForm<FormData>();
 
@@ -43,10 +23,12 @@ const ContactForm = () => {
     item: NiceSelectType | NiceSelectType[],
     name: keyof FormData
   ) => {
-
     // if Its Service Selected value -> its an array then don't update
     if (Array.isArray(item)) {
-      setValue(name, item.map(service => service.option));
+      setValue(
+        name,
+        item.map((service) => service.option)
+      );
       return;
     }
     setValue(name, item.option);
@@ -58,12 +40,55 @@ const ContactForm = () => {
     }
   };
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-    const toastId = toast.loading("Processing...");
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    const toastId = toast.loading("Sending Info...");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY,
+          fullName: getValues("fullName"),
+          email: getValues("email"),
+          phone: getValues("phone"),
+          address: getValues("address"),
+          message: getValues("message"),
+          postalCode: getValues("postalCode"),
+          location: getValues("location"),
+          Hear_About_Us_Through: getValues("hearAboutUs"),
+          Interested_Services: JSON.stringify(getValues("serviceInterest")),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success(
+          "Thank you for your Interest, We will reach out to you Soon",
+          {
+            id: toastId,
+            duration: 1500,
+          }
+        );
+      }
+    } catch (error) {
+      toast.error("Oops! Something Went Wrong while sending Info", {
+        id: toastId,
+      });
+    } finally {
+      toast.dismiss(toastId);
+    }
+
     toast.success(
       "Thank you for your Interest, Our Team will reach out to you Soon",
       { id: toastId, duration: 30000 }
     );
+
+    // form RESET
     reset();
   };
 
@@ -120,13 +145,15 @@ const ContactForm = () => {
             <div className="contact-form-div">
               <input
                 type="text"
-                {...register("postCode", {
-                  required: "Post Code is required",
+                {...register("postalCode", {
+                  required: "Postal Code is required",
                 })}
-                placeholder="Post Code"
+                placeholder="Postal Code"
               />
-              {errors.postCode && (
-                <span className="error-message">{errors.postCode.message}</span>
+              {errors.postalCode && (
+                <span className="error-message">
+                  {errors.postalCode.message}
+                </span>
               )}
             </div>
           </div>

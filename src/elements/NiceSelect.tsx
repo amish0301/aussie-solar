@@ -4,6 +4,7 @@ import React, {
   KeyboardEvent,
   MouseEvent,
   useCallback,
+  useEffect,
   useRef,
   useState,
 } from "react";
@@ -14,6 +15,7 @@ interface NiceSelectProps {
   defaultCurrent: number;
   placeholder?: string;
   className?: string;
+  isPopUpForm?: boolean;
   onChange: (
     item: NiceSelectType | NiceSelectType[],
     name: keyof FormData
@@ -28,10 +30,12 @@ const NiceSelect: React.FC<NiceSelectProps> = ({
   placeholder,
   className,
   isService,
+  isPopUpForm,
   onChange,
   name,
 }) => {
   const [open, setOpen] = useState(false);
+  const [openUp, setOpenUp] = useState(false); // New state for positioning
   const { setNiceSelectData } = useGlobalContext();
   const [current, setCurrent] = useState<NiceSelectType>(
     options[defaultCurrent]
@@ -80,13 +84,29 @@ const NiceSelect: React.FC<NiceSelectProps> = ({
     }
   };
 
+  useEffect(() => {
+    if (open) {
+      const rect = ref.current?.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect) {
+        const spaceBelow = windowHeight - rect.bottom;
+        const spaceAbove = rect.top;
+
+        // If in popup form OR insufficient space below, open upwards
+        setOpenUp(isPopUpForm || spaceBelow < 200);
+      }
+    }
+  }, [open, isPopUpForm]);
+
+
   const stopPropagation = (e: MouseEvent | KeyboardEvent) => {
     e.stopPropagation();
   };
 
   return (
     <div
-      className={`nice-select ${className || ""} ${open ? "open" : ""}`}
+    className={`nice-select ${className || ""} ${open ? "open" : ""} ${openUp ? "upward" : ""}`}
       role="button"
       tabIndex={0}
       onClick={handleClick}

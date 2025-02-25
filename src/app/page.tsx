@@ -14,7 +14,7 @@ const Home = () => {
           <LetterBox />
         </main>
       </Wrapper>
-      <MobileSearch/>
+      <MobileSearch />
     </>
   );
 };

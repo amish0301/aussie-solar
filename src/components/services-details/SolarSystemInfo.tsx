@@ -31,7 +31,7 @@ const SolarSystemInfo = ({ data, productData }: propsType) => {
                 <div className="solar-system me-lg-4">
                   <span className="d-flex">Kangaroo Solar</span>
                   <h2>{data?.title}</h2>
-                  <p>
+                  <p style={{ whiteSpace: "pre-line" }}>
                     {productData?.primaryInfo ??
                       "At Kangaroo Solar, we have access to a trusted installation network spanning across the entire country. From inner city Sydney through to the suburbs of Brisbane and Adelaide, we can install solar panels quickly and with minimum disruption to your daily schedule. Our team of installers are fully qualified and have experience working in a range of residential and commercial environments."}
                     <br />

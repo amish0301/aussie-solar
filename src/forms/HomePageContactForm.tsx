@@ -14,16 +14,49 @@ interface FormData {
 const HomePageContactForm = () => {
   const {
     register,
-    handleSubmit, 
+    handleSubmit,
     reset,
+    getValues,
     formState: { errors },
   } = useForm<FormData>();
 
-  const onSubmit: SubmitHandler<FormData> = (data) => {
-  
-    const toastId = toast.loading("Sending Info");
-    toast.success("Message Send Successfully", { id: toastId, duration: 2000 });
-    reset()
+  const onSubmit: SubmitHandler<FormData> = async (data) => {
+    const toastId = toast.loading("Sending Info..");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY,
+          fullName: getValues("fullName"),
+          email: getValues("email"),
+          phone: getValues("phone"),
+          address: getValues("address"),
+          message: getValues("message"),
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success("Thank you for your Interest, We will reach out to you Soon", {
+          id: toastId,
+          duration: 1500,
+        });
+      }
+    } catch (error) {
+      toast.error("Oops! Something Went Wrong while sending Info", {
+        id: toastId,
+      });
+    } finally {
+      toast.dismiss(toastId);
+    }
+
+    reset();
   };
   return (
     <>
