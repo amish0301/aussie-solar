@@ -1,118 +1,65 @@
 "use client";
 import React from "react";
-import "./GalleryArea.css";
 import Image from "next/image";
+import "./GalleryArea.css";
+
+// Import images
+import imgOne from "./img/1.jpeg";
+import imgTwo from "./img/2.jpeg";
+import imgThree from "./img/3.jpeg";
+import imgFour from "./img/4.jpeg";
+import imgFive from "./img/5.jpeg";
+import imgSix from "./img/6.jpeg";
+import imgSeven from "./img/7.jpeg";
+import imgEight from "./img/8.jpeg";
+import imgNine from "./img/9.jpeg";
+import imgTen from "./img/10.jpeg";
+import imgEleven from "./img/11.jpeg";
+
+// Store imported images in an array
+const images = [
+  imgOne,
+  imgTwo,
+  imgThree,
+  imgFour,
+  imgFive,
+  imgSix,
+  imgSeven,
+  imgEight,
+  imgNine,
+  imgTen,
+  imgEleven,
+];
 
 const GalleryArea = () => {
   return (
-    <>
-      <section className="gap section-contact">
-        <div className="container">
-          <div className="heading">
-            <p>Gallery</p>
-            <div className="line"></div>
-          </div>
-          <div className="row">
-            <div className="col-lg-12">
-              <div className="masonry-container">
-                {[
-                  {
-                    title: "Crashing Waves",
-                    tags: "Landscapes, Waves, Beach",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/waves.jpg",
-                  },
-                  {
-                    title: "Blue Docks",
-                    tags: "Docks, Sunset, Horizon",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/docks.jpg",
-                  },
-                  {
-                    title: "Pastel Canyons",
-                    tags: "Canyon, Rock formations",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/canyon.jpg",
-                  },
-                  {
-                    title: "Pink Mountain Sunset",
-                    tags: "Landscapes, Sunset, Mountains",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/dawn-mountains.jpg",
-                  },
-                  {
-                    title: "Autumn Pine",
-                    tags: "Forest, Pines, Mountains",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/forest.jpg",
-                  },
-                  {
-                    title: "Purple Power Poles",
-                    tags: "Urban, landscape, manmade",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/power-poles.jpg",
-                  },
-                  {
-                    title: "Purple Ridges",
-                    tags: "Mountains, Sunrise, Landscapes",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/purple-mtn.jpg",
-                  },
-                  {
-                    title: "Spinning Lights",
-                    tags: "Carnival, Lights, Nightlife",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/rides.jpg",
-                  },
-                  {
-                    title: "Feather Bokeh",
-                    tags: "Close-ups, Feather, Bokeh",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/feather.jpg",
-                  },
-                  {
-                    title: "Irridescent Bench",
-                    tags: "Landscapes, Still-Life, Countryside",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/bench-alt.jpg",
-                  },
-                  {
-                    title: "Blazing Dandelions",
-                    tags: "Dandelion, Bokeh, Flora",
-                    img: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/bokeh-dandelion.jpg",
-                  },
-                ].map((panel, index) => (
-                  <div className="panel" key={index}>
-                    <div className="panel-wrapper">
-                      <div className="panel-overlay">
-                        <div className="panel-text">
-                          <div className="panel-title">{panel.title}</div>
-                          <div className="panel-tags">
-                            <span className="tag-icon">
-                              <Image
-                                className="tag-icon-img"
-                                src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/tag-icon.svg"
-                                alt="Tag Icon"
-                              />
-                            </span>
-                            <span className="tags-list">{panel.tags}</span>
-                          </div>
-                        </div>
-                        <Image
-                          className="panel-gradient"
-                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/base-gradient.png"
-                          alt="Gradient"
-                        />
-                        <Image
-                          className="panel-vingette"
-                          src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/375042/darken-gradient.png"
-                          alt="Darken Gradient"
-                        />
-                      </div>
-                      <Image
-                        className="panel-img"
-                        src={panel.img}
-                        alt={panel.title}
-                      />
-                    </div>
+    <section className="gap section-contact">
+      <div className="container">
+        <div className="heading">
+          <p>Gallery</p>
+          <div className="line"></div>
+        </div>
+        <div className="row">
+          <div className="col-lg-12">
+            <div className="masonry-container">
+              {images.map((image, index) => (
+                <div className="panel" key={index}>
+                  <div className="panel-wrapper">
+                    <Image
+                      className="panel-img"
+                      src={image}
+                      alt={`Gallery Image ${index + 1}`}
+                      width={500}
+                      height={300}
+                    />
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
