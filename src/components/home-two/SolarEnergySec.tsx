@@ -80,7 +80,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="/packages/commercial-solar">
+                  <a href="/packages/2">
                     <h4>Commercial solar energy</h4>
                   </a>
                   <p>
@@ -114,7 +114,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="/packages/residential-solar">
+                  <a href="/packages/1">
                     <h4>Boost Green Credentials</h4>
                   </a>
                   <p>
@@ -131,7 +131,7 @@ const SolarEnergySec = () => {
                   </i>
                 </div>
                 <div>
-                  <a href="/packages/commercial-solar">
+                  <a href="/packages/2">
                     <h4>Industry Expertise</h4>
                   </a>
                   <p>

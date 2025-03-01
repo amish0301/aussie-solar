@@ -31,7 +31,7 @@
     "react-use": "^17.4.0",
     "react-visibility-sensor": "^5.1.1",
     "sass": "^1.63.4",
-    "sonner": "^1.4.41",
+    "sonner": "^1.4.41",  
     "stripe": "^17.6.0",
     "swiper": "^9.4.1",
     "wowjs": "^1.1.3"

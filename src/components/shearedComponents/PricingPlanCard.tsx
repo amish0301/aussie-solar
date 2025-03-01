@@ -64,7 +64,7 @@ const PricingPlanCard = ({ data, margin }: propsData) => {
             </li>
           </ul>
 
-          <Link href="/packages/residential-solar" className="button">
+          <Link href="/packages/1" className="button">
             Purchase Now
           </Link>
         </div>

@@ -24,7 +24,7 @@ const DomesticSec = () => {
                 <p>
                 Comprehensive residential solar solutions with top-tier 1 panel installation, reliable battery storage, and intelligent energy management—designed for maximum efficiency and long-term savings.
                 </p>
-                <Link href="/packages/residential-solar" className="button">
+                <Link href="/packages/1" className="button">
                   Read More
                 </Link>
               </div>
@@ -38,7 +38,7 @@ const DomesticSec = () => {
                 <p>
                 Advanced commercial solar installations, engineered for superior performance, cost savings, and sustainability—empowering businesses with reliable, long-term energy solutions.  
                 </p>
-                <Link href="/packages/commercial-solar" className="button">
+                <Link href="/packages/2" className="button">
                   Read More
                 </Link>
               </div>

@@ -161,14 +161,14 @@ const EnergySystem = ({ faqData }: propType) => {
                   </i>
                 </div>
                 <div>
-                  <a href="/packages/residential-solar">
+                  <a href="/packages/1">
                     <h4>Commercial Solar Energy</h4>
                   </a>
                   <p>
                     Power your business with cost-effective solar solutions,
                     reducing energy bills and ensuring long-term sustainability.
                   </p>
-                  <a href={"/packages/commercial-solar"} className="button">
+                  <a href={"/packages/2"} className="button">
                     {" "}
                     Explore Packages{" "}
                     <FontAwesomeIcon

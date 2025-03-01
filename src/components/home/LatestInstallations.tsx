@@ -118,9 +118,9 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
                         <Link
                           href={
                             item.id === 1
-                              ? "/packages/residential-solar"
+                              ? "/packages/1"
                               : item.id === 2
-                              ? "/packages/commercial-solar"
+                              ? "/packages/2"
                               : item.id === 4
                               ? "/services-details/1"
                               : item.id === 5
@@ -137,9 +137,9 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
                         <Link
                           href={
                             item.id === 1
-                              ? "/packages/residential-solar"
+                              ? "/packages/1"
                               : item.id === 2
-                              ? "/packages/commercial-solar"
+                              ? "/packages/2"
                               : item.id === 4
                               ? "/services-details/1"
                               : item.id === 5

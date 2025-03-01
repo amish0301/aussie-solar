@@ -157,13 +157,13 @@ const FooterTwo = () => {
                 <ul className="link-style">
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/packages/residential-solar">
+                    <a href="/packages/1">
                       Residential Package
                     </a>
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/packages/commercial-solar">Commercial Package</a>
+                    <a href="/packages/2">Commercial Package</a>
                   </li>
                 </ul>
               </div>

@@ -168,7 +168,7 @@ const EnergySystem = ({
                   </i>
                 </div>
                 <div>
-                  <a href="/packages/residential-solar">
+                  <a href="/packages/1">
                     <h4>Residential & Commercial Solar</h4>
                   </a>
                   <p>
