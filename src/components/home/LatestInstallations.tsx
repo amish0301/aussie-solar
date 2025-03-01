@@ -104,14 +104,14 @@ const LatestInstallations = ({ classOne, noBottom }: propsType) => {
               }}
             >
               {sliderData?.map((item, index) => (
-                <SwiperSlide key={item.id}>
+                <SwiperSlide key={index}>
                   <div className="item">
                     <div className="recent-projects-img">
                       <figure>
                         <Image
                           alt="our-packages"
                           src={item?.img}
-                          style={{ width: "670px", height: "427px" }}
+                          style={{ width: "670px", height: 'auto' }}
                         />
                       </figure>
                       <div className="recent-projects-text">

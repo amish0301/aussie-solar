@@ -6,6 +6,7 @@ import PhoneIcon from "@/svg/PhoneIcon";
 import LocationIcon from "@/svg/LocationIcon";
 import EmailIcon from "@/svg/EmailIcon";
 import Image from "next/image";
+import LocationTwoIcon from "@/svg/LocationTwoIcon";
 const FooterOne = () => {
   const year: number = new Intl.DateTimeFormat("en-AU", {
     year: "numeric",
@@ -187,7 +188,7 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="contact-info">
                 <i>
-                  <LocationIcon />
+                  <LocationTwoIcon />
                 </i>
                 <div>
                   <h4>Address 1 :</h4>
@@ -199,7 +200,7 @@ const FooterOne = () => {
             <div className="col-lg-3 col-md-6">
               <div className="contact-info">
                 <i>
-                  <LocationIcon />
+                  <LocationTwoIcon />
                 </i>
                 <div>
                   <h4>Address 2 :</h4>
@@ -234,7 +235,7 @@ const FooterOne = () => {
                 <Link href="#">Terms & Conditions</Link>
               </li>
               <li>
-                <Link href="#">About Us</Link>
+                <Link href="/about">About Us</Link>
               </li>
             </ul>
           </div>

@@ -1,13 +1,17 @@
-import React from "react";
+import { packagesData } from "@/data/package-data";
 import BreadCambDefault from "../shearedComponents/BreadCambDefault";
 import OurPackagesSce from "./OurPackagesSce";
-import { packagesData } from "@/data/package-data";
 
-interface propType { id: number };
+interface propType {
+  params: { id: number };
+}
 
-const OurPackagesMain = ({ id }: propType) => {
+const OurPackagesMain = ({ params }: propType) => {
   // extract what type of packages we're passing, e.g: residential/commercial
-  const data = packagesData?.find((item) => item.id === id);
+  const data = packagesData.find((item) => item.id === params?.id);
+
+  if (!data) return <p>Package Not found</p>;
+
   return (
     <>
       <BreadCambDefault

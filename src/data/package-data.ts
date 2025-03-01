@@ -32,7 +32,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: "Our 6.6kW solar system solution is designed for the needs of growing Australian families and business owners: efficient, weather resistant, and capable of meeting your power demands on a daily basis.",
         secondaryInfo2: "Kangaroo Solar is 100% Australian owned- and one of the country's leading solar providers. We have offices in Melbourne, Sydney, Brisbane, and Adelaide and service the entire nation with a large network of professional, qualified installers. Our 6.6kW solar panel system comes with a 25-30 year performance warranty, 25 year manufacturer's warranty, and a 10 years workmanship labour warranty",
         kwp: "6.6kW",
-        href: "/packages/residential-solar",
+        href: "/packages/1",
       },
       {
         id: 102,
@@ -47,7 +47,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: "Our 7.92kW solar system solution is designed for the needs of growing Australian families and business owners: efficient, weather resistant, and capable of meeting your power demands on a daily basis.",
         secondaryInfo2: "Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacturer’s warranty, and a 10 years workmanship labour warranty ",
         kwp: "7.92kW",
-        href: "/packages/residential-solar",
+        href: "/packages/1",
       },
       {
         id: 103,
@@ -62,7 +62,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: "Our 10.12kW solar system solution is designed for the needs of growing Australian families and business owners: efficient,weather resistant, and capable of meeting your power demands ona daily basis.",
         secondaryInfo2: "Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacture's warranty, and a 10 years workmanship warranty (including installation).",
         kwp: "10.12kW",
-        href: "/packages/residential-solar",
+        href: "/packages/1",
       },
       {
         id: 104,
@@ -77,7 +77,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: "Our 13.2kW solar system solution is designed for the needs of growing Australian families and business owners: efficient,weather resistant, and capable of meeting your power demands ona daily basis.",
         secondaryInfo2: "Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacturer’s warranty, and a 10 years workmanship labour warranty ",
         kwp: "13.2kW",
-        href: "/packages/residential-solar",
+        href: "/packages/1",
       },
       {
         id: 105,
@@ -100,7 +100,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: `Our 19.36kW solar system solution is designed for the needs of growing Australian families and business owners: efficient,weather resistant, and capable of meeting your power demands ona daily basis.`,
         secondaryInfo2: `Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacturer’s warranty, and a 10 years workmanship labour warranty `,
         kwp: "19.36kW",
-        href: "/packages/residential-solar",
+        href: "/packages/1",
       },
     ],
   },
@@ -123,7 +123,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: "Our 20kW solar system is specifically designed to meet the energy needs of Australian businesses, offering high efficiency, durability against harsh weather conditions, and reliable performance to support your daily power requirements.",
         secondaryInfo2: "Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacturer’s warranty, and 10 years workmanship labour warranty (including installation).",
         kwp: "20kW",
-        href: "/packages/commercial-solar",
+        href: "/packages/2",
       },
       {
         id: 202,
@@ -138,7 +138,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: `Our 30kW solar system is specifically designed to meet the energy needs of Australian businesses, offering high efficiency, durability against harsh weather conditions, and reliable performance to support your daily power requirements.`,
         secondaryInfo2: `Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacturer’s warranty, and a 10 years workmanship labour warranty `,
         kwp: "30kW",
-        href: "/packages/commercial-solar",
+        href: "/packages/2",
       },
       {
         id: 203,
@@ -153,7 +153,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: `Our 50kW solar system is specifically designed to meet the energy needs of Australian businesses, offering high efficiency, durability against harsh weather conditions, and reliable performance to support your daily power requirements.`,
         secondaryInfo2: `Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacturer’s warranty, and a 10 years workmanship labour warranty `,
         kwp: "50kW",
-        href: "/packages/commercial-solar",
+        href: "/packages/2",
       },
       {
         id: 204,
@@ -168,7 +168,7 @@ export const packagesData: packagesType[] = [
         secondaryInfo1: `Our 100kW solar system is specifically designed to meet the energy needs of Australian businesses, offering high efficiency, durability against harsh weather conditions, and reliable performance to support your daily power requirements.`,
         secondaryInfo2: `Kangaroo Solar is 100% Australian-owned and operated, and a leading solar provider in the country. We serve customers nationwide through a large network of professional, qualified installers. Our 6.6kW solar panel system includes a 25-30 year performance warranty, a 25 year manufacturer’s warranty, and a 10 years workmanship labour warranty `,
         kwp: "100kW",
-        href: "/packages/commercial-solar",
+        href: "/packages/2",
       },
       {
         id: 105,

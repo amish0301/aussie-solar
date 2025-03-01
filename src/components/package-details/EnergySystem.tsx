@@ -1,35 +1,52 @@
+"use client";
+
 import { packageSizeMap } from "@/data/package-data";
 import { TserviceData } from "@/interFace/interFace";
 import BattaryIconTwo from "@/svg/BattaryIconTwo";
 import InvestmentIcon from "@/svg/InvestmentIcon";
 import SolarEnergyTwoIcon from "@/svg/SolarEnergyTwoIcon";
-import { useParams } from "next/navigation";
-import React from "react";
 
 interface propsType {
   data: TserviceData;
+  packageTypeId?: number;
+  isResidentialPackage?: boolean;
 }
 
-const EnergySystem = ({ data }: propsType) => {
-  const params = useParams();
-  const paramsId = params?.id;
-  const isResidentialPackage = (Number(paramsId) >= 101 && Number(paramsId) <= 105);
-
-  const packageSize = packageSizeMap[paramsId as keyof typeof packageSizeMap] || "Custom";
+const EnergySystem = ({
+  data,
+  isResidentialPackage,
+  packageTypeId,
+}: propsType) => {
+  const packageSize =
+    packageSizeMap[packageTypeId as keyof typeof packageTypeId] || "Custom";
 
   return (
     <>
-     <section className="clean-energy mt-60">
+      <section className="clean-energy mt-60">
         <div className="container">
           {/* Info */}
           <div className="row">
             <div className="col-md-5">
               <h4 className="pb-3">{data?.secondaryTitle1}</h4>
               <p className="font-description">
-              Solar power is broadly recognised as a simple and effective way to reduce your CO2 emissions and energy bills, but not all solar panel systems are equal. Some aren&#39;t designed to cope with Australia&#39;s heat, others don&#39;t deliver comparable performance. A poorly performing system will limit your sustainability and financial return. The best way to protect your investment is to select high-quality solar products designed for life in Australia.
+                Solar power is broadly recognised as a simple and effective way
+                to reduce your CO2 emissions and energy bills, but not all solar
+                panel systems are equal. Some aren&#39;t designed to cope with
+                Australia&#39;s heat, others don&#39;t deliver comparable
+                performance. A poorly performing system will limit your
+                sustainability and financial return. The best way to protect
+                your investment is to select high-quality solar products
+                designed for life in Australia.
                 <br />
                 <br />
-                Solar panel manufacturers are ranked into three tiers, 1-3. Tier 1 solar manufacturers gain the top ranking by proving themselves to be reliable and stable and they provide the best value products on the market. Only a small percentage of solar panel manufacturers around the world have achieved the top Tier 1 ranking. Kangaroo Solar only sells and installs Tier 1 products, giving you the peace of mind of receiving quality products that will provide the best return on investment.
+                Solar panel manufacturers are ranked into three tiers, 1-3. Tier
+                1 solar manufacturers gain the top ranking by proving themselves
+                to be reliable and stable and they provide the best value
+                products on the market. Only a small percentage of solar panel
+                manufacturers around the world have achieved the top Tier 1
+                ranking. Kangaroo Solar only sells and installs Tier 1 products,
+                giving you the peace of mind of receiving quality products that
+                will provide the best return on investment.
                 <br />
                 <br />
                 {data?.secondaryInfo1}
@@ -43,13 +60,20 @@ const EnergySystem = ({ data }: propsType) => {
             <p className="cta-line">
               Call us at <a href="callto:1300-274-737">1300 274 737</a> or{" "}
               <a href="/contact">get a quote</a> today to determine if a{" "}
-              {packageSize} solar panel system is the perfect fit for your {isResidentialPackage ? 'Home' : 'Business'}.
+              {packageSize} solar panel system is the perfect fit for your{" "}
+              {isResidentialPackage ? "Home" : "Business"}.
             </p>
           </div>
 
           <h5>Sustainable Energy Systems</h5>
           <p>
-          Our cutting-edge clean energy solutions are designed to power homes and businesses across Australia with maximum efficiency and reliability. By harnessing advanced solar technology, we provide a sustainable and cost-effective way to reduce electricity bills while minimizing environmental impact. Our expertly engineered systems ensure long-term energy independence with minimal maintenance, making clean energy more accessible than ever.
+            Our cutting-edge clean energy solutions are designed to power homes
+            and businesses across Australia with maximum efficiency and
+            reliability. By harnessing advanced solar technology, we provide a
+            sustainable and cost-effective way to reduce electricity bills while
+            minimizing environmental impact. Our expertly engineered systems
+            ensure long-term energy independence with minimal maintenance,
+            making clean energy more accessible than ever.
           </p>
 
           {/* Bullet Point Content */}
@@ -128,15 +152,15 @@ const EnergySystem = ({ data }: propsType) => {
                 </i>
               </div>
               <h3>
-              &ldquo;Success is built on innovation, dedication, and a commitment to
-                a sustainable future.&rdquo;
+                &ldquo;Success is built on innovation, dedication, and a
+                commitment to a sustainable future.&rdquo;
               </h3>
             </div>
           </div>
 
           <h5 className="pb-4">Advanced Solar Energy Solutions</h5>
           <div className="row">
-          <div className="col-lg-4 col-md-6">
+            <div className="col-lg-4 col-md-6">
               <div className="use-energix two">
                 <div className="use-energix-icon">
                   <i>
@@ -148,7 +172,9 @@ const EnergySystem = ({ data }: propsType) => {
                     <h4>Residential & Commercial Solar</h4>
                   </a>
                   <p>
-                  Harness the power of solar energy for your home or business, reducing electricity costs and contributing to a greener planet.
+                    Harness the power of solar energy for your home or business,
+                    reducing electricity costs and contributing to a greener
+                    planet.
                   </p>
                 </div>
               </div>
@@ -165,7 +191,9 @@ const EnergySystem = ({ data }: propsType) => {
                     <h4>Smart Battery Storage</h4>
                   </a>
                   <p>
-                  Optimize energy usage with our advanced battery storage solutions, ensuring uninterrupted power supply even at night.
+                    Optimize energy usage with our advanced battery storage
+                    solutions, ensuring uninterrupted power supply even at
+                    night.
                   </p>
                 </div>
               </div>
@@ -182,7 +210,8 @@ const EnergySystem = ({ data }: propsType) => {
                     <h4>Cost Savings & ROI</h4>
                   </a>
                   <p>
-                  Invest in solar and enjoy long-term financial benefits with reduced electricity bills and government incentives.
+                    Invest in solar and enjoy long-term financial benefits with
+                    reduced electricity bills and government incentives.
                   </p>
                 </div>
               </div>
@@ -190,7 +219,7 @@ const EnergySystem = ({ data }: propsType) => {
           </div>
         </div>
       </section>
-    </> 
+    </>
   );
 };
 

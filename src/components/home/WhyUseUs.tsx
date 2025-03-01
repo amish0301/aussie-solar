@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import SaveMoneyIcon from "@/svg/SaveMoneyIcon";
 import {
   faHeadset,
@@ -10,6 +9,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import savings from "../../../public/assets/img/savings.svg";
 import videoIcon from "../../../public/assets/residential_gif.gif";
 interface propsType {

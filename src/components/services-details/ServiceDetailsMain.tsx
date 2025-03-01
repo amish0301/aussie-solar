@@ -1,12 +1,12 @@
 import { serviceData } from "@/data/service-data";
-import { FAQItem, TServiceProductData, TserviceData, idType } from "@/interFace/interFace";
+import { serviceProductData } from "@/data/service-product-data";
+import { TServiceProductData, TserviceData, idType } from "@/interFace/interFace";
 import LatestInstallations from "../home/LatestInstallations";
 import BreadCambThree from "../shearedComponents/BreadCambThree";
+import GetInTouch from "../shearedComponents/GetInTouch";
 import EnergySystem from "./EnergySystem";
 import SolarSystemInfo from "./SolarSystemInfo";
 import Thumbnail from "./Thumbnail";
-import GetInTouch from "../shearedComponents/GetInTouch";
-import { serviceProductData } from "@/data/service-product-data";
 
 const ServiceDetailsMain = ({ id }: idType) => {
   const data = serviceData?.find((item) => item.id == id);

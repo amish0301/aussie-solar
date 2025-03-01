@@ -110,8 +110,8 @@ export default function QuotePopup() {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
-        className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-transparent bg-opacity-50 z-3"
-        style={{ zIndex: 1050 }}
+        className="popup-overlay position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-dark bg-opacity-50 z-3"
+        style={{ zIndex: 1050, padding: "10px" }}
         onClick={handleOutsideClick}
       >
         <motion.div
@@ -119,45 +119,30 @@ export default function QuotePopup() {
           animate={{ scale: 1 }}
           exit={{ scale: 0 }}
           transition={{ duration: 0.5 }}
-          className="bg-white p-4 rounded shadow-lg position-relative"
-          style={{
-            maxWidth: "460px",
-            width: "90%",
-            overflow: "hidden",
-            borderRadius: "12px",
-            boxShadow: "0 4px 10px rgba(0, 0, 0, 0.1)",
-          }}
+          className="popup-container bg-white p-3 rounded shadow-lg position-relative"
         >
+          {/* Close Button */}
+          <button
+            className="btn-close position-absolute close-btn"
+            // style={{ top: 0, right: 0, zIndex: 3, fontSize: '22px' }}
+            onClick={() => setIsVisible(false)}
+          ></button>
+
           {/* Ribbon */}
           <div
-            className="position-absolute text-white fw-bold"
-            style={{
-              background: "red",
-              color: "white",
-              padding: "8px 30px",
-              top: "18px",
-              right: "-25px",
-              transform: "rotate(45deg)",
-              boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.2)",
-              fontSize: "0.875rem",
-              zIndex: 2,
-            }}
+            className="position-absolute text-white fw-bold ribbon"
           >
             20% OFF *
           </div>
 
-          <button
-            className="btn-close position-absolute"
-            style={{ top: 2, right: 0, zIndex: 3 }}
-            onClick={() => setIsVisible(false)}
-          ></button>
-          <h2 className="text-left text-[##000000]">
+          <h2 className="text-left text-dark">
             Hold On! <br /> Confused About Going Solar?
           </h2>
-          <p className="text-center text-muted">
+          <p className="text-left text-muted track-wide">
             Slash your electricity bills with our top-rated solar solutions! Act
             now - this <strong>exclusive offer</strong> won&apos;t last long! ⏳
           </p>
+
           <form className="mt-3" onSubmit={handleSubmit(onSubmit)}>
             <div className="mb-3">
               <input
@@ -165,14 +150,13 @@ export default function QuotePopup() {
                 placeholder="Your Full Name"
                 className="form-control p-2"
                 required
-                {...register("fullName", {
-                  required: "Full Name is required",
-                })}
+                {...register("fullName", { required: "Full Name is required" })}
               />
               {errors.fullName && (
                 <span className="error-message">{errors.fullName.message}</span>
               )}
             </div>
+
             <div className="mb-3">
               <input
                 type="email"
@@ -188,7 +172,6 @@ export default function QuotePopup() {
               )}
             </div>
 
-            {/* postal code */}
             <div className="mb-3">
               <input
                 type="text"
@@ -217,7 +200,6 @@ export default function QuotePopup() {
                 <option value="+1">🇺🇸 +1</option>
                 <option value="+91">🇮🇳 +91</option>
                 <option value="+971">🇦🇪 +971</option>
-                {/* Add more country codes as needed */}
               </select>
 
               <input
@@ -230,11 +212,11 @@ export default function QuotePopup() {
                 })}
               />
             </div>
+
             {errors.phone && (
               <span className="error-message">{errors.phone.message}</span>
             )}
 
-            {/* services  */}
             <div className="w-100">
               <NiceSelect
                 options={serviceData}
@@ -255,6 +237,7 @@ export default function QuotePopup() {
               Get My Exclusive Solar Savings Quote Now!
             </button>
           </form>
+
           <p
             className="text-center mt-3 text-muted"
             style={{ fontSize: "0.875rem" }}

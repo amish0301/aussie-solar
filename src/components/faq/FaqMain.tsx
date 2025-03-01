@@ -13,7 +13,7 @@ const FaqMain = () => {
         </div>
 
         {/* Contact Section - Right Column (only visible on medium and larger screens) */}
-        <div className="col-12 col-md-5 d-none d-md-block">
+        <div className="col-12 col-md-5 d-md-block faq-quote-container">
           <h2 className="mt-4 text-center">Request a Quote</h2>
           <HomePageContactForm />
         </div>

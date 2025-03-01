@@ -1,3 +1,5 @@
+import { MetaDataProps } from "@/interFace/interFace";
+import { Metadata } from "next";
 import Stripe from "stripe";
 
 export const animationCreate = () => {
@@ -7,5 +9,37 @@ export const animationCreate = () => {
   new (window as any).WOW.WOW({ live: false }).init();
 };
 
-
+// Generating Stripe session
 export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string ?? '');
+
+// MetaData
+export function generateMetadata({
+  title,
+  description,
+  url,
+  keywords,
+  image, // Default image
+}: MetaDataProps): Metadata {
+  const baseUrl = process.env.NEXT_PUBLIC_DOMAIN ?? "http://localhost:3000";
+
+  const images = Array.isArray(image) ? image : [image];
+
+  return {
+    title,
+    description,
+    metadataBase: new URL(baseUrl),
+    openGraph: {
+      url: `${baseUrl}${url}`,
+      title,
+      description,
+      images: images.map((img) => ({ url: img ? (img.startsWith("http") ? img : `${baseUrl}${img}`) : `${baseUrl}/default-image.jpg` })),
+    },
+    keywords,
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [{url: images[0] || `${baseUrl}/assets/opengraph-image.png`}],
+    },
+  };
+}

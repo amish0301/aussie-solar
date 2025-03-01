@@ -1,5 +1,6 @@
 import navMenuData from "@/data/menu/menu-data";
 import useGlobalContext from "@/hooks/use-context";
+import LocationIcon from "@/svg/LocationIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -13,7 +14,7 @@ const MobileMenu = () => {
     setopenSubMenu(!openSubMenu);
     setsubMenuNum(index);
   };
-  const blanklink = () => {}
+  const blanklink = () => {};
 
   return (
     <>
@@ -43,7 +44,9 @@ const MobileMenu = () => {
             >
               <Link
                 onClick={
-                  (item?.hasDropdown === false || item?.id == 4) ? toggleSideMenu : blanklink
+                  item?.hasDropdown === false || item?.id == 4
+                    ? toggleSideMenu
+                    : blanklink
                 }
                 href={item?.link}
               >
@@ -135,6 +138,21 @@ const MobileMenu = () => {
                 <p>info@kangaroosolar.com.au</p>
               </Link>
             </div>
+          </div>
+
+          {/* add address */}
+          <div className="mobile-menu-info d-flex align-items-center top-bar-mail">
+            <i>
+              <LocationIcon />
+            </i>
+            <p>Address 1 : 76 Cherish Drive, Tarneit, VIC - 3029</p>
+          </div>
+
+          <div className="mobile-menu-info d-flex align-items-center top-bar-mail">
+            <i>
+              <LocationIcon />
+            </i>
+            <p>Address 2 : 2 Fripp Cres, Beverly Hills, NSW 2209</p>
           </div>
         </div>
       </div>

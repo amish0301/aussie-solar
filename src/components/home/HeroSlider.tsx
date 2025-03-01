@@ -1,13 +1,12 @@
 "use client";
-import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
+import useGlobalContext from "@/hooks/use-context";
+import { useState } from "react";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css/bundle";
-import sliderImg1 from "../../../public/assets/img/featured-area.jpg";
-import sliderImg2 from "../../../public/assets/img/tesla-battery.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
 import sliderImg3 from "../../../public/assets/img/featured-area-3.jpg";
 import sliderImg4 from "../../../public/assets/img/featured-area-4.jpg";
-import useGlobalContext from "@/hooks/use-context";
+import sliderImg2 from "../../../public/assets/img/tesla-battery.jpg";
 const HeroSlider = () => {
   const { openLetterBox, setOpenLetterBox } = useGlobalContext();
   const [activeIndex, setActiveIndex] = useState(0);

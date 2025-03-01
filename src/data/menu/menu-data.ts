@@ -51,7 +51,7 @@ const navMenuData: MenuItem[] = [
       {
         id: 5.1,
         label: "Residential Solar",
-        link: "/packages/residential-solar",
+        link: "/packages/1",
         hasDropdown: true,
         subMenu: [
           {
@@ -85,7 +85,7 @@ const navMenuData: MenuItem[] = [
       {
         id: 16,
         label: "Commercial Solar",
-        link: "/packages/commercial-solar",
+        link: "/packages/2",
         hasDropdown: true,
         subMenu: [
           {

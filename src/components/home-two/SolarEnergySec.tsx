@@ -1,20 +1,17 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import bgImg from "../../../public/assets/img/get-in-touch-bgimg.jpg";
+import useGlobalContext from "@/hooks/use-context";
+import BattaryIconTwo from "@/svg/BattaryIconTwo";
+import CommercialSolarEnergyIcon from "@/svg/CommercialSolarEnergyIcon";
 import CredentialsIcon from "@/svg/CredentialsIcon";
-import SolarEnergyIcon from "@/svg/SolarEnergyIcon";
-import TechnologiesIcon from "@/svg/TechnologiesIcon";
+import ExpertiseIcon from "@/svg/ExpertiseIcon";
 import PhoneIcon from "@/svg/PhoneIcon";
+import SolarRetailer from "@/svg/SolarRetailer";
+import TechnologiesIcon from "@/svg/TechnologiesIcon";
+import Image from "next/image";
+import { useState } from "react";
+import bgImg from "../../../public/assets/img/get-in-touch-bgimg.jpg";
 import arista from "../../../public/assets/img/get-in-touch.png";
 import videoTwo from "../../../public/assets/residential_gif.gif";
-import ModalVideo from "react-modal-video";
-import BattaryIconTwo from "@/svg/BattaryIconTwo";
-import InvestmentIcon from "@/svg/InvestmentIcon";
-import CommercialSolarEnergyIcon from "@/svg/CommercialSolarEnergyIcon";
-import useGlobalContext from "@/hooks/use-context";
-import SolarRetailer from "@/svg/SolarRetailer";
-import ExpertiseIcon from "@/svg/ExpertiseIcon";
 
 const SolarEnergySec = () => {
   const { openLetterBox, setOpenLetterBox } = useGlobalContext();

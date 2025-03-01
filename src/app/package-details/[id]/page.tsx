@@ -1,21 +1,52 @@
-"use client";  // Mark the component as a Client Component
+// "use client"; // Mark the component as a Client Component
 
 import LetterBox from "@/components/home-two/LetterBox";
 import PackageDetailsMain from "@/components/package-details/PackageDetailsMain";
 import MobileSearch from "@/components/shearedComponents/MobileSearch";
+import { packagesData } from "@/data/package-data";
+import { TserviceData } from "@/interFace/interFace";
 import Wrapper from "@/layout/DefaultWrapper";
-import { useParams } from "next/navigation"; // ✅ Use useParams() instead of useRouter()
-import { useEffect, useState } from "react";
+import { Metadata } from "next";
 
-const ProjectDetailsDynamicPage = () => {
-  const { id } = useParams(); // ✅ Fetch the dynamic route parameter
-  const [numericId, setNumericId] = useState<number | null>(null);
+// MetaData
+export async function generateMetadata({
+  params,
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
+  const numericId = Number(params.id);
 
-  useEffect(() => {
-    if (id) {
-      setNumericId(Number(id));
-    }
-  }, [id]);
+  const packageData: TserviceData | undefined = packagesData
+    .flatMap((category) => category.packages) // Flatten all packages into a single array
+    .find((pkg) => pkg.id === numericId); // Find package by id
+
+  return {
+    title: packageData?.title ?? "Package Details - Kangaroo Solar",
+    description: packageData?.tagLine ?? "Learn more about our solar packages.",
+    metadataBase: new URL(
+      process.env.NEXT_PUBLIC_DOMAIN ?? "http://localhost:3000"
+    ),
+    openGraph: {
+      title: packageData?.title ?? "Package Details - Kangaroo Solar",
+      description:
+        packageData?.tagLine ??
+        "Discover our cost-effective and high-efficiency solar panel solutions.",
+      images: packageData?.img
+        ? [
+            {
+              url:
+                typeof packageData.img === "string"
+                  ? packageData.img
+                  : packageData.img.src ?? "",
+            },
+          ]
+        : [],
+    },
+  };
+}
+
+const PackageDetailsDynamicPage = ({ params }: { params: { id: string } }) => {
+  const numericId = Number(params.id);
 
   return (
     <>
@@ -34,4 +65,4 @@ const ProjectDetailsDynamicPage = () => {
   );
 };
 
-export default ProjectDetailsDynamicPage;
+export default PackageDetailsDynamicPage;

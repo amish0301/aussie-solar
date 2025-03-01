@@ -6,6 +6,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import bgImg from "../../../public/assets/img/footer.jpg";
 import Logo from "../../../public/assets/img/logo2.png";
+import { useState } from "react";
+import { toast } from "sonner";
 const FooterTwo = () => {
   const year: number = new Intl.DateTimeFormat("en-AU", {
     year: "numeric",
@@ -13,6 +15,44 @@ const FooterTwo = () => {
   }).format(new Date()) as unknown as number;
 
   const pathName = usePathname();
+  const [emailSubscription, setEmailSubscription] = useState("");
+
+  const handleSubscribe = async (e:React.FormEvent) => {
+    e.preventDefault();
+
+    console.log(emailSubscription);
+    const toastId = toast.loading("Subscribing to Newsletter...");
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY,
+          SubscribedMail: emailSubscription,
+          message: `${emailSubscription} has Just Subscribe for NewsLetter`
+        }),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        toast.success(
+          "Thank you for Subscribing Our News Letter",
+          {
+            id: toastId,
+            duration: 1500,
+          }
+        );
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
   return (
     <>
       <footer
@@ -163,13 +203,14 @@ const FooterTwo = () => {
                     </i>
                     <h3>Subscribe to our newsletter.</h3>
                   </div>
-                  <form>
+                  <form onSubmit={handleSubscribe}>
                     <input
-                      type="text"
+                      type="email"
                       name="email"
                       placeholder="Enter your email address..."
+                      onChange={(e) => setEmailSubscription(e.target.value)}
                     />
-                    <button className="button">Subscribe</button>
+                    <button className="button" type="submit">Subscribe</button>
                   </form>
                 </div>
               </div>

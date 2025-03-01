@@ -140,6 +140,14 @@ export interface packagesType {
   packages: TserviceData[];
 }
 
+export interface MetaDataProps {
+  title: string;
+  description: string;
+  url: string;
+  keywords?: string[];
+  image?: string | string[];
+}
+
 export interface BreadCrumbDefaultPropType {
   title: string;
   pages: string;

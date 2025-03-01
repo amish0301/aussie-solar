@@ -1,11 +1,10 @@
-import { projectData } from "@/data/project-data";
+import { allBrands } from "@/data/service-product-data";
 import { TserviceData } from "@/interFace/interFace";
 import ArrowIcon from "@/svg/ArrowIcon";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import Sponsors from "../home/Sponsors";
 import GetInTouch from "../shearedComponents/GetInTouch";
-import { allBrands } from "@/data/service-product-data";
 
 interface propType {
   packages: TserviceData[];
@@ -34,7 +33,9 @@ const OurProjectsSce = ({ packages }: propType) => {
                           <h5>{item?.title}</h5>
                         </Link>
                         <h6>{item?.kwp}</h6>
-                        <span style={{color: "black", fontWeight: "bold"}}>Package</span>
+                        <span style={{ color: "black", fontWeight: "bold" }}>
+                          Package
+                        </span>
                         <Link href={`/package-details/${item?.id}`}>
                           <i>
                             <ArrowIcon />
