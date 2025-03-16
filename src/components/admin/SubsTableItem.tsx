@@ -1,11 +1,10 @@
-import { TAdminEmail } from "@/app/admin/subscriptions/page";
 import React from "react";
 
 interface propsType {
-    email: string,
-    mongoId: string,
-    deleteEmail: (mongoId: string) => void,
-    date: string
+  email: string;
+  mongoId: string;
+  deleteEmail: (mongoId: string) => void;
+  date: string;
 }
 
 const SubsTableItem = ({ email, mongoId, deleteEmail, date }: propsType) => {
