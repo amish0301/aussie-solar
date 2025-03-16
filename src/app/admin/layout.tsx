@@ -3,7 +3,7 @@ import Sidebar from "@/components/admin/Sidebar";
 import { getServerSession } from "next-auth";
 
 import { ReactNode } from "react";
-import { authOptions } from "../api/auth/[...nextauth]/route";
+import authOption from "../api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 
 interface LayoutProps {
@@ -11,7 +11,7 @@ interface LayoutProps {
 }
 
 export default async function Layout({ children }: LayoutProps) {
-  const session = await getServerSession(authOptions);
+  const session = await getServerSession(authOption);
 
   if (!session) {
     redirect("/login");

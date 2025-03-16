@@ -1,13 +1,13 @@
-import NextAuth from 'next-auth';
-import CredentialsProvider from 'next-auth/providers/credentials';
-import { connectDB } from '@/utils/utils';
-import User from '@/models/user';
-import bcrypt from 'bcryptjs';
+import NextAuth, { NextAuthOptions } from "next-auth";
+import CredentialsProvider from "next-auth/providers/credentials";
+import { connectDB } from "@/utils/utils";
+import User from "@/models/user";
+import bcrypt from "bcryptjs";
 
-export const authOptions = {
+const authOptions: NextAuthOptions = {
     providers: [
         CredentialsProvider({
-            name: 'Credentials',
+            name: "Credentials",
             credentials: {
                 email: { label: "Email", type: "email" },
                 password: { label: "Password", type: "password" },
@@ -20,43 +20,46 @@ export const authOptions = {
                 await connectDB();
 
                 const user = await User.findOne({ email: credentials.email });
-                if (!user || !['admin', 'super_admin'].includes(user.role)) {
+                if (!user || !["admin", "super_admin"].includes(user.role)) {
                     throw new Error("Admin not found or unauthorized");
                 }
 
-                // verify password
                 const isPasswordValid = await bcrypt.compare(credentials.password, user.password);
                 if (!isPasswordValid) {
                     throw new Error("Invalid password");
                 }
 
-                return { id: user._id, email: user.email, role: user.role };
-            }
-        })
+                return { id: user._id.toString(), email: user.email, role: user.role };
+            },
+        }),
     ],
-    session: { strategy: 'jwt' as const },
+    session: { strategy: "jwt" as const },
     callbacks: {
-        async jwt({ token, user }: any) {
+        async jwt({ token, user }: { token: any, user?: any }) {
             if (user) {
+                token.id = user.id;
                 token.role = user.role;
             }
             return token;
         },
-        async session({ session, token }: any) {
+        async session({ session, token }: { session: any, token: any }) {
             if (session.user) {
-                session.user.role = token.role;
+                session.user.id = token.id as string;
+                session.user.role = token.role as string;
             }
             return session;
         },
-        async redirect({ url, baseUrl }: any) {
+        async redirect({ url, baseUrl }: { url: any, baseUrl: any }) {
             return url.startsWith(baseUrl) ? url : "/admin";
-        }
+        },
     },
-    secret: process.env.NEXT_AUTH_SESSION_SECRET,
+    secret: process.env.NEXTAUTH_SECRET,
     pages: {
-        signIn: '/login'
-    }
+        signIn: "/login",
+    },
 };
 
 const handler = NextAuth(authOptions);
+
 export { handler as GET, handler as POST };
+export default handler;
