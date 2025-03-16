@@ -111,8 +111,6 @@ const navMenuData: MenuItem[] = [
           { id: 16.6, label: "Custom Size Solution", link: "/contact" },
         ],
       },
-      // { id: 14, label: "our blog", link: "/our-blog" },
-      // { id: 15, label: "blog details", link: "/blog-details" },
     ],
   },
   {
@@ -127,6 +125,8 @@ const navMenuData: MenuItem[] = [
       { id: 12, label: "Payment", link: "/payment" },
       { id: 14, label: "Gallery", link: "/gallery" },
       { id: 15, label: "Contact Us", link: "/contact" },
+      { id: 16, label: "our blogs", link: "/our-blog" },
+      // { id: 17, label: "blog details", link: "/blog-details" },
     ],
   },
 ];

@@ -1,17 +1,43 @@
-import { TblogData } from "@/interFace/interFace";
-import Image, { StaticImageData } from "next/image";
-import React from "react";
-import videoBg from "../../../public/assets/img/video-2.jpg";
+"use client";
+
+import { IBlog } from "@/models/blog";
+import Preloader from "@/utils/Preloader";
+import axios from "axios";
+import Image from "next/image";
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import blogImg from "../../../public/assets/img/blog-details-1.jpg";
 import blogImg2 from "../../../public/assets/img/blog-details-2.jpg";
-import comment1 from "../../../public/assets/img/comment-1.jpg";
-import comment2 from "../../../public/assets/img/comment-2.jpg";
-import Link from "next/link";
-import BlogCommentForm from "@/forms/BlogCommentForm";
-interface propsType {
-  data: TblogData;
-}
-const BlogDetailsContent = ({ data }: propsType) => {
+import videoBg from "../../../public/assets/img/video-2.jpg";
+import BlogRightSidebar from "../our-blog/BlogRightSidebar";
+
+const BlogDetailsContent = ({ id }: { id: string }) => {
+
+  // fetch blog data corresponding id
+  const [data, setData] = useState<IBlog>();
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+
+    async function fetchData() {
+      try {
+        const res = await axios.get(`/api/blogs?id=${id}`);
+        if(res.data.success) {
+          setData(res.data?.blogs[0]);
+          setIsLoading(false);
+        }
+      } catch (error) {
+        console.log(String(error) || "Error in fetching Blog data", error);
+      }finally {
+        setIsLoading(false);
+      }
+    }
+
+    if(id) fetchData();
+  }, [id])
+
+  if(isLoading) return <Preloader />
+
   return (
     <section className="gap">
       <div className="container">
@@ -19,48 +45,40 @@ const BlogDetailsContent = ({ data }: propsType) => {
           <div className="col-lg-8">
             <div className="our-blog-text">
               <div className="our-blog-text-img">
-                <figure>
-                  <Image alt="img" src={data?.img} />
-                </figure>
+                {/* <figure>
+                  <Image alt="img" src={data?.image ?? ""} />
+                </figure> */}
                 <div className="d-flex admin">
-                  <Image alt="img" src={data?.authorImg as StaticImageData} />
-                  <h5>{data?.author}</h5>
+                  <Image alt="img" width={25} height={25} src={data?.authorImg as string || "https://www.gravatar.com/avatar/"} />
+                  <h5>{data?.author || "Author"}</h5>
                 </div>
               </div>
-              <span>{data?.designation}</span>
+              {/* <span>{data?.designation}</span> */}
               <h2>{data?.title}</h2>
               <div className="d-flex">
                 <h6>
-                  <Link href="#">{data?.date}</Link>
+                  <Link href="#">{new Date(data?.createdAt || "").toLocaleDateString("en-US", {
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                  })}</Link>
                 </h6>
-                <div className="d-flex align-items-center me-4">
+                {/* <div className="d-flex align-items-center me-4">
                   <Image
                     alt="vector"
                     className="me-2"
                     src={data?.commentLogo}
                   />
                   <span className="pe-0">{data?.comment}</span>
-                </div>
+                </div> */}
               </div>
             </div>
+
+{/* BLOG CONTENT */}
+
             <div className="blog-details-text">
-              <p>
-                Leading renewable energy solutions provider that is
-                revolutionising and redefining the way sustainable energy
-                sources are harnessed across the world. Present in 18 countries
-                across Asia, Australia, Europe Africa and the Americas, Veztaz
-                is powering.
-              </p>
-              <p>
-                Never ever think of giving up. Winners never quit and quitters
-                never win. Take all negative words out of your mental dictionary
-                and focus on the solutions with utmost conviction and patience.
-                The battle is never lost until you’ve abandon your vision. But
-                what if you’re really exhausted physically, mentally, and most
-                of all emotionally? Here are some sources of motivation to
-                prompt you in reaching the peak of accomplishment.
-              </p>
-              <ul className="custom-listing-stlyes">
+              {data?.content && data?.content.split('\n').map((content, index) => (<p key={index} className="pb-1">{content}</p>))}
+              {/* <ul className="custom-listing-stlyes">
                 <li>
                   <h4>Custom Listing Stlyes</h4>
                 </li>
@@ -86,16 +104,18 @@ const BlogDetailsContent = ({ data }: propsType) => {
                   <div className="bol"></div>Interested discretion estimating on
                   stimulated.
                 </li>
-              </ul>
-              <div className="video">
+              </ul> */}
+              <div>
                 <figure>
                   <Image
                     alt="img"
                     style={{ width: "100%", height: "auto" }}
-                    src={videoBg}
+                    height={40}
+                    width={40}
+                    src={data?.image || videoBg}
                   />
                 </figure>
-                <button>
+                {/* <button>
                   <i>
                     <svg
                       width="11"
@@ -110,33 +130,15 @@ const BlogDetailsContent = ({ data }: propsType) => {
                       />
                     </svg>
                   </i>
-                </button>
+                </button> */}
               </div>
               <h2>
                 “Success is the result of perfection, hard work, learning from
                 failure, loyalty, and persistence”
               </h2>
-              <p className="mt-5">
-                Never ever think of giving up. Winners never quit and quitters
-                never win. Take all negative words out of your mental dictionary
-                and focus on the solutions with utmost conviction and patience.
-                The battle is never lost until you’ve abandon your vision. But
-                what if you’re really exhausted physically, mentally, and most
-                of all emotionally? Here are some sources of motivation to
-                prompt you in reaching the peak of accomplishment.
-              </p>
-              <h4>How Solar Energy is the Solution</h4>
+              <h4>Which is the best Australian-owned solar company that offers top-quality solar panel installations and energy-efficient solutions?</h4>
               <p>
-                Never ever think of giving up. Winners never quit and quitters
-                never win. Take all negative words out of your mental dictionary
-                and focus on the solutions with utmost conviction and patience.
-                The battle is never lost until you’ve some sources of motivation
-                to prompt you in reaching the peak of accomplishment.
-              </p>
-              <p>
-                Global demand for a Circular Economy solution is already high,
-                with global concrete manufacturers engaging with us to{" "}
-                <b>develop specific testing programmes.</b>
+              Kangaroo Solar is one of Australia's leading solar energy providers, offering top-quality solar panel installations, battery storage solutions, and energy-efficient systems for homes and businesses. As a 100% Australian-owned company, we take pride in delivering affordable solar solutions that help reduce electricity bills while promoting a greener future. Our expert team ensures seamless solar system installation with <b>premium Tier-1</b> solar panels and cutting-edge technology. Looking for the best solar provider in Australia to maximize your energy savings?
               </p>
               <div className="row">
                 <div className="col-lg-6">
@@ -164,32 +166,28 @@ const BlogDetailsContent = ({ data }: propsType) => {
               </div>
               <h4 className="pt-0">Professionals and relevant experience!</h4>
               <p>
-                Our immediate goal is to complete the testing phase and achieve
-                the certification, which will allow us to bring our product to
-                market by the end of the year. We are actively engaging with
-                waste to energy operators, concrete manufacturers, and the wider
-                construction industry.
+              When choosing a solar energy provider, working with experienced solar professionals is crucial to ensure a seamless installation and long-term performance. At Kangaroo Solar, our team consists of certified solar installers, licensed electricians, and industry experts with years of hands-on experience in delivering high-quality solar panel systems across Australia.
               </p>
               <p>
-                Global demand for a Circular Economy solution is already high,
-                with global concrete manufacturers engaging with us to develop
-                specific testing programmes.
+              With our deep expertise in solar energy solutions, we guarantee tailored solar system designs, efficient solar panel installation, and ongoing support to maximize your energy savings. Whether it's a residential solar system, commercial solar setup, or battery storage solution, our professionals bring the relevant industry experience needed to ensure smooth project execution and compliance with Australian solar standards.
               </p>
-              <div className="share-this">
+
+
+              {/* <div className="share-this">
                 <h6>SHARE THIS:</h6>
                 <ul>
                   <li>
-                    <Link href="/https://www.facebook.com/">Facebook</Link>
+                    <Link href="https://www.facebook.com/">Facebook</Link>
                   </li>
                   <li>
-                    <Link href="/https://twitter.com/">Twitter</Link>
+                    <Link href="https://twitter.com/">Twitter</Link>
                   </li>
                   <li>
-                    <Link href="/https://bd.linkedin.com/">LinkedIn</Link>
+                    <Link href="https://bd.linkedin.com/">LinkedIn</Link>
                   </li>
                 </ul>
-              </div>
-              <div className="comment">
+              </div> */}
+              {/* <div className="comment">
                 <h4>Comments</h4>
                 <ul className="comment-ul-child">
                   <li className="single-comment">
@@ -231,20 +229,22 @@ const BlogDetailsContent = ({ data }: propsType) => {
                         Delivered ye sportsmen zealously arranging frankness
                         estimable as. Nay any article enabled musical shyness
                         yet sixteen.
-                      </p> 
+                      </p>
                     </div>
                   </li>
                 </ul>
-              </div>
-              <div className="comment leave">
+              </div> */}
+              {/* <div className="comment leave">
                 <h4>Leave a Comment</h4>
                 <p>Your email address will not be published.</p>
-                 <BlogCommentForm/>
-              </div>
+                <BlogCommentForm />
+              </div> */}
+
+
             </div>
           </div>
 
-          <div className="col-lg-4">
+          {/* <div className="col-lg-4">
             <div className="posts">
               <h4>Recent Posts</h4>
               <div className="line"></div>
@@ -273,7 +273,9 @@ const BlogDetailsContent = ({ data }: propsType) => {
                 </li>
                 <li>
                   <div>
-                    <Link href="#">Metal Roofing: The Best for Solar Panels</Link>
+                    <Link href="#">
+                      Metal Roofing: The Best for Solar Panels
+                    </Link>
                     <span>December 12, 2023</span>
                   </div>
                   <div>
@@ -282,6 +284,7 @@ const BlogDetailsContent = ({ data }: propsType) => {
                 </li>
               </ul>
             </div>
+            <RecentPosts />
             <div className="posts mt-4">
               <h4>Recent Comments</h4>
               <div className="line"></div>
@@ -373,7 +376,8 @@ const BlogDetailsContent = ({ data }: propsType) => {
                 </li>
               </ul>
             </div>
-          </div>
+          </div> */}
+          <BlogRightSidebar />
         </div>
       </div>
     </section>

@@ -46,6 +46,13 @@ export type TblogData = {
   propsClass?:string;
   propsClassTwo?:string;
 };
+
+export type TblogCategories = {
+  id: number;
+  category: string;
+  href: string;
+}
+
 export type TprojectData = {
   id: number;
   title: string;

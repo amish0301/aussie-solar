@@ -2,8 +2,8 @@ import AppProvider from "@/contextApi/AppProvider";
 import QuotePopup from "@/forms/PopUpHomeQuote";
 import { Metadata } from "next";
 import { Toaster } from "sonner";
-import "../style/index.scss";
 import "./globals.css";
+import "../style/index.scss";
 if (typeof window !== "undefined") {
   require("bootstrap/dist/js/bootstrap");
 }
@@ -134,7 +134,7 @@ export default function RootLayout({
           <AppProvider>
             {children}
             <QuotePopup />
-            <Toaster position="bottom-center" richColors />
+            <Toaster position="bottom-center" richColors theme="dark" />
           </AppProvider>
         </body>
       </html>

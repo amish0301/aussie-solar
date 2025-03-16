@@ -1,4 +1,5 @@
 import { MetaDataProps } from "@/interFace/interFace";
+import mongoose from "mongoose";
 import { Metadata } from "next";
 import Stripe from "stripe";
 
@@ -39,7 +40,23 @@ export function generateMetadata({
       card: "summary_large_image",
       title,
       description,
-      images: [{url: images[0] || `${baseUrl}/assets/opengraph-image.png`}],
+      images: [{ url: images[0] || `${baseUrl}/assets/opengraph-image.png` }],
     },
   };
 }
+
+// MongoDB connection
+export const connectDB = async () => {
+  try {
+    if (mongoose.connection.readyState >= 1) {
+      return; // Already connected
+    }
+
+    await mongoose.connect(process.env.NEXT_MONGODB_URI as string, {
+      dbName: "Kangaroo_Solar",
+    } as any);
+  } catch (error) {
+    console.error("MongoDB connection failed:", error);
+    process.exit(1);
+  }
+};

@@ -4,7 +4,16 @@ const nextConfig = {
   compress: true,
   reactStrictMode: true,
   typescript: {
-    ignoreBuildErrors: false
+    ignoreBuildErrors: false,
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.gravatar.com",
+        pathname: "/avatar/**",
+      },
+    ],
   },
 };
 

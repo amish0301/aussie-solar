@@ -1760,6 +1760,7 @@ header.two button.search-btn svg {
   clip-path: inset(26% 0 0 35%);
   top: -14px;
   -webkit-animation-name: rotateme;
+  animation-name: rotateme;
   -webkit-animation-duration: 88s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;

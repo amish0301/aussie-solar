@@ -1,17 +1,11 @@
-import LoginMain from '@/components/login/LoginMain';
-import Wrapper from '@/layout/DefaultWrapper';
-import React from 'react';
+import LoginMain from "@/components/login/LoginMain";
 
 const LoginPage = () => {
-    return (
-        <>
-            <Wrapper>
-                <main>
-                    <LoginMain/>
-                </main>
-            </Wrapper>
-        </>
-    );
+  return (
+    <>
+      <LoginMain />
+    </>
+  );
 };
 
 export default LoginPage;

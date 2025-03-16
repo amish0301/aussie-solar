@@ -1,9 +1,7 @@
 import BlogDetailsMain from "@/components/blog-details/BlogDetailsMain";
-import useGlobalContext from "@/hooks/use-context";
 import Wrapper from "@/layout/DefaultWrapper";
-import React, { useEffect } from "react";
 
-const BlogDetailsDynamicPage = ({ params }: { params: { id: number } }) => {
+const BlogDetailsDynamicPage = ({ params }: { params: { id: string } }) => {
   const id = params.id;
   return (
     <>

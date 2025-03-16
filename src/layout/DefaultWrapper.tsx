@@ -28,7 +28,6 @@ const Wrapper: React.FC<WrapperProps> = ({ children }) => {
 
   return (
     <> 
-     
       <div className={`${isLoading ? "" : "page-loaded"}`}>
         <Preloader/>
         {(() => {

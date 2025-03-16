@@ -14,7 +14,8 @@ import ourBlogImg5 from "../../public/assets/img/our-blog-5.jpg"
 import adminImg from "../../public/assets/img/admin.jpg" 
 import vectorImg from "../../public/assets/img/vector.png"
 import authorImg from "../../public/assets/img/man.jpg"
-import { TblogData } from "@/interFace/interFace" 
+import { TblogCategories, TblogData } from "@/interFace/interFace" 
+
 export const blogData:TblogData[] = [
     {
         id:1,
@@ -121,4 +122,22 @@ export const blogData:TblogData[] = [
         authorImg:authorImg,
     },
 
+]
+
+export const blogCategories: TblogCategories[] = [
+    {
+        id: 1,
+        category: "Services",
+        href: "/blog?category=service"
+    },
+    {
+        id: 2,
+        category: "Solar Packages",
+        href: "/blog?category=packages"
+    },
+    {
+        id: 3,
+        category: "Solar Products",
+        href: "/blog?category=products"
+    }
 ]
