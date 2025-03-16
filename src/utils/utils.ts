@@ -49,12 +49,14 @@ export function generateMetadata({
 export const connectDB = async () => {
   try {
     if (mongoose.connection.readyState >= 1) {
+      console.log('not working');
       return; // Already connected
     }
 
     await mongoose.connect(process.env.NEXT_MONGODB_URI as string, {
       dbName: "Kangaroo_Solar",
     } as any);
+
   } catch (error) {
     console.error("MongoDB connection failed:", error);
     process.exit(1);
