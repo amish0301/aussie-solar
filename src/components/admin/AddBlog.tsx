@@ -1,11 +1,12 @@
 "use client";
+
 import axios from "axios";
 import Image from "next/image";
 import React, { useState } from "react";
 import { toast } from "sonner";
 import upload_area from "../../../public/assets/img/upload_area.png";
 
-const page = () => {
+const AddBlog = () => {
   const [image, setImage] = useState<File | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [data, setData] = useState({
@@ -140,4 +141,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default AddBlog;
