@@ -3,11 +3,11 @@
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 
+import { usePathname } from "next/navigation";
 import addIcon from "../../../public/assets/img/add_icon.png";
-import logo from "../../../public/assets/img/logo.png";
 import blog_icon from "../../../public/assets/img/blog_icon.png";
 import email_icon from "../../../public/assets/img/email_icon.png";
-import { usePathname } from "next/navigation";
+import logo from "../../../public/assets/img/logo.png";
 
 interface SidebarLinkProps {
   href: string;
@@ -42,15 +42,16 @@ function SidebarLink({ href, icon, label, active }: SidebarLinkProps) {
 
 export default function Sidebar() {
   const pathname = usePathname();
+  
   return (
     <div
       className="d-flex flex-column bg-light vh-100 border-end shadow-md"
       style={{ width: "18rem" }}
     >
       {/* Logo Section */}
-      <div className="px-4 py-3 border-bottom cursor-pointer text-center bg-white">
+      <Link href={'/admin'} className="px-4 py-3 border-bottom cursor-pointer text-center bg-white cursor-pointer">
         <Image src={logo} width={140} height={50} alt="Logo" />
-      </div>
+      </Link>
 
       {/* Sidebar Section */}
       <div className="d-flex flex-column gap-3 p-3">

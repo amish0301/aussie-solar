@@ -16,4 +16,6 @@ const BlogDetailsMain = ({ id }: idType) => {
   );
 };
 
+// MONGO_URI IS CHANGED SO MIGHT NOT WORK - LOGIN AND ALL
+
 export default BlogDetailsMain;
