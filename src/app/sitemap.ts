@@ -3,7 +3,7 @@ import { serviceData } from "@/data/service-data";
 import { fetchBlogDataFromDB } from "@/utils/siteMapData";
 import { MetadataRoute } from "next";
 
-export const revalidate = 300;
+export const revalidate = 100;
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
