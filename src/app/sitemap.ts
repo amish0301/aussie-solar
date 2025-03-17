@@ -1,8 +1,9 @@
 import { packagesData } from "@/data/package-data";
 import { serviceData } from "@/data/service-data";
+import { fetchBlogDataFromDB } from "@/utils/siteMapData";
 import { MetadataRoute } from "next";
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // for package data - package type | residential | commercial
   const packageTypeEntries: MetadataRoute.Sitemap = packagesData?.map(({ id }) => ({
@@ -12,29 +13,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // for package details - e.g residential > 6.6,13.2 etc
   const packageDataEntries: MetadataRoute.Sitemap = packagesData?.flatMap(pkg => pkg.packages).map(({ id }) => ({
     url: `${process.env.NEXT_PUBLIC_DOMAIN}/package-details/${id}`,
-    priority: 9
+    priority: 0.9
   }))
 
-
   // for service details
-  const serviceDataEntries: MetadataRoute.Sitemap = serviceData?.map(({id}) => ({
+  const serviceDataEntries: MetadataRoute.Sitemap = serviceData?.map(({ id }) => ({
     url: `${process.env.NEXT_PUBLIC_DOMAIN}/service-details/${id}`,
-    priority: 7
+    priority: 0.7
   }));
 
+  // for blog data
+  const blogDataEntries: MetadataRoute.Sitemap = await fetchBlogDataFromDB();
 
   return [
     {
       url: `${process.env.NEXT_PUBLIC_DOMAIN}`,
-      priority: 10,
+      priority: 1,
     },
     {
       url: `${process.env.NEXT_PUBLIC_DOMAIN}/services`,
-      priority: 8
+      priority: 0.8
     },
     {
       url: `${process.env.NEXT_PUBLIC_DOMAIN}/about`,
-      priority: 5
+      priority: 0.5
     },
 
     ...packageTypeEntries,
@@ -42,6 +44,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...packageDataEntries,
 
     ...serviceDataEntries,
+
+    ...blogDataEntries,
 
 
     // static and secondary routes
