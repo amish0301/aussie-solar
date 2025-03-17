@@ -3,6 +3,7 @@
 import LetterBox from "@/components/home-two/LetterBox";
 import HomeMain from "@/components/home/HomeMain";
 import MobileSearch from "@/components/shearedComponents/MobileSearch";
+import QuotePopup from "@/forms/PopUpHomeQuote";
 import Wrapper from "@/layout/DefaultWrapper";
 import { generateMetadata } from "@/utils/utils";
 
@@ -48,6 +49,7 @@ const Home = () => {
       <Wrapper>
         <main>
           <HomeMain />
+          <QuotePopup />
           <LetterBox />
         </main>
       </Wrapper>
