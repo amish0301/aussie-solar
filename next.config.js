@@ -14,6 +14,7 @@ const nextConfig = {
         pathname: "/avatar/**",
       },
     ],
+    domains: ["res.cloudinary.com"]
   },
 };
 
