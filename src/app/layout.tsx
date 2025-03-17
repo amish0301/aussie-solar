@@ -32,7 +32,7 @@ export const metadata: Metadata = {
       "Kangaroo Solar - Premium Solar Panel Installation & Battery Storage",
     description:
       "Power your home with top-tier solar panel systems, expert installations, and sustainable energy solutions. Trusted by thousands across Australia.",
-    url: process.env.NEXT_PUBLIC_DOMAIN ?? "http://localhost:3000",
+    url: process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000",
     siteName: "Kangaroo Solar",
     images: [
       {
@@ -54,10 +54,10 @@ export const metadata: Metadata = {
     images: ["/assets/img/solar-panel.jpg"],
   },
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_DOMAIN ?? "http://localhost:3000"
+    process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000"
   ),
   alternates: {
-    canonical: process.env.NEXT_PUBLIC_DOMAIN ?? "http://localhost:3000",
+    canonical: process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000",
   },
 };
 

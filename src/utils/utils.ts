@@ -11,7 +11,7 @@ export const animationCreate = () => {
 };
 
 // Generating Stripe session
-export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string ?? '');
+export const stripe = new Stripe(process.env.STRIPE_SECRET_KEY as string || '');
 
 // MetaData
 export function generateMetadata({

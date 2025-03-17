@@ -19,7 +19,7 @@ const HomeMain = () => {
       <LatestInstallations classOne="" noBottom="no-bottom" />
       <WhyUse bgImg={bgImg} propsClass="" />
       {/* <PricingPlan /> */}
-      <Sponsors brands={allBrands ?? []} />
+      <Sponsors brands={allBrands || []} />
       <ProcessSolutionsSec propsClass="gap" />
       <RequestAQuote noTop="no-top" quoteClass="" />
       <TestimonialsSec propsClass="no-top" />
