@@ -1,4 +1,5 @@
 import Blog from "@/models/blog";
+import cloudinary from "@/utils/cloudinary";
 import { connectDB } from "@/utils/utils";
 import { writeFile } from 'fs/promises'
 import { NextRequest, NextResponse } from "next/server";
@@ -61,11 +62,25 @@ export async function POST(req: NextRequest) {
 
     let imgUrl = "";
     if (image && image instanceof File) {
-      const imageByteData = await image.arrayBuffer();
-      const buffer = Buffer.from(imageByteData);
-      const path = `./public/${timestamp}_${image.name}`;
-      writeFile(path, buffer);
-      imgUrl = `/${timestamp}_${image.name}`;
+
+      // FOR DEV ENV use below
+
+      // const imageByteData = await image.arrayBuffer();
+      // const buffer = Buffer.from(imageByteData);
+      // const path = `./public/${timestamp}_${image.name}`;
+      // writeFile(path, buffer);
+      // imgUrl = `/${timestamp}_${image.name}`;
+
+      const arrayBuffer = await image.arrayBuffer();
+      const buffer = Buffer.from(arrayBuffer);
+
+      // Upload image to Cloudinary
+      const uploadResponse = await cloudinary.uploader.upload(`data:image/jpeg;base64,${buffer.toString("base64")}`, {
+        folder: "blogs",
+      });
+
+      imgUrl = uploadResponse.secure_url; // Get the uploaded image URL
+
     }
 
     await Blog.create({

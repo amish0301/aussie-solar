@@ -3,6 +3,7 @@
 import { connectDB } from "@/utils/utils";
 import { NextRequest, NextResponse } from "next/server";
 import Blog from '@/models/blog'
+import cloudinary from "@/utils/cloudinary";
 
 
 export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
@@ -37,6 +38,19 @@ export async function DELETE(req: NextRequest, { params }: { params: { id: strin
     try {
         await connectDB();
         const { id } = params;
+
+
+        // find blog
+        const blog = await Blog.findById(id);
+        if (blog.image) {
+            const imageUrl = blog.image;
+            const publicId = imageUrl.split("/").pop()?.split(".")[0]; // Extract public ID from URL
+      
+            if (publicId) {
+              // Delete image from Cloudinary
+              await cloudinary.uploader.destroy(`blogs/${publicId}`);
+            }
+          }
 
         const blogDeleted = await Blog.findByIdAndDelete(id);
 
