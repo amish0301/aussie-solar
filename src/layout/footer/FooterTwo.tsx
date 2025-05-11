@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import bgImg from "../../../public/assets/img/footer.jpg";
-import Logo from "../../../public/assets/img/logo2.png";
+import Logo from "../../../public/assets/img/Aussie_logo2.png";
 import { useState } from "react";
 import { toast } from "sonner";
 const FooterTwo = () => {
@@ -68,7 +68,7 @@ const FooterTwo = () => {
                 </Link>
                 <p>
                   <strong>Powering Australia with Smart Solar Solutions</strong>{" "}
-                  - Kangaroo Solar revolutionizes energy with high-performance
+                  - Aussie Electrical Solar Energy revolutionizes energy with high-performance
                   solar, battery storage, and smart solutions, maximizing
                   savings and sustainability for homes and businesses.
                 </p>
@@ -105,8 +105,8 @@ const FooterTwo = () => {
                     <i>
                       <EmailTwoIcon />
                     </i>
-                    <Link href="mailto:info@kangaroosolar.com.au">
-                      <p>info@kangaroosolar.com.au</p>
+                    <Link href="mailto:Jared@aussieelectricalsolarenergy.com.au">
+                      <p>Jared@aussieelectricalsolarenergy.com.au</p>
                     </Link>
                   </div>
                 </div>
@@ -115,7 +115,7 @@ const FooterTwo = () => {
                     <LocationTwoIcon />
                   </i>
                   <div>
-                    <p>76 Cherish Drive, Tarneit, VIC - 3029</p>
+                    {/* <p>76 Cherish Drive, Tarneit, VIC - 3029</p> */}
                     <p>2 Fripp Cres, Beverly Hills, NSW 2209</p>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ const FooterTwo = () => {
           )}
 
           <div className="footer-bottom">
-            <p>Ⓒ Copyright Kangaroo Solar {year}. All Right Reserved.</p>
+            <p>Ⓒ Copyright Aussie Electrical Solar Energy {year}. All Right Reserved.</p>
             <ul>
               <li>
                 <Link href="#">Privacy Policy</Link>

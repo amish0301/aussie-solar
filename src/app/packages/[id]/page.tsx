@@ -20,12 +20,12 @@ export async function generateMetadata({
 
   return {
     metadataBase,
-    title: data?.title ?? "Kangaroo Solar Packages",
+    title: data?.title ?? "Aussie Electrical Solar Energy Packages",
     description: `Discover the benefits of our ${
       data?.title ?? "solar packages"
     } and choose the best one for your needs.`,
     openGraph: {
-      title: data?.title ?? "Kangaroo Solar Packages",
+      title: data?.title ?? "Aussie Electrical Solar Energy Packages",
       description: `Find out about our ${
         data?.title ?? "solar packages"
       } and maximize your energy savings.`,
@@ -39,7 +39,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: data?.title ?? "Kangaroo Solar Packages",
+      title: data?.title ?? "Aussie Electrical Solar Energy Packages",
       description: `Explore ${
         data?.title ?? "our solar packages"
       } designed for efficiency and sustainability.`,

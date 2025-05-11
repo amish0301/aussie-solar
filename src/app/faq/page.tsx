@@ -7,7 +7,7 @@ import { generateMetadata } from "@/utils/utils";
 export const metadata = generateMetadata({
   title: "Frequently Asked Questions ",
   description:
-    "Explore Kangaroo Solar's comprehensive FAQ section to find answers to common questions about solar panel systems, installation processes, warranties, savings, and more. Empower yourself with knowledge about sustainable energy solutions tailored for Australian homeowners.",
+    "Explore Aussie Electrical Solar Energy's comprehensive FAQ section to find answers to common questions about solar panel systems, installation processes, warranties, savings, and more. Empower yourself with knowledge about sustainable energy solutions tailored for Australian homeowners.",
   url: "/faq",
   keywords: [
     "solar panel system",

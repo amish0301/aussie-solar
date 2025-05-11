@@ -24,6 +24,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/featureData.ts", "src/hooks/ratings-hooks.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "src/data/featureData.ts", "src/hooks/ratings-hooks.js", "global.d.ts"],
   "exclude": ["node_modules"]
 }

@@ -7,7 +7,8 @@ import SearchIcon from "@/svg/SearchIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import Logo from "../../../public/assets/img/logo.png";
+// import Logo from "../../../public/assets/img/logo.png";
+import Logo from "../../../public/assets/img/Aussie_logo.png";
 import MobileMenu from "./MobileMenu";
 
 const HeaderOne = () => {
@@ -70,8 +71,8 @@ const HeaderOne = () => {
                   <i>
                     <EmailTwoIcon />
                   </i>
-                  <Link href="mailto:info@kangaroosolar.com.au">
-                    <p>info@kangaroosolar.com.au</p>
+                  <Link href="mailto:Jared@aussieelectricalsolarenergy.com.au">
+                    <p>Jared@aussieelectricalsolarenergy.com.au</p>
                   </Link>
                 </div>
                 <div className="d-flex align-items-center px-3">
@@ -88,7 +89,7 @@ const HeaderOne = () => {
           <div className={`menu-bar menu-bar-en ${isSticky ? "sticky" : ""}`}>
             <div className="logo">
               <Link href="/">
-                <Image src={Logo} alt="logo" width={140} height={40} />
+                <Image src={Logo} alt="logo" width={140} height={35} />
               </Link>
             </div>
             <nav className="navbar">

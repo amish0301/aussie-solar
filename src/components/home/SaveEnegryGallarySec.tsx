@@ -22,7 +22,7 @@ const SaveEnegryGallarySec = () => {
           <div className="row align-items-center">
             <div className="col-lg-6">
               <div className="heading">
-                <p>Welcome to Kangaroo Solar Power Save Energy</p>
+                <p>Welcome to Aussie Electrical Solar Energy Power Save Energy</p>
                 <div className="line"></div>
                 <h2>Taking the effort out of business energy</h2>
               </div>
@@ -30,7 +30,7 @@ const SaveEnegryGallarySec = () => {
             <div className="col-lg-6">
               <div className="renewable-group">
                 <p>
-                  At Kangaroo Solars, we are committed to delivering
+                  At Aussie Electrical Solar Energys, we are committed to delivering
                   high-quality, reliable, and sustainable solar energy solutions
                   across Australia. With a presence in multiple regions, we take
                   pride in being a trusted name in the solar power industry,

@@ -1,10 +1,10 @@
 {
-  "name": "Kangaroo Solar",
-  "short_name": "Kangaroo Solar",
+  "name": "Aussie Electrical Solar Energy",
+  "short_name": "Aussie Electrical Solar Energy",
   "icons": [
     {
       "src": "/assets/img/fav-icon/android-chrome-192x192.png",
-      "sizes": "192x192",
+      "sizes": "150x250",
       "type": "image/png"
     },
     {

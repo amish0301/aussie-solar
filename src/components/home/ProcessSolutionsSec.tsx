@@ -73,7 +73,7 @@ const ProcessSolutionsSec = ({ propsClass }: propsType) => {
                   <span>4</span>
                 </div>
                 <p>
-                  Kangaroo Solar&apos;s expert team offers over a decade of
+                  Aussie Electrical Solar Energy&apos;s expert team offers over a decade of
                   experience, delivering top-notch solar solutions for a
                   sustainable, greener future.
                 </p>
@@ -91,7 +91,7 @@ const ProcessSolutionsSec = ({ propsClass }: propsType) => {
                 </div>
 
                 <p>
-                  Kangaroo Solar prioritizes quality, offering high-performance,
+                  Aussie Electrical Solar Energy prioritizes quality, offering high-performance,
                   durable solar solutions that meet top industry standards for
                   reliable, efficient, and sustainable energy savings.
                 </p>
@@ -109,7 +109,7 @@ const ProcessSolutionsSec = ({ propsClass }: propsType) => {
                 </div>
 
                 <p>
-                  Kangaroo Solar offers reliable, efficient energy solutions
+                  Aussie Electrical Solar Energy offers reliable, efficient energy solutions
                   with maximum rebates, expert support, seamless installations,
                   and a customer-first approach for sustainable power.
                 </p>

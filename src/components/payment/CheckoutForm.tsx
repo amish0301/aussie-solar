@@ -28,7 +28,7 @@ const StripeRedirect = () => {
   return (
     <div className="container text-center mt-4">
       <Image src={logo} alt="Company Logo" width="150" />
-      <h3 className="mt-3">Kangaroo Solar - Secure Payment</h3>
+      <h3 className="mt-3">Aussie Electrical Solar Energy - Secure Payment</h3>
 
       <input
         type="number"

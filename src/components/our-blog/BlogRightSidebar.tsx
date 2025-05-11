@@ -56,7 +56,7 @@ const BlogRightSidebar = () => {
             </li>
             <li>
               <Link href="#">
-                <span>Kangaroo Solar</span>
+                <span>Aussie Electrical Solar Energy</span>
               </Link>
             </li>
           </ul>

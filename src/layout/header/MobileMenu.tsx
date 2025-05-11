@@ -4,7 +4,7 @@ import LocationIcon from "@/svg/LocationIcon";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Logo from "../../../public/assets/img/logo.png";
+import Logo from "../../../public/assets/img/Aussie_logo.png";
 
 const MobileMenu = () => {
   const { sideMenuOpen, toggleSideMenu } = useGlobalContext();
@@ -24,7 +24,7 @@ const MobileMenu = () => {
       >
         <div className="mobilemenu-logo">
           <Link href="/">
-            <Image src={Logo} alt="logo" width={170} height={50} />
+            <Image src={Logo} alt="logo" width={200} height={50} />
           </Link>
         </div>
         <ul>
@@ -134,25 +134,25 @@ const MobileMenu = () => {
                   ></path>
                 </svg>
               </i>
-              <Link href="mailto:info@kangaroosolar.com.au">
-                <p>info@kangaroosolar.com.au</p>
+              <Link href="mailto:Jared@aussieelectricalsolarenergy.com.au">
+                <p>Jared@aussieelectricalsolarenergy.com.au</p>
               </Link>
             </div>
           </div>
 
           {/* add address */}
-          <div className="mobile-menu-info d-flex align-items-center top-bar-mail">
+          {/* <div className="mobile-menu-info d-flex align-items-center top-bar-mail">
             <i>
               <LocationIcon />
             </i>
             <p>Address 1 : 76 Cherish Drive, Tarneit, VIC - 3029</p>
-          </div>
+          </div> */}
 
           <div className="mobile-menu-info d-flex align-items-center top-bar-mail">
             <i>
               <LocationIcon />
             </i>
-            <p>Address 2 : 2 Fripp Cres, Beverly Hills, NSW 2209</p>
+            <p>Address : 2 Fripp Cres, Beverly Hills, NSW 2209</p>
           </div>
         </div>
       </div>

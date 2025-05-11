@@ -1,7 +1,9 @@
 import React from "react";
 import bgImg from "../../../public/assets/img/footer.jpg";
 import Link from "next/link";
-import Logo from "../../../public/assets/img/logo2.png";
+// import Logo from "../../../public/assets/img/logo2.png";
+// import Logo from "../../../public/assets/img/Aussie_logo2.png"
+import Logo from "../../../public/assets/img/Aussie_logo.png"
 import PhoneIcon from "@/svg/PhoneIcon";
 import LocationIcon from "@/svg/LocationIcon";
 import EmailIcon from "@/svg/EmailIcon";
@@ -28,10 +30,11 @@ const FooterOne = () => {
                   <Image src={Logo} alt="logo" width={180} />
                 </Link>
                 <p>
-                  <strong>Powering Australia with Smart Solar Solutions</strong> - Kangaroo Solar
-                  revolutionizes energy with high-performance solar, battery
-                  storage, and smart solutions, maximizing savings and
-                  sustainability for homes and businesses.
+                  <strong>Powering Australia with Smart Solar Solutions</strong>{" "}
+                  - Aussie Electrical Solar Energy revolutionizes energy with
+                  high-performance solar, battery storage, and smart solutions,
+                  maximizing savings and sustainability for homes and
+                  businesses.
                 </p>
                 <ul className="d-flex social-media">
                   <li>
@@ -142,10 +145,10 @@ const FooterOne = () => {
               </div>
             </div>
 
-            {/* Kangaroo Solar Section */}
+            {/* Aussie Electrical Solar Energy Section */}
             <div className="col-lg-2 col-md-6">
               <div className="footer-widget about-energix">
-                <h4>Kangaroo Solar</h4>
+                <h4>Aussie Electrical Solar Energy</h4>
                 <div className="line"></div>
                 <ul className="footer-link-style">
                   <li>
@@ -170,7 +173,10 @@ const FooterOne = () => {
           </div>
 
           {/* Contact Footer */}
-          <div className="row contact-footer">
+          <div
+            className="row contact-footer"
+            style={{ justifyContent: "space-between" }}
+          >
             <div className="col-lg-3 col-md-6">
               <div className="contact-info">
                 <i>
@@ -185,17 +191,17 @@ const FooterOne = () => {
               </div>
             </div>
 
-            <div className="col-lg-3 col-md-6">
+            {/* <div className="col-lg-4 col-md-6">
               <div className="contact-info">
                 <i>
                   <LocationTwoIcon />
                 </i>
                 <div>
-                  <h4>Address 1 :</h4>
+                  <h4>Address :</h4>
                   <p>76 Cherish Drive, Tarneit, VIC - 3029</p>
                 </div>
               </div>
-            </div>
+            </div> */}
 
             <div className="col-lg-3 col-md-6">
               <div className="contact-info">
@@ -203,7 +209,7 @@ const FooterOne = () => {
                   <LocationTwoIcon />
                 </i>
                 <div>
-                  <h4>Address 2 :</h4>
+                  <h4>Address :</h4>
                   <p>2 Fripp Cres, Beverly Hills, NSW 2209</p>
                 </div>
               </div>
@@ -216,8 +222,8 @@ const FooterOne = () => {
                 </i>
                 <div>
                   <h4>Email Address:</h4>
-                  <Link href="mailto:info@kangaroosolar.com.au">
-                    <p>info@kangaroosolar.com.au</p>
+                  <Link href="mailto:Jared@aussieelectricalsolarenergy.com.au">
+                    <p>Jared@aussieelectricalsolarenergy.com.au</p>
                   </Link>
                 </div>
               </div>
@@ -226,7 +232,10 @@ const FooterOne = () => {
 
           {/* Footer Bottom */}
           <div className="footer-bottom">
-            <p>Ⓒ Copyright Kangaroo Solar {year}. All Right Reserved.</p>
+            <p>
+              Ⓒ Copyright Aussie Electrical Solar Energy {year}. All Right
+              Reserved.
+            </p>
             <ul>
               <li>
                 <Link href="#">Privacy Policy</Link>

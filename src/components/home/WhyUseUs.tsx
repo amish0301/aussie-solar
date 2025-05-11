@@ -37,7 +37,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
               <div className="heading">
                 <p>Commitment to a Sustainable Future</p>
                 <div className="line"></div>
-                <h2>Why Choose Kangaroo Solar?</h2>
+                <h2>Why Choose Aussie Electrical Solar Energy?</h2>
               </div>
               <div className="use-energix-grid d-grid">
                 {/* premium quality */}
@@ -166,8 +166,8 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
                 </div>
                 <div className="call-for mail-for">
                   <p>Email Address:</p>
-                  <Link href="mailto:info@kangaroosolar.com.au">
-                    <p>info@kangaroosolar.com.au</p>
+                  <Link href="mailto:Jared@aussieelectricalsolarenergy.com.au">
+                    <p>Jared@aussieelectricalsolarenergy.com.au</p>
                   </Link>
                 </div>
               </div>

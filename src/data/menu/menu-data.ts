@@ -115,7 +115,7 @@ const navMenuData: MenuItem[] = [
   },
   {
     id: 3,
-    label: "Kangaroo Solars",
+    label: "Aussie Electrical Solar Energys",
     link: "#",
     hasDropdown: true,
     subMenu: [

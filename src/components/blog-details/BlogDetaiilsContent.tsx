@@ -138,7 +138,7 @@ const BlogDetailsContent = ({ id }: { id: string }) => {
               </h2>
               <h4>Which is the best Australian-owned solar company that offers top-quality solar panel installations and energy-efficient solutions?</h4>
               <p>
-              Kangaroo Solar is one of Australia&apos;s leading solar energy providers, offering top-quality solar panel installations, battery storage solutions, and energy-efficient systems for homes and businesses. As a 100% Australian-owned company, we take pride in delivering affordable solar solutions that help reduce electricity bills while promoting a greener future. Our expert team ensures seamless solar system installation with <b>premium Tier-1</b> solar panels and cutting-edge technology. Looking for the best solar provider in Australia to maximize your energy savings?
+              Aussie Electrical Solar Energy is one of Australia&apos;s leading solar energy providers, offering top-quality solar panel installations, battery storage solutions, and energy-efficient systems for homes and businesses. As a 100% Australian-owned company, we take pride in delivering affordable solar solutions that help reduce electricity bills while promoting a greener future. Our expert team ensures seamless solar system installation with <b>premium Tier-1</b> solar panels and cutting-edge technology. Looking for the best solar provider in Australia to maximize your energy savings?
               </p>
               <div className="row">
                 <div className="col-lg-6">
@@ -166,7 +166,7 @@ const BlogDetailsContent = ({ id }: { id: string }) => {
               </div>
               <h4 className="pt-0">Professionals and relevant experience!</h4>
               <p>
-              When choosing a solar energy provider, working with experienced solar professionals is crucial to ensure a seamless installation and long-term performance. At Kangaroo Solar, our team consists of certified solar installers, licensed electricians, and industry experts with years of hands-on experience in delivering high-quality solar panel systems across Australia.
+              When choosing a solar energy provider, working with experienced solar professionals is crucial to ensure a seamless installation and long-term performance. At Aussie Electrical Solar Energy, our team consists of certified solar installers, licensed electricians, and industry experts with years of hands-on experience in delivering high-quality solar panel systems across Australia.
               </p>
               <p>
               With our deep expertise in solar energy solutions, we guarantee tailored solar system designs, efficient solar panel installation, and ongoing support to maximize your energy savings. Whether it&apos;s a residential solar system, commercial solar setup, or battery storage solution, our professionals bring the relevant industry experience needed to ensure smooth project execution and compliance with Australian solar standards.

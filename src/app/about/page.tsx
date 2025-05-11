@@ -9,7 +9,7 @@ import React from "react";
 export const metadata = generateMetadata({
   title: "About Us",
   description:
-    "Learn about Kangaroo Solar, our mission, vision, and commitment to providing high-efficiency solar energy solutions. Discover how we help homeowners and businesses embrace sustainable energy.",
+    "Learn about Aussie Electrical Solar Energy, our mission, vision, and commitment to providing high-efficiency solar energy solutions. Discover how we help homeowners and businesses embrace sustainable energy.",
   url: "/about",
   image: [
     "/assets/img/banners/banner-man.jpeg",

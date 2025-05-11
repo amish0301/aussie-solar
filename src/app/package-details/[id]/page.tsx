@@ -21,13 +21,13 @@ export async function generateMetadata({
     .find((pkg) => pkg.id === numericId); // Find package by id
 
   return {
-    title: packageData?.title ?? "Package Details - Kangaroo Solar",
+    title: packageData?.title ?? "Package Details - Aussie Electrical Solar Energy",
     description: packageData?.tagLine ?? "Learn more about our solar packages.",
     metadataBase: new URL(
       process.env.NEXT_PUBLIC_DOMAIN ?? "http://localhost:3000"
     ),
     openGraph: {
-      title: packageData?.title ?? "Package Details - Kangaroo Solar",
+      title: packageData?.title ?? "Package Details - Aussie Electrical Solar Energy",
       description:
         packageData?.tagLine ??
         "Discover our cost-effective and high-efficiency solar panel solutions.",

@@ -8,7 +8,7 @@ import Wrapper from "@/layout/DefaultWrapper";
 import { generateMetadata } from "@/utils/utils";
 
 export const metadata = generateMetadata({
-  title: "Kangaroo Solar - Best Solar Panel Systems in Australia",
+  title: "Aussie Electrical Solar Energy - Best Solar Panel Systems in Australia",
   description:
     "Get top-quality solar panel installation, battery storage, and cleaning services. Reduce electricity bills with efficient solar energy solutions. Certified solar experts with top-rated customer service.",
   url: "/",

@@ -44,7 +44,7 @@ const EnergySystem = ({
                 to be reliable and stable and they provide the best value
                 products on the market. Only a small percentage of solar panel
                 manufacturers around the world have achieved the top Tier 1
-                ranking. Kangaroo Solar only sells and installs Tier 1 products,
+                ranking. Aussie Electrical Solar Energy only sells and installs Tier 1 products,
                 giving you the peace of mind of receiving quality products that
                 will provide the best return on investment.
                 <br />

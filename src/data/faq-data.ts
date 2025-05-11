@@ -34,7 +34,7 @@ export const faqData: FAQItem[] = [
   {
     question: "How do I know if my roof is suitable for solar panels?",
     answer:
-      "At Kangaroo Solar, our industry experts and electricians will help you choose the best solar system to suit your needs. We evaluate your roof's size, orientation, and location to determine the optimal placement of solar panels, maximizing energy efficiency and reducing your energy bills. If your roof isn't ideal.",
+      "At Aussie Electrical Solar Energy, our industry experts and electricians will help you choose the best solar system to suit your needs. We evaluate your roof's size, orientation, and location to determine the optimal placement of solar panels, maximizing energy efficiency and reducing your energy bills. If your roof isn't ideal.",
   },
   {
     question:

@@ -11,14 +11,14 @@ const WellComeToSolarSec = () => {
           <div className="row">
             <div className="col-xl-5">
               <div className="heading">
-                <p>Welcome to Kangaroo Solar</p>
+                <p>Welcome to Aussie Electrical Solar Energy</p>
                 <div className="line"></div>
-                <h2>Powering a Sustainable Future with Kangaroo Solar</h2>
+                <h2>Powering a Sustainable Future with Aussie Electrical Solar Energy</h2>
               </div>
               <div className="renewable-group w-100">
                 <p>
                   Founded with a commitment to sustainability and energy
-                  efficiency, Kangaroo Solar has become a trusted name in the
+                  efficiency, Aussie Electrical Solar Energy has become a trusted name in the
                   renewable energy industry. With over a years of experience,
                   our team of skilled electricians and industry experts
                   specializes in delivering cutting-edge solar solutions for
@@ -28,7 +28,7 @@ const WellComeToSolarSec = () => {
                 <p>
                   We are dedicated to providing our customers with the maximum
                   rebates available, ensuring they get the best value for their
-                  investment. At Kangaroo Solar, we believe in quality over
+                  investment. At Aussie Electrical Solar Energy, we believe in quality over
                   compromise—we always recommend high-quality products that
                   offer superior performance and longevity, never opting for
                   cheap alternatives.
@@ -37,9 +37,9 @@ const WellComeToSolarSec = () => {
                   Our expert team ensures seamless, high-quality installations
                   and tailored energy solutions to meet evolving energy needs.
                 </p>
-                <h3>Join the Green Energy Movement with Kangaroo Solar</h3>
+                <h3>Join the Green Energy Movement with Aussie Electrical Solar Energy</h3>
                 <p>
-                  At Kangaroo Solar, we are leading the charge toward a cleaner,
+                  At Aussie Electrical Solar Energy, we are leading the charge toward a cleaner,
                   more efficient future. Our comprehensive services empower
                   businesses and households to harness renewable energy
                   effectively. Partner with us and take the next step toward a

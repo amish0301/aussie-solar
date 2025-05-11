@@ -64,7 +64,7 @@ const Payment = () => {
                   <strong>Bank Name:</strong> Australian National Bank
                 </li>
                 <li className="list-group-item">
-                  <strong>Account Name:</strong> Kangaroo Solar Pty Ltd
+                  <strong>Account Name:</strong> Aussie Electrical Solar Energy Pty Ltd
                 </li>
                 <li className="list-group-item">
                   <strong>BSB:</strong> 123-456

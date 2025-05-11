@@ -18,7 +18,7 @@ const EnergySystem = ({ faqData }: propType) => {
         <div className="container">
           <h5>Consumer protections</h5>
           <p>
-            At Kangaroo Solar, we believe solar should be simple, affordable,
+            At Aussie Electrical Solar Energy, we believe solar should be simple, affordable,
             and great value for money. To ensure you get a top-performing system
             that is value for money, we offer a range of consumer protections on
             our solar products and services.
@@ -32,7 +32,7 @@ const EnergySystem = ({ faqData }: propType) => {
 
           <h5>Comprehensive Solar Panel Installation by Kangaroo</h5>
           <p className="mb-4">
-            At Kangaroo Solar, we specialize in delivering top-notch solar panel
+            At Aussie Electrical Solar Energy, we specialize in delivering top-notch solar panel
             installation services for residential and commercial spaces. Our
             team of experts ensures a seamless and efficient setup, helping you
             harness the power of the sun to reduce energy costs and promote

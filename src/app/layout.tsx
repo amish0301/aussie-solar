@@ -9,11 +9,11 @@ if (typeof window !== "undefined") {
 
 export const metadata: Metadata = {
   title: {
-    default: "Kangaroo Solar - Best Solar Panel Solutions in Australia",
-    template: "%s - Kangaroo Solar",
+    default: "Aussie Electrical Solar Energy - Best Solar Panel Solutions in Australia",
+    template: "%s - Aussie Electrical Solar Energy",
   },
   description:
-    "Kangaroo Solar provides expert solar panel installation, battery storage, and maintenance services across Australia. Save on electricity bills with clean energy solutions.",
+    "Aussie Electrical Solar Energy provides expert solar panel installation, battery storage, and maintenance services across Australia. Save on electricity bills with clean energy solutions.",
 
   keywords: [
     "solar panels",
@@ -29,11 +29,11 @@ export const metadata: Metadata = {
 
   openGraph: {
     title:
-      "Kangaroo Solar - Premium Solar Panel Installation & Battery Storage",
+      "Aussie Electrical Solar Energy - Premium Solar Panel Installation & Battery Storage",
     description:
       "Power your home with top-tier solar panel systems, expert installations, and sustainable energy solutions. Trusted by thousands across Australia.",
     url: process.env.NEXT_PUBLIC_DOMAIN || "http://localhost:3000",
-    siteName: "Kangaroo Solar",
+    siteName: "Aussie Electrical Solar Energy",
     images: [
       {
         url: "/assets/img/solar-panel.jpeg",
@@ -48,9 +48,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     site: "@KangarooSolar",
-    title: "Kangaroo Solar - Trusted Solar Panel Installers in Australia",
+    title: "Aussie Electrical Solar Energy - Trusted Solar Panel Installers in Australia",
     description:
-      "Get high-quality solar panel installations, maintenance, and battery storage solutions with Kangaroo Solar.",
+      "Get high-quality solar panel installations, maintenance, and battery storage solutions with Aussie Electrical Solar Energy.",
     images: ["/assets/img/solar-panel.jpg"],
   },
   metadataBase: new URL(
@@ -73,7 +73,7 @@ export default function RootLayout({
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="description"
-            content="Kangaroo Solar is an Australian-based company providing high-efficiency solar energy solutions. Discover top-quality solar panel installations, cleaning, and Wi-Fi monitoring for homes and businesses."
+            content="Aussie Electrical Solar Energy is an Australian-based company providing high-efficiency solar energy solutions. Discover top-quality solar panel installations, cleaning, and Wi-Fi monitoring for homes and businesses."
           />
           <meta
             name="viewport"
