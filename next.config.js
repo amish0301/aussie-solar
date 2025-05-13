@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: 'export',
+  output: "export", // Uncomment this line to enable static export
   compress: true,
   reactStrictMode: true,
   typescript: {
@@ -14,7 +14,7 @@ const nextConfig = {
         pathname: "/avatar/**",
       },
     ],
-    domains: ["res.cloudinary.com"]
+    domains: ["res.cloudinary.com"],
   },
 };
 
