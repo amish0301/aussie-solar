@@ -1,9 +1,7 @@
 import React from "react";
 import bgImg from "../../../public/assets/img/footer.jpg";
 import Link from "next/link";
-// import Logo from "../../../public/assets/img/logo2.png";
-// import Logo from "../../../public/assets/img/Aussie_logo2.png"
-import Logo from "../../../public/assets/img/Aussie_logo.png"
+import Logo from "../../../public/assets/img/Aussie_Logo_White.png"
 import PhoneIcon from "@/svg/PhoneIcon";
 import LocationIcon from "@/svg/LocationIcon";
 import EmailIcon from "@/svg/EmailIcon";

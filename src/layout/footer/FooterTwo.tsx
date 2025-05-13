@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import bgImg from "../../../public/assets/img/footer.jpg";
-import Logo from "../../../public/assets/img/Aussie_logo2.png";
+import Logo from "../../../public/assets/img/Aussie_Logo_White.png";
 import { useState } from "react";
 import { toast } from "sonner";
 const FooterTwo = () => {
