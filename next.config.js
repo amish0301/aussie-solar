@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // output: "export", // Uncomment this line to enable static export
+  output: "export", // Uncomment this line to enable static export
   compress: true,
   reactStrictMode: true,
   typescript: {
