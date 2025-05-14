@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import addIcon from "../../../public/assets/img/add_icon.png";
 import blog_icon from "../../../public/assets/img/blog_icon.png";
 import email_icon from "../../../public/assets/img/email_icon.png";
-import logo from "../../../public/assets/img/logo.png";
+import logo from "../../../public/assets/img/Aussie_logo2.png";
 
 interface SidebarLinkProps {
   href: string;
@@ -50,7 +50,7 @@ export default function Sidebar() {
     >
       {/* Logo Section */}
       <Link href={'/admin'} className="px-4 py-3 border-bottom cursor-pointer text-center bg-white cursor-pointer">
-        <Image src={logo} width={140} height={50} alt="Logo" />
+        <Image src={logo} width={100} height={50} alt="Logo" />
       </Link>
 
       {/* Sidebar Section */}
