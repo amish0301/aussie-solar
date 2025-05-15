@@ -21,28 +21,30 @@ export default function LoginPage() {
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault(); // Prevent default form submission
+    setIsLoading(true);
     const toastId = toast.loading("Verifying Credentials...");
     try {
-      e.preventDefault();
-
-      setIsLoading(true);
-
       const result = await signIn("credentials", {
         email: formData.email,
         password: formData.password,
         redirect: false,
       });
 
-      if (result?.error) {
-        toast.error(String(result.error) || "Error while login", { id: toastId });
-        setError(result.error);
+      if (result?.ok && !result.error) {
+        toast.success("Login successful!", { id: toastId });
+        // Optional delay to ensure session is available
+        setTimeout(() => {
+          router.push("/admin");
+        }, 300);
       } else {
-        router.push('/admin');
+        toast.error(result?.error || "Login failed", { id: toastId });
+        setError(result?.error || "Login failed");
       }
     } catch (error) {
-      console.log('error while login', error);
+      console.error("Error during login:", error);
+      toast.error("An unexpected error occurred", { id: toastId });
     } finally {
-      toast.dismiss(toastId);
       setIsLoading(false);
     }
   };
@@ -76,9 +78,9 @@ export default function LoginPage() {
               type="submit"
               className="btn btn-primary w-100"
               disabled={isLoading}
-              style={{ opacity: `${isLoading ? 0.5 : 1}` }}
+              style={{ opacity: isLoading ? 0.5 : 1 }}
             >
-              Login
+              {isLoading ? "Logging in..." : "Login"}
             </button>
           </form>
         </div>
