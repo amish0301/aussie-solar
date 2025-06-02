@@ -1,7 +1,7 @@
 import React from "react";
 import bgImg from "../../../public/assets/img/footer.jpg";
 import Link from "next/link";
-import Logo from "../../../public/assets/img/Aussie_Logo_White.png"
+import Logo from "../../../public/assets/img/Aussie_Logo_White.png";
 import PhoneIcon from "@/svg/PhoneIcon";
 import LocationIcon from "@/svg/LocationIcon";
 import EmailIcon from "@/svg/EmailIcon";
@@ -183,7 +183,7 @@ const FooterOne = () => {
                 <div>
                   <h4>Phone No:</h4>
                   <Link href="callto:01234525407">
-                    <p>01234 525 407</p>
+                    <p>+61485993765</p>
                   </Link>
                 </div>
               </div>

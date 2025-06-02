@@ -12,7 +12,8 @@ import Logo from "../../../public/assets/img/Aussie_logo.png";
 import MobileMenu from "./MobileMenu";
 
 const HeaderOne = () => {
-  const { toggleSideMenu, toggleSearchBar, openLetterBox, setOpenLetterBox } = useGlobalContext();
+  const { toggleSideMenu, toggleSearchBar, openLetterBox, setOpenLetterBox } =
+    useGlobalContext();
 
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [isLaptop, setIsLaptop] = useState<boolean>(false);
@@ -79,7 +80,9 @@ const HeaderOne = () => {
                   <i>
                     <PhoneTwoIcon />
                   </i>
-                  <Link href="callto:+61-455-505-652"><p>+61-455-505-652</p></Link>
+                  <Link href="callto:+61485993765">
+                    <p>+61485993765</p>
+                  </Link>
                 </div>
               </div>
             </div>

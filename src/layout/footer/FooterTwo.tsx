@@ -17,7 +17,7 @@ const FooterTwo = () => {
   const pathName = usePathname();
   const [emailSubscription, setEmailSubscription] = useState("");
 
-  const handleSubscribe = async (e:React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
 
     console.log(emailSubscription);
@@ -33,25 +33,22 @@ const FooterTwo = () => {
         body: JSON.stringify({
           access_key: process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY,
           SubscribedMail: emailSubscription,
-          message: `${emailSubscription} has Just Subscribe for NewsLetter`
+          message: `${emailSubscription} has Just Subscribe for NewsLetter`,
         }),
       });
 
       const data = await response.json();
 
       if (data.success) {
-        toast.success(
-          "Thank you for Subscribing Our News Letter",
-          {
-            id: toastId,
-            duration: 1500,
-          }
-        );
+        toast.success("Thank you for Subscribing Our News Letter", {
+          id: toastId,
+          duration: 1500,
+        });
       }
     } catch (error) {
       console.log(error);
     }
-  }
+  };
 
   return (
     <>
@@ -68,9 +65,10 @@ const FooterTwo = () => {
                 </Link>
                 <p>
                   <strong>Powering Australia with Smart Solar Solutions</strong>{" "}
-                  - Aussie Electrical Solar Energy revolutionizes energy with high-performance
-                  solar, battery storage, and smart solutions, maximizing
-                  savings and sustainability for homes and businesses.
+                  - Aussie Electrical Solar Energy revolutionizes energy with
+                  high-performance solar, battery storage, and smart solutions,
+                  maximizing savings and sustainability for homes and
+                  businesses.
                 </p>
                 <ul className="d-flex social-media">
                   <li>
@@ -96,7 +94,7 @@ const FooterTwo = () => {
                       <PhoneTwoIcon />
                     </i>
                     <Link href="callto:01234525407">
-                      <p>01234 525 407</p>
+                      <p>+61485993765</p>
                     </Link>
                   </div>
                 </div>
@@ -157,9 +155,7 @@ const FooterTwo = () => {
                 <ul className="link-style">
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
-                    <a href="/packages/1">
-                      Residential Package
-                    </a>
+                    <a href="/packages/1">Residential Package</a>
                   </li>
                   <li>
                     <i className="fa-solid fa-caret-right"></i>
@@ -210,7 +206,9 @@ const FooterTwo = () => {
                       placeholder="Enter your email address..."
                       onChange={(e) => setEmailSubscription(e.target.value)}
                     />
-                    <button className="button" type="submit">Subscribe</button>
+                    <button className="button" type="submit">
+                      Subscribe
+                    </button>
                   </form>
                 </div>
               </div>
@@ -218,7 +216,10 @@ const FooterTwo = () => {
           )}
 
           <div className="footer-bottom">
-            <p>Ⓒ Copyright Aussie Electrical Solar Energy {year}. All Right Reserved.</p>
+            <p>
+              Ⓒ Copyright Aussie Electrical Solar Energy {year}. All Right
+              Reserved.
+            </p>
             <ul>
               <li>
                 <Link href="#">Privacy Policy</Link>

@@ -32,7 +32,7 @@ const ContactArea = () => {
                 <div>
                   <h4>Phone No:</h4>
                   <a href="callto:01234525407">
-                    <p>01234 525 407</p>
+                    <p>+61485993765</p>
                   </a>
                 </div>
               </div>
