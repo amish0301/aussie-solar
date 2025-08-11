@@ -126,8 +126,7 @@ const SolarSystemInfo = ({ data, productData }: propsType) => {
             </div>
           )}
 
-
-{/* below is general info in all services pages, can be removed */}
+          {/* below is general info in all services pages, can be removed */}
 
           <div className="row align-items-center mt-3">
             <div className="col-lg-7">
@@ -143,14 +142,24 @@ const SolarSystemInfo = ({ data, productData }: propsType) => {
                 <br />
                 <br />
                 By purchasing a solar panel system for your home or business
-                with Aussie Electrical Solar Energy, you can access a highly qualified,
-                professional team that can support you every step of the way.
+                with Aussie Electrical Solar Energy, you can access a highly
+                qualified, professional team that can support you every step of
+                the way.
               </p>
             </div>
             <div className="col-lg-5">
-              <h2 className="mb-3">The Aussie Electrical Solar Energy Difference</h2>
+              <h2 className="mb-3">
+                The Aussie Electrical Solar Energy Difference
+              </h2>
               <p>
-              We believe in solar power and do everything we can to get this wonderful technology into the hands of more people. Along with our reliable products, expert installation services, and advanced consumer protections, we also offer a variety of flexible finance solutions, a 10% price beat Warranty, and no lock-in contracts. If you’re looking for solar panel products and installation you can trust, from one of the biggest names in the country, please give us a call.
+                We believe in solar power and do everything we can to get this
+                wonderful technology into the hands of more people. Along with
+                our reliable products, expert installation services, and
+                advanced consumer protections, we also offer a variety of
+                flexible finance solutions, a 10% price beat Warranty, and no
+                lock-in contracts. If you’re looking for solar panel products
+                and installation you can trust, from one of the biggest names in
+                the country, please give us a call.
               </p>
             </div>
           </div>

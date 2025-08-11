@@ -30,7 +30,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
             <div className="heading">
               <h2 className="text-center">
                 Expert In-House Team of Electricians and Solar Specialists with
-                Over 8 Years of Experience
+                Years of Experience
               </h2>
             </div>
             <div className="col-xl-6">
@@ -162,7 +162,7 @@ const WhyUseEnergix = ({ bgImg, propsClass }: propsType) => {
               <div className="d-sm-flex mt-4">
                 <div className="call-for">
                   <p>Call For a Quote:</p>
-                  <Link href="callto:+921234866731">+92 1234 866 731</Link>
+                  <Link href="callto:+61485993765">+61485993765</Link>
                 </div>
                 <div className="call-for mail-for">
                   <p>Email Address:</p>

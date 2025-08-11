@@ -15,7 +15,7 @@ const HomeMain = () => {
     <>
       <HeroSlider />
       <DomesticSec />
-      <SaveEnegryGallarySec />
+      {/* <SaveEnegryGallarySec /> */}
       <LatestInstallations classOne="" noBottom="no-bottom" />
       <WhyUse bgImg={bgImg} propsClass="" />
       {/* <PricingPlan /> */}

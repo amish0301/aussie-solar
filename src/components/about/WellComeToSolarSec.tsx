@@ -13,37 +13,43 @@ const WellComeToSolarSec = () => {
               <div className="heading">
                 <p>Welcome to Aussie Electrical Solar Energy</p>
                 <div className="line"></div>
-                <h2>Powering a Sustainable Future with Aussie Electrical Solar Energy</h2>
+                <h2>
+                  Powering a Sustainable Future with Aussie Electrical Solar
+                  Energy
+                </h2>
               </div>
               <div className="renewable-group w-100">
                 <p>
                   Founded with a commitment to sustainability and energy
-                  efficiency, Aussie Electrical Solar Energy has become a trusted name in the
-                  renewable energy industry. With over a years of experience,
-                  our team of skilled electricians and industry experts
-                  specializes in delivering cutting-edge solar solutions for
-                  both residential and commercial clients—helping them save
-                  money while reducing their environmental impact.
+                  efficiency, Aussie Electrical Solar Energy has become a
+                  trusted name in the renewable energy industry. With over a
+                  years of experience, our team of skilled electricians and
+                  industry experts specializes in delivering cutting-edge solar
+                  solutions for both residential and commercial clients—helping
+                  them save money while reducing their environmental impact.
                 </p>
                 <p>
                   We are dedicated to providing our customers with the maximum
                   rebates available, ensuring they get the best value for their
-                  investment. At Aussie Electrical Solar Energy, we believe in quality over
-                  compromise—we always recommend high-quality products that
-                  offer superior performance and longevity, never opting for
-                  cheap alternatives.
+                  investment. At Aussie Electrical Solar Energy, we believe in
+                  quality over compromise—we always recommend high-quality
+                  products that offer superior performance and longevity, never
+                  opting for cheap alternatives.
                 </p>
                 <p>
                   Our expert team ensures seamless, high-quality installations
                   and tailored energy solutions to meet evolving energy needs.
                 </p>
-                <h3>Join the Green Energy Movement with Aussie Electrical Solar Energy</h3>
+                <h3>
+                  Join the Green Energy Movement with Aussie Electrical Solar
+                  Energy
+                </h3>
                 <p>
-                  At Aussie Electrical Solar Energy, we are leading the charge toward a cleaner,
-                  more efficient future. Our comprehensive services empower
-                  businesses and households to harness renewable energy
-                  effectively. Partner with us and take the next step toward a
-                  sustainable tomorrow.
+                  At Aussie Electrical Solar Energy, we are leading the charge
+                  toward a cleaner, more efficient future. Our comprehensive
+                  services empower businesses and households to harness
+                  renewable energy effectively. Partner with us and take the
+                  next step toward a sustainable tomorrow.
                 </p>
               </div>
             </div>
@@ -56,7 +62,7 @@ const WellComeToSolarSec = () => {
                     <i>
                       <ExperienceTwoIcon />
                     </i>
-                    <div>
+                    {/* <div>
                       <div className="d-flex">
                         <h2 className="timer count-title count-number">
                           {" "}
@@ -65,7 +71,7 @@ const WellComeToSolarSec = () => {
                         <span>+</span>
                       </div>
                       <h6>Years Experience</h6>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
