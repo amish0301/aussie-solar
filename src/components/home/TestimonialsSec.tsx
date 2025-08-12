@@ -91,7 +91,7 @@ const TestimonialsSec = ({ propsClass }: propsType) => {
                   <>
                     <div>
                       <div className="client-reviews-text">
-                        <h3>{currentData?.review}</h3>
+                        <h3>{currentData?.review || []}</h3>
                         <div className="d-flex align-items-center">
                           <i>
                             <QuoteIcon />
